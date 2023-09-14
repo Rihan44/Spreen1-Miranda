@@ -1,4 +1,18 @@
-/* GENERALES */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
@@ -17,8 +31,6 @@ a {
   text-decoration: none;
 }
 
-/* END GENERALES */
-/* HEADER */
 header.header {
   width: 100%;
   height: auto;
@@ -109,52 +121,52 @@ header.header nav.header-menu__burguer ul.header-menu__items li a {
 }
 
 /* FIN HEADER */
-/* MAIN */
 main {
-  padding-top: 120px;
+  padding-top: 85px;
   display: flex;
   flex-direction: column;
   height: auto;
   width: 100%;
   height: auto;
-  background: rgb(51, 51, 51);
+  background: rgb(255, 255, 255);
   /* BANNER SECTION */
   /* FIN SECTION BANNER */
-  /* BANNER CHECKDATE */
-  /* FIN BANNER CHECKDATE */
 }
-main section.banner, main h2, main h3, main div {
+main section.banner {
   background: rgb(51, 51, 51);
   color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 30px;
   padding: 10px;
 }
-main section.banner h2.banner__firstitle, main h2 h2.banner__firstitle, main h3 h2.banner__firstitle, main div h2.banner__firstitle {
+main section.banner h2.banner__firstitle {
+  background: rgb(51, 51, 51);
   width: 80%;
   font-family: "Archivo", sans-serif;
   line-height: 18px;
   letter-spacing: 2.8px;
   font-size: 0.8em;
+  margin-top: 60px;
 }
-main section.banner h3.banner__secondtitle, main h2 h3.banner__secondtitle, main h3 h3.banner__secondtitle, main div h3.banner__secondtitle {
+main section.banner h3.banner__secondtitle {
+  background: rgb(51, 51, 51);
   font-family: "Old Standard TT", sans-serif;
   line-height: 60px;
   letter-spacing: -1.2px;
   font-weight: 400;
   font-size: 3.5em;
   width: 100%;
+  margin-top: 40px;
 }
-main section.banner div.banner__buttons, main h2 div.banner__buttons, main h3 div.banner__buttons, main div div.banner__buttons {
+main section.banner div.banner__buttons {
+  background: rgb(51, 51, 51);
   display: flex;
   flex-direction: column;
   height: auto;
   width: 100%;
 }
-main section.banner div.banner__buttons button, main h2 div.banner__buttons button, main h3 div.banner__buttons button, main div div.banner__buttons button {
+main section.banner div.banner__buttons button {
   width: 60%;
   padding: 20px;
   cursor: pointer;
@@ -166,13 +178,19 @@ main section.banner div.banner__buttons button, main h2 div.banner__buttons butt
   font-family: "Archivo", sans-serif;
   font-weight: 700;
 }
-main section.banner div.banner__buttons button.banner-buttons__tour, main h2 div.banner__buttons button.banner-buttons__tour, main h3 div.banner__buttons button.banner-buttons__tour, main div div.banner__buttons button.banner-buttons__tour {
+main section.banner div.banner__buttons button.banner-buttons__tour {
   background: rgb(190, 173, 142);
   margin-bottom: 20px;
+  margin-top: 40px;
 }
-main section.banner div.banner__buttons button.banner-buttons__more, main h2 div.banner__buttons button.banner-buttons__more, main h3 div.banner__buttons button.banner-buttons__more, main div div.banner__buttons button.banner-buttons__more {
+main section.banner div.banner__buttons button.banner-buttons__more {
   background: none;
   border: 2px solid gray;
+  margin-bottom: 60px;
+}
+
+main {
+  /* FIN BANNER CHECKDATE */
 }
 main section.banner__checkdate {
   background: rgb(34, 34, 34);
@@ -215,4 +233,192 @@ main section.banner__checkdate form.banner-checkdate__form button.banner-checkda
   background: rgb(190, 173, 142);
 }
 
-/* FIN MAIN *//*# sourceMappingURL=styles.css.map */
+main section.discover {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 60px;
+}
+main section.discover div.discover__titlebox {
+  width: 100%;
+  height: auto;
+  background: rgb(249, 249, 249);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+main section.discover div.discover__titlebox h4.discover-titlebox__about {
+  width: 100%;
+  background: none;
+  font-size: 0.875em;
+  color: rgb(119, 119, 119);
+  font-family: "Archivo", sans-serif;
+  letter-spacing: 2.8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 18px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+main section.discover div.discover__titlebox h2.discover-titlebox__title {
+  width: 100%;
+  background: none;
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 3.5em;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(17, 17, 17);
+  margin-bottom: 20px;
+}
+main section.discover div.discover__titlebox p.discover-titlebox__paraph {
+  width: 100%;
+  font-family: "Archivo", sans-serif;
+  background: none;
+  font-size: 0.9em;
+  color: rgb(119, 119, 119);
+  margin-bottom: 30px;
+  line-height: 25px;
+}
+main section.discover div.discover__titlebox button.discover-titlebox__button {
+  background: rgb(189, 172, 141);
+  border: none;
+  width: 65%;
+  padding: 20px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 0.875em;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+main section.discover div.discover-strong-team {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: auto;
+  background: rgb(255, 255, 255);
+  align-items: center;
+}
+main section.discover div.discover-strong-team div.discover-strong-team__box {
+  height: auto;
+  width: 75%;
+  background: none;
+  box-shadow: 0 8px 16px 0 rgba(34, 34, 34, 0.02);
+  margin-bottom: 40px;
+}
+main section.discover div.discover-strong-team div.discover-strong-team__box div.discover-strong-team__img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.discover div.discover-strong-team div.discover-strong-team__box div.discover-strong-team__img img.discover-strong-team-img__imgcover {
+  width: 100%;
+  height: 300px;
+}
+main section.discover div.discover-strong-team div.discover-strong-team__box div.discover-strong-team__description {
+  width: 85%;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../img/team-nocolor.png");
+  background-cover: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+main section.discover div.discover-strong-team div.discover-strong-team__box div.discover-strong-team__description h4.discover-strong-team-description__title {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 1.875em;
+  font-weight: 400;
+  letter-spacing: -0.9px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: none;
+}
+main section.discover div.discover-strong-team div.discover-strong-team__box div.discover-strong-team__description p.discover-strong-team-description__paraph {
+  width: 80%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.875em;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 25px;
+  background: none;
+}
+
+main section.discover div.discover-luxury-room {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: auto;
+  background: rgb(255, 255, 255);
+  align-items: center;
+}
+main section.discover div.discover-luxury-room div.discover-luxury-room__box {
+  height: auto;
+  width: 75%;
+  background: none;
+  margin-bottom: 40px;
+  color: rgb(255, 255, 255);
+  background: rgb(34, 34, 34);
+}
+main section.discover div.discover-luxury-room div.discover-luxury-room__box div.discover-luxury-room__img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+}
+main section.discover div.discover-luxury-room div.discover-luxury-room__box div.discover-luxury-room__img img.discover-luxury-room-img__imgcover {
+  width: 100%;
+  height: 300px;
+}
+main section.discover div.discover-luxury-room div.discover-luxury-room__box div.discover-luxury-room__description {
+  width: 85%;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+}
+main section.discover div.discover-luxury-room div.discover-luxury-room__box div.discover-luxury-room__description img.discover-luxury-room-description__team-img {
+  background: none;
+}
+main section.discover div.discover-luxury-room div.discover-luxury-room__box div.discover-luxury-room__description h4.discover-luxury-room-description__title {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 1.875em;
+  font-weight: 400;
+  letter-spacing: -0.9px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: none;
+  background: none;
+}
+main section.discover div.discover-luxury-room div.discover-luxury-room__box div.discover-luxury-room__description p.discover-luxury-room-description__paraph {
+  width: 80%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.875em;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 25px;
+  background: none;
+}/*# sourceMappingURL=styles.css.map */

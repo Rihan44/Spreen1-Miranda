@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+main section.discover div.discover-strong-team {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: auto;
+  background: rgb(255, 255, 255);
+  align-items: center;
+}
+main section.discover div.discover-strong-team div.discover-strong-team__box {
+  height: auto;
+  width: 75%;
+  background: none;
+  box-shadow: 0 8px 16px 0 rgba(34, 34, 34, 0.02);
+  margin-bottom: 40px;
+}
+main section.discover div.discover-strong-team div.discover-strong-team__box div.discover-strong-team__img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.discover div.discover-strong-team div.discover-strong-team__box div.discover-strong-team__img img.discover-strong-team-img__imgcover {
+  width: 100%;
+  height: 300px;
+}
+main section.discover div.discover-strong-team div.discover-strong-team__box div.discover-strong-team__description {
+  width: 85%;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../img/team-nocolor.png");
+  background-cover: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+main section.discover div.discover-strong-team div.discover-strong-team__box div.discover-strong-team__description h4.discover-strong-team-description__title {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 1.875em;
+  font-weight: 400;
+  letter-spacing: -0.9px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: none;
+}
+main section.discover div.discover-strong-team div.discover-strong-team__box div.discover-strong-team__description p.discover-strong-team-description__paraph {
+  width: 80%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.875em;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 25px;
+  background: none;
+}/*# sourceMappingURL=strong-team.css.map */

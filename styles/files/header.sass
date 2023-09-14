@@ -1,0 +1,77 @@
+@import "variables"
+
+header.header 
+    width: 100%
+    height: auto
+    background: rgba(255, 255, 255, 1)
+    position: fixed  
+    div.header__boxgeneral 
+        width: 100%
+        display: flex
+        padding: 20px
+        box-shadow: 0 3px 6px 0 rgba(36, 36, 36, 0.29)
+        justify-content: space-between
+        align-items: center
+        z-index: 10
+        button 
+            border: none
+            background: none
+            cursor: pointer
+            img 
+                width: 20px
+            img.header-menubutton__icon
+                width: 18px
+        div.header__titlebox
+            display: flex
+            margin-right: 100px
+            justify-content: space-between
+            width: 30%
+            align-items: center
+            div.header__boxlogo
+                width: 50%
+                height: auto
+                font-size: 1.5em
+                font-family: $fontPrincipal
+                box-shadow: 0 14px 24px 0 rgba(139, 139, 139, 0.25)
+                text-align: center
+                margin-right: 10px
+                padding: 10px
+            h1.header-titlebox__title
+                font-size: 0.8em
+                font-family: $fontPrincipal
+                display: flex
+                flex-direction: column
+                color: rgba(17, 17, 17, 1)
+                line-height: 18px
+                letter-spacing: 2.8px
+                span.header-titlebox-title__span
+                    font-weight: 100
+        div.header-boxgeneral__icons
+            display: flex
+            justify-content: space-between
+            width: 20%
+    nav.header-menu__burguer
+        height: auto
+        width: 100%
+        z-index: -1
+        position: absolute
+        top: -150px
+        ul.header-menu__items 
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            margin-top: 20px
+            list-style: none
+            padding-left: 20px
+            padding-bottom: 0px
+            li 
+                padding: 10px 0px
+                padding-bottom: 0px
+                margin-top: 10px
+                margin-bottom: 10px
+                a
+                    color: rgba(17, 17, 17, 1)
+                    font-family: $fontPrincipal
+                    font-weight: 600
+                    background: none
+/* FIN HEADER */
