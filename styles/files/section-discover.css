@@ -282,7 +282,6 @@ main section.discover div.discover-rooms div.discover-rooms__minimal {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px;
 }
 main section.discover div.discover-rooms div.discover-rooms__minimal h3.discover-rooms-minimal__h3 {
   font-family: "Old Standard TT", sans-serif;
