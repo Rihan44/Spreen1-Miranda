@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <title>Home</title>
 </head>
+
 <body>
     <header class="header">
         <div class="header__boxgeneral">
             <button class="header__menubutton" id="burguer__icon">
-                <img id="img_icon" class="header-menubutton__icon"  alt="burger_icon">
+                <img id="img_icon" class="header-menubutton__icon" alt="burger_icon">
             </button>
             <div class="header__titlebox">
                 <div class="header__boxlogo">
@@ -70,62 +72,90 @@
             <div class="discover__titlebox">
                 <h4 class="discover-titlebox__about">About us</h4>
                 <h2 class="discover-titlebox__title">Discover Our Underground.</h2>
-                <p class="discover-titlebox__paraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="discover-titlebox__paraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <button class="discover-titlebox__button">Book now</button>
             </div>
             <div class="discover-strong-team">
                 <div class="discover-strong-team__box">
                     <div class="discover-strong-team__img">
-                        <img class="discover-strong-team-img__imgcover" src="img/strong_team.jpg" alt="strong"/>
+                        <img class="discover-strong-team-img__imgcover" src="img/strong_team.jpg" alt="strong" />
                     </div>
                     <div class="discover-strong-team__description">
-                        <img class="discover-strong-team-description__team-img" src="img/team-color.png" alt="teamcolor" />
+                        <img class="discover-strong-team-description__team-img" src="img/team-color.png"
+                            alt="teamcolor" />
                         <h4 class="discover-strong-team-description__title">Strong team</h4>
-                        <p class="discover-strong-team-description__paraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                        <p class="discover-strong-team-description__paraph">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor.</p>
                     </div>
                 </div>
             </div>
             <div class="discover-luxury-room">
                 <div class="discover-luxury-room__box">
                     <div class="discover-luxury-room__img">
-                        <img class="discover-luxury-room-img__imgcover" src="img/luxury-hotel.jpg" alt="luxury"/>
+                        <img class="discover-luxury-room-img__imgcover" src="img/luxury-hotel.jpg" alt="luxury" />
                     </div>
                     <div class="discover-luxury-room__description">
-                        <img class="discover-luxury-room-description__team-img" src="img/luxury-icon.png" alt="luxury-icon" />
+                        <img class="discover-luxury-room-description__team-img" src="img/luxury-icon.png"
+                            alt="luxury-icon" />
                         <h4 class="discover-luxury-room-description__title">Luxury Room</h4>
-                        <p class="discover-luxury-room-description__paraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                        <p class="discover-luxury-room-description__paraph">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor.</p>
                     </div>
                 </div>
             </div>
             <div class="discover-rooms">
-                <h4>ROOMS</h4>
-                <h2>Hand Picked Rooms</h2>
+                <h4 class="discover-rooms__h4">ROOMS</h4>
+                <h2 class="discover-rooms__h2">Hand Picked Rooms</h2>
                 <div class="discover-rooms__icons">
-                    <img src="img/bed-icon.png" alt="bed-icon"/>
-                    <img src="img/wifi-icon.png" alt="wifi-icon" />
-                    <img src="img/car-icon.png" alt="car-icon" />
-                    <img src="img/cold-icon.png" alt="snow-icon" />
-                    <img src="img/gym-icon.png" alt="gym-icon" />
-                    <img src="img/no-smoking-icon.png" alt="no-smoking-icon" />
-                    <img src="img/cocktail-icon.png" alt="cocktail-icon" />
+                    <img class="discover-rooms-icons__img" src="img/bed-icon.png" alt="bed-icon" />
+                    <img class="discover-rooms-icons__img" src="img/wifi-icon.png" alt="wifi-icon" />
+                    <img class="discover-rooms-icons__img" src="img/car-icon.png" alt="car-icon" />
+                    <img class="discover-rooms-icons__img" src="img/cold-icon.png" alt="snow-icon" />
+                    <img class="discover-rooms-icons__img" src="img/gym-icon.png" alt="gym-icon" />
+                    <img class="discover-rooms-icons__img" src="img/no-smoking-icon.png" alt="no-smoking-icon" />
+                    <img class="discover-rooms-icons__img" src="img/cocktail-icon.png" alt="cocktail-icon" />
                 </div>
-                <div>
-                    <!-- slider -->
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide-img1">
+                            <img class="swiper-slide__img" src="img/slider-rooms1.jpeg" alt="img1" />
+                        </div>
+                        <div class="swiper-slide slide-img2">
+                            <img class="swiper-slide__img" src="img/slider-rooms2.jpg" alt="img2" />
+                        </div>
+                        <div class="swiper-slide slide-img3">
+                            <img class="swiper-slide__img" src="img/slider-rooms3.jpg" alt="img3" />
+                        </div>
+                        <div class="swiper-slide slide-img4">
+                            <img class="swiper-slide__img" src="img/slider-rooms4.jpg" alt="img4" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
                 <div class="discover-rooms__minimal">
-                    <h3>Minimal Duplex Room</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                    <h2>$345/Night</h2>
+                    <h3 class="discover-rooms-minimal__h3">Minimal Duplex Room</h3>
+                    <p class="discover-rooms-minimal__paraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore.</p>
+                    <h2 class="discover-rooms-minimal__h2">$345<span class="discover-rooms-minimal-h2__span">/Night</span></h2>
                 </div>
             </div>
         </section>
-        <section class="">
+        <section class="meet-video">
+            <h3>Intro video</h3>
+            <h2>Meet With Our Luxury Place.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.</p>
+            <video muted src="https://www.youtube.com/watch?v=Bu3Doe45lcU&ab_channel=RainerWahlen"></video>
+            <button>Book now</button>
         </section>
         <section></section>
         <section></section>
         <section></section>
     </main>
-    <script src="scripts/main.js"></script>
+    <script type="module" src="scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
+
 </html>

@@ -6,6 +6,7 @@ header.header {
   height: auto;
   background: rgb(255, 255, 255);
   position: fixed;
+  z-index: 1000;
 }
 header.header div.header__boxgeneral {
   width: 100%;
@@ -14,7 +15,6 @@ header.header div.header__boxgeneral {
   box-shadow: 0 3px 6px 0 rgba(36, 36, 36, 0.29);
   justify-content: space-between;
   align-items: center;
-  z-index: 10;
 }
 header.header div.header__boxgeneral button {
   border: none;
