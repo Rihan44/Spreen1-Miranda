@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-section.meet-video {
+main section.meet-video {
   width: 100%;
   height: auto;
   background: rgb(34, 34, 34);
@@ -9,7 +9,7 @@ section.meet-video {
   flex-direction: column;
   padding: 20px;
 }
-section.meet-video h3.meet-video__h3 {
+main section.meet-video h3.meet-video__h3 {
   font-family: "Archivo", sans-serif;
   font-size: 0.875em;
   color: rgb(189, 172, 141);
@@ -20,7 +20,7 @@ section.meet-video h3.meet-video__h3 {
   margin-bottom: 20px;
   margin-top: 40px;
 }
-section.meet-video h2.meet-video__h2 {
+main section.meet-video h2.meet-video__h2 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
   font-size: 3.5em;
@@ -29,7 +29,7 @@ section.meet-video h2.meet-video__h2 {
   line-height: 60px;
   margin-bottom: 20px;
 }
-section.meet-video p.meet-video__paraph {
+main section.meet-video p.meet-video__paraph {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
   font-size: 0.875em;
@@ -37,11 +37,11 @@ section.meet-video p.meet-video__paraph {
   color: rgb(194, 194, 194);
   margin-bottom: 40px;
 }
-section.meet-video iframe.meet-video__iframe {
+main section.meet-video iframe.meet-video__iframe {
   width: 100%;
   margin-bottom: 40px;
 }
-section.meet-video button.meet-video__button {
+main section.meet-video button.meet-video__button {
   width: 60%;
   padding: 20px;
   margin-bottom: 20px;

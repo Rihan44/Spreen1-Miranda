@@ -1,5 +1,5 @@
 /* variables */
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs';
 
 let burguer_icon = document.getElementById('burguer__icon');
 let img_icon = document.getElementById('img_icon');
@@ -9,7 +9,7 @@ let check_menu = true;
 img_icon.src = '../img/burguer_icon.png';
 
 burguer_icon.addEventListener('click', () => {
-    if(check_menu) {
+    if (check_menu) {
         nav_menu.style.top = '85px';
         nav_menu.style.transition = '0.5s';
         nav_menu.style.paddingBottom = '15px';
@@ -24,17 +24,59 @@ burguer_icon.addEventListener('click', () => {
 });
 
 /* slider */
-const swiper = new Swiper('.swiper', {
+const swiperRooms = new Swiper('#swipper-rooms', {
     direction: 'horizontal',
     loop: true,
-    /* autoplay: {
+    autoplay: {
         delay: 3000
     },
-   */
+
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '#swiper-button-next-rooms',
+        prevEl: '#swiper-button-prev-rooms',
     }
-  
+
+});
+
+
+const swiperFacilites = new Swiper('#swiper-facilities', {
+    direction: 'horizontal',
+    loop: true,
+    autoplay: {
+        delay: 3000
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true
+    }
+
+});
+
+let swiperMenu = new Swiper(".swiper-menu", {
+    cssMode: true,
+    loop: true,
+    autoplay: {
+        delay: 3000
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
-  
+
+  const swiperImagesFood = new Swiper('.swiper-images-food-slider', {
+    direction: 'horizontal',
+    loop: true,
+    autoplay: {
+        delay: 3000
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true
+    }
+
+});

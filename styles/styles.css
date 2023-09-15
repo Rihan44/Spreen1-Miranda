@@ -13,6 +13,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 html, * {
   box-sizing: border-box;
   margin: 0;
@@ -30,6 +36,10 @@ a {
 
 h2, h3, h4, p {
   background: none;
+}
+
+:root {
+  --swiper-theme-color: rgba(190, 173, 142, 1);
 }
 
 header.header {
@@ -338,7 +348,6 @@ main section.discover div.discover-strong-team div.discover-strong-team__box div
   flex-direction: column;
   align-items: center;
   background: url("../img/team-nocolor.png");
-  background-cover: cover;
   background-position: top right;
   background-repeat: no-repeat;
 }
@@ -466,42 +475,42 @@ main section.discover div.discover-rooms div.discover-rooms__icons img.discover-
   width: 15px;
   height: 15px;
 }
-main section.discover div.discover-rooms div.swiper {
+main section.discover div.discover-rooms div#swipper-rooms {
   width: 100%;
   height: auto;
 }
-main section.discover div.discover-rooms div.swiper img.swiper-slide__img {
+main section.discover div.discover-rooms div#swipper-rooms img.swiper-slide__img {
   width: 100%;
   height: 270px;
   z-index: -3;
 }
-main section.discover div.discover-rooms div.swiper div.swiper-button-prev {
+main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-prev-rooms {
   background: rgb(255, 255, 255);
   width: 32px;
   height: 32px;
   font-size: 10px;
   color: rgb(34, 34, 34);
 }
-main section.discover div.discover-rooms div.swiper div.swiper-button-prev::after, main section.discover div.discover-rooms div.swiper .swiper-rtl .swiper-button-next::after {
+main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-prev-rooms::after, main section.discover div.discover-rooms div#swipper-rooms .swiper-rtl #swiper-button-prev-rooms::after {
   content: "prev";
   font-size: 1.1em;
 }
-main section.discover div.discover-rooms div.swiper div.swiper-button-prev:hover {
+main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-prev-rooms:hover {
   background: rgb(189, 172, 141);
   color: rgb(255, 255, 255);
 }
-main section.discover div.discover-rooms div.swiper div.swiper-button-next {
+main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-next-rooms {
   background: rgb(255, 255, 255);
   width: 32px;
   height: 32px;
   font-size: 10px;
   color: rgb(34, 34, 34);
 }
-main section.discover div.discover-rooms div.swiper div.swiper-button-next::after, main section.discover div.discover-rooms div.swiper .swiper-rtl .swiper-button-next::after {
+main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-next-rooms::after, main section.discover div.discover-rooms div#swipper-rooms .swiper-rtl #swiper-button-next-rooms::after {
   content: "next";
   font-size: 1.1em;
 }
-main section.discover div.discover-rooms div.swiper div.swiper-button-next:hover {
+main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-next-rooms:hover {
   background: rgb(189, 172, 141);
   color: rgb(255, 255, 255);
 }
@@ -545,7 +554,7 @@ main section.discover div.discover-rooms div.discover-rooms__minimal h2.discover
   font-size: 13px;
 }
 
-section.meet-video {
+main section.meet-video {
   width: 100%;
   height: auto;
   background: rgb(34, 34, 34);
@@ -553,7 +562,7 @@ section.meet-video {
   flex-direction: column;
   padding: 20px;
 }
-section.meet-video h3.meet-video__h3 {
+main section.meet-video h3.meet-video__h3 {
   font-family: "Archivo", sans-serif;
   font-size: 0.875em;
   color: rgb(189, 172, 141);
@@ -564,7 +573,7 @@ section.meet-video h3.meet-video__h3 {
   margin-bottom: 20px;
   margin-top: 40px;
 }
-section.meet-video h2.meet-video__h2 {
+main section.meet-video h2.meet-video__h2 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
   font-size: 3.5em;
@@ -573,7 +582,7 @@ section.meet-video h2.meet-video__h2 {
   line-height: 60px;
   margin-bottom: 20px;
 }
-section.meet-video p.meet-video__paraph {
+main section.meet-video p.meet-video__paraph {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
   font-size: 0.875em;
@@ -581,11 +590,11 @@ section.meet-video p.meet-video__paraph {
   color: rgb(194, 194, 194);
   margin-bottom: 40px;
 }
-section.meet-video iframe.meet-video__iframe {
+main section.meet-video iframe.meet-video__iframe {
   width: 100%;
   margin-bottom: 40px;
 }
-section.meet-video button.meet-video__button {
+main section.meet-video button.meet-video__button {
   width: 60%;
   padding: 20px;
   margin-bottom: 20px;
@@ -598,4 +607,251 @@ section.meet-video button.meet-video__button {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   background: rgb(190, 173, 142);
+}
+
+main section.facilities {
+  width: 100%;
+  margin-bottom: 40px;
+}
+main section.facilities h4.facilities__h4 {
+  background: none;
+  font-size: 0.875em;
+  color: rgb(119, 119, 119);
+  font-family: "Archivo", sans-serif;
+  letter-spacing: 2.8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 18px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+main section.facilities h2.facilities__h2 {
+  font-size: 3.5em;
+  font-family: "Old Standard TT", sans-serif;
+  letter-spacing: -1.2px;
+  line-height: 60px;
+  font-weight: 400;
+  color: rgb(34, 34, 34);
+  text-align: center;
+  margin-bottom: 50px;
+}
+main section.facilities div.slider-facilities-articles {
+  padding: 20px;
+}
+main section.facilities div.slider-facilities-articles h3 {
+  font-family: rgb(189, 172, 141);
+  font-weight: 400;
+  font-size: 1.875em;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+  color: rgb(34, 34, 34);
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+main section.facilities div.slider-facilities-articles p {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+  margin-bottom: 40px;
+}
+main section.facilities div.facilities-slide__article1 {
+  background: url("../img/01.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+}
+main section.facilities div.facilities-slide__article2 {
+  background: url("../img/02.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+}
+main section.facilities div.facilities-slide__article3 {
+  background: url("../img/03.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+}
+main section.facilities div.facilities-slide__article4 {
+  background: url("../img/04.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+}
+main section.facilities div.facilities-slide__article5 {
+  background: url("../img/05.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+}
+main section.facilities div.facilities-slide__article6 {
+  background: url("../img/06.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+}
+main section.facilities div#facilities-bullets-pagination {
+  background: none;
+}
+
+main section.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 100px;
+  margin-top: 80px;
+}
+main section.menu img.menu__img {
+  position: absolute;
+  left: 80%;
+  width: 110px;
+  overflow: hidden;
+  background-clip: content-box;
+  top: -60px;
+}
+main section.menu h4.menu__h4 {
+  background: none;
+  font-size: 0.875em;
+  color: rgb(119, 119, 119);
+  font-family: "Archivo", sans-serif;
+  letter-spacing: 2.8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 18px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+main section.menu h2.menu__h2 {
+  font-weight: 400;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 3.5em;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(34, 34, 34);
+  margin-bottom: 40px;
+}
+main section.menu div#swiper-menu div.swiper-menu__buttons {
+  margin-top: 10px;
+}
+main section.menu div#swiper-menu div.swiper-menu__buttons div.swiper-menu-buttons__prev {
+  background: rgb(248, 248, 248);
+  top: 100%;
+  left: 70%;
+  width: 36px;
+  height: 36px;
+  font-size: 10px;
+  color: rgb(34, 34, 34);
+}
+main section.menu div#swiper-menu div.swiper-menu__buttons div.swiper-menu-buttons__prev::after, main section.menu div#swiper-menu div.swiper-menu__buttons .swiper-rtl .swiper-menu-buttons__prev::after {
+  content: "prev";
+  font-size: 1.1em;
+}
+main section.menu div#swiper-menu div.swiper-menu__buttons div.swiper-menu-buttons__prev:hover {
+  background: rgb(189, 172, 141);
+  color: rgb(255, 255, 255);
+}
+main section.menu div#swiper-menu div.swiper-menu__buttons div.swiper-menu-buttons__next {
+  top: 100%;
+  left: 85%;
+  background: rgb(248, 248, 248);
+  width: 36px;
+  height: 36px;
+  font-size: 10px;
+  color: rgb(34, 34, 34);
+}
+main section.menu div#swiper-menu div.swiper-menu__buttons div.swiper-menu-buttons__next::after, main section.menu div#swiper-menu div.swiper-menu__buttons .swiper-rtl .swiper-menu-buttons__next::after {
+  content: "next";
+  font-size: 1.1em;
+}
+main section.menu div#swiper-menu div.swiper-menu__buttons div.swiper-menu-buttons__next:hover {
+  background: rgb(189, 172, 141);
+  color: rgb(255, 255, 255);
+}
+main section.menu div#swiper-menu div.slide-menu div.slide-menu__food {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-around;
+}
+main section.menu div#swiper-menu div.slide-menu div.slide-menu__food img {
+  display: none;
+}
+main section.menu div#swiper-menu div.slide-menu div.slide-menu__food div.slider-menu-food-container__img1 {
+  width: 100%;
+  height: 140px;
+  margin-right: 30px;
+  background: url("../img/eggs&bacon.jpg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main section.menu div#swiper-menu div.slide-menu div.slide-menu__food div.slider-menu-food-container__img2 {
+  width: 100%;
+  height: 140px;
+  margin-right: 30px;
+  background: url("../img/tea&coffe.jpg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main section.menu div#swiper-menu div.slide-menu div.slide-menu__food div.slider-menu-food-container__img3 {
+  width: 100%;
+  height: 140px;
+  margin-right: 30px;
+  background: url("../img/chia.jpg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main section.menu div#swiper-menu div.slide-menu div.slide-menu__food div.slider-menu-food-container__img4 {
+  width: 100%;
+  height: 140px;
+  margin-right: 30px;
+  background: url("../img/fruit.jpg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main section.menu div#swiper-menu div.slide-menu div.slide-menu__food div.slider-menu-food-container__img5 {
+  width: 100%;
+  height: 140px;
+  margin-right: 30px;
+  background: url("../img/marmalade.jpeg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main section.menu div#swiper-menu div.slide-menu div.slide-menu__food div.slider-menu-food-container__img6 {
+  width: 100%;
+  height: 140px;
+  margin-right: 30px;
+  background: url("../img/cheeseplate.jpg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main section.menu div#swiper-menu div.slide-menu div.slide-menu__food div.slider-menu-food-container__description {
+  width: 90%;
+}
+main section.menu div#swiper-menu div.slide-menu div.slide-menu__food h3.slider-menu-food__h3 {
+  font-weight: 400;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 1.5em;
+  letter-spacing: -0.72px;
+  line-height: 24px;
+  color: rgb(34, 34, 34);
+  margin-bottom: 10px;
+}
+main section.menu div#swiper-menu div.slide-menu div.slide-menu__food p.slider-menu-food__paraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 24px;
+  color: rgb(34, 34, 34);
 }/*# sourceMappingURL=styles.css.map */
