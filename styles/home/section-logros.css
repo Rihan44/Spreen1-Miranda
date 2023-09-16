@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+main section.logros-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  height: auto;
+  padding: 30px;
+  background: rgb(34, 34, 34);
+}
+main section.logros-icon div.logros-icon__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(34, 34, 34);
+  margin-bottom: 40px;
+}
+main section.logros-icon div.logros-icon__container img.logros-icon-container__img {
+  background: none;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+main section.logros-icon div.logros-icon__container h2.logros-icon-container-description__h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3.75em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 82px;
+  color: rgb(255, 255, 255);
+}
+main section.logros-icon div.logros-icon__container span.logros-icon-container-description__span {
+  background: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+  line-height: 22px;
+  font-weight: 700;
+}/*# sourceMappingURL=section-logros.css.map */

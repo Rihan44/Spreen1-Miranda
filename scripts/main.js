@@ -56,13 +56,10 @@ const swiperFacilites = new Swiper('#swiper-facilities', {
 
 let swiperMenu = new Swiper(".swiper-menu", {
     cssMode: true,
-    loop: true,
-    autoplay: {
-        delay: 3000
-    },
+
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-menu-buttons__next",
+      prevEl: ".swiper-menu-buttons__prev",
     },
   });
 
@@ -72,9 +69,10 @@ let swiperMenu = new Swiper(".swiper-menu", {
     autoplay: {
         delay: 3000
     },
+    cssMode: true,
 
     pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination-images-food",
         type: "bullets",
         clickable: true
     }

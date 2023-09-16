@@ -7,16 +7,16 @@ main section.menu {
   padding: 20px;
   width: 100%;
   position: relative;
-  margin-bottom: 100px;
-  margin-top: 80px;
+  margin-bottom: 50px;
+  margin-top: 60px;
+  overflow: hidden;
 }
 main section.menu img.menu__img {
   position: absolute;
   left: 80%;
   width: 110px;
   overflow: hidden;
-  background-clip: content-box;
-  top: -60px;
+  top: 0;
 }
 main section.menu h4.menu__h4 {
   background: none;
@@ -44,7 +44,7 @@ main section.menu div#swiper-menu div.swiper-menu__buttons {
 }
 main section.menu div#swiper-menu div.swiper-menu__buttons div.swiper-menu-buttons__prev {
   background: rgb(248, 248, 248);
-  top: 100%;
+  top: 98%;
   left: 70%;
   width: 36px;
   height: 36px;
@@ -60,7 +60,7 @@ main section.menu div#swiper-menu div.swiper-menu__buttons div.swiper-menu-butto
   color: rgb(255, 255, 255);
 }
 main section.menu div#swiper-menu div.swiper-menu__buttons div.swiper-menu-buttons__next {
-  top: 100%;
+  top: 98%;
   left: 85%;
   background: rgb(248, 248, 248);
   width: 36px;
