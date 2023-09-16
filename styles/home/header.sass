@@ -1,4 +1,4 @@
-@import "variables"
+@import "../variables"
 
 header.header 
     width: 100%
@@ -13,7 +13,7 @@ header.header
         box-shadow: 0 3px 6px 0 rgba(36, 36, 36, 0.29)
         justify-content: space-between
         align-items: center
-        button 
+        button.header__menubutton 
             border: none
             background: none
             cursor: pointer
@@ -50,6 +50,8 @@ header.header
             display: flex
             justify-content: space-between
             width: 20%
+            button
+                border: none
     nav.header-menu__burguer
         height: auto
         width: 100%

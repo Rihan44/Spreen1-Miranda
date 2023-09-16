@@ -28,6 +28,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 html, * {
   box-sizing: border-box;
   margin: 0;
@@ -51,6 +69,7 @@ h2, h3, h4, p {
   --swiper-theme-color: rgba(190, 173, 142, 1);
 }
 
+/* HOME STYLES */
 header.header {
   width: 100%;
   height: auto;
@@ -66,15 +85,15 @@ header.header div.header__boxgeneral {
   justify-content: space-between;
   align-items: center;
 }
-header.header div.header__boxgeneral button {
+header.header div.header__boxgeneral button.header__menubutton {
   border: none;
   background: none;
   cursor: pointer;
 }
-header.header div.header__boxgeneral button img {
+header.header div.header__boxgeneral button.header__menubutton img {
   width: 20px;
 }
-header.header div.header__boxgeneral button img.header-menubutton__icon {
+header.header div.header__boxgeneral button.header__menubutton img.header-menubutton__icon {
   width: 18px;
 }
 header.header div.header__boxgeneral div.header__titlebox {
@@ -110,6 +129,9 @@ header.header div.header__boxgeneral div.header-boxgeneral__icons {
   display: flex;
   justify-content: space-between;
   width: 20%;
+}
+header.header div.header__boxgeneral div.header-boxgeneral__icons button {
+  border: none;
 }
 header.header nav.header-menu__burguer {
   height: auto;
@@ -149,8 +171,6 @@ main {
   width: 100%;
   height: auto;
   background: rgb(255, 255, 255);
-  /* BANNER SECTION */
-  /* FIN SECTION BANNER */
 }
 main section.banner {
   background: rgb(51, 51, 51);
@@ -1073,4 +1093,379 @@ footer div.footer__copyright p.footer-copyright__paraph {
   line-height: 19px;
   letter-spacing: -0.48px;
   color: rgb(34, 34, 34);
+}
+
+/* ABOUT US STYLES */
+main {
+  padding-top: 85px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  height: auto;
+  background: rgb(255, 255, 255);
+  margin-bottom: 30px;
+}
+main section.about-us__banner {
+  background: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+main section.about-us__banner h2.about-us-banner__firsttitle {
+  background: rgb(51, 51, 51);
+  width: 80%;
+  font-family: "Archivo", sans-serif;
+  line-height: 18px;
+  letter-spacing: 2.8px;
+  font-size: 0.8em;
+  margin-top: 60px;
+}
+main section.about-us__banner h3.about-us-banner__secondtitle {
+  background: rgb(51, 51, 51);
+  font-family: "Old Standard TT", sans-serif;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  font-weight: 400;
+  font-size: 3.5em;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+main section.about-us__banner div.about-us-banner__buttons {
+  background: rgb(255, 255, 255);
+  display: flex;
+  height: auto;
+  width: 40%;
+  position: relative;
+  right: -50%;
+  height: auto;
+  padding: 20px;
+  bottom: 0px;
+  justify-content: center;
+  align-items: center;
+}
+main section.about-us__banner div.about-us-banner__buttons a {
+  font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  font-size: 1em;
+  letter-spacing: -0.48px;
+  line-height: 18px;
+}
+main section.about-us__banner div.about-us-banner__buttons p {
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+}
+main section.about-us__banner div.about-us-banner__buttons a.banner-buttons__home {
+  margin-right: 10px;
+  color: rgb(34, 34, 34);
+}
+main section.about-us__banner div.about-us-banner__buttons a.banner-buttons__about {
+  margin-left: 10px;
+  color: rgb(190, 173, 142);
+}
+
+main section.video-about__presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+main section.video-about__presentation iframe.video-about-presentation__iframe {
+  width: 90%;
+  height: 186px;
+  margin-bottom: 30px;
+}
+main section.video-about__presentation h3.video-about-presentation__title {
+  width: 90%;
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  letter-spacing: -1.16px;
+  line-height: 40px;
+  text-align: center;
+  color: rgb(34, 34, 34);
+}
+
+main section.our-services {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+main section.our-services div.our-services__container {
+  width: 45%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section.our-services h4.our-services-container__h4 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 2.4px;
+  font-size: 0.65em;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+main section.our-services img.our-services-container__img {
+  background: none;
+}
+main section.our-services div.our-services__container.plane {
+  background: rgb(190, 173, 142);
+  color: rgb(255, 255, 255);
+}
+main section.our-services div.our-services__container.plane h4.our-services-container__h4 {
+  width: 100%;
+}
+
+main section.restaurant {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+main section.restaurant div.restaurant__container {
+  width: 90%;
+  box-shadow: 0 14px 24px 0 rgba(184, 184, 184, 0.1);
+  height: auto;
+}
+main section.restaurant div.restaurant__container img.restaurant-container__img {
+  width: 100%;
+  height: 232px;
+}
+main section.restaurant div.restaurant__container div.restaurant-container__info {
+  padding: 10px;
+}
+main section.restaurant div.restaurant__container div.restaurant-container__info h4.restaurant-container-info__h4 {
+  width: 100%;
+  background: none;
+  font-size: 0.875em;
+  color: rgb(119, 119, 119);
+  font-family: "Archivo", sans-serif;
+  letter-spacing: 2.8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 18px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+main section.restaurant div.restaurant__container div.restaurant-container__info h2.restaurant-container-info__h2 {
+  width: 100%;
+  background: none;
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 2.5em;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(34, 34, 34);
+  margin-bottom: 20px;
+}
+main section.restaurant div.restaurant__container div.restaurant-container__info p.restaurant-container-info__paraph {
+  width: 100%;
+  font-family: "Archivo", sans-serif;
+  background: none;
+  font-size: 0.9em;
+  color: rgb(119, 119, 119);
+  margin-bottom: 30px;
+  line-height: 25px;
+}
+main section.restaurant div.restaurant__container div.restaurant-container__info button.restaurant-container-info__button {
+  background: rgb(189, 172, 141);
+  border: none;
+  width: 65%;
+  padding: 20px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 0.875em;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+main section.facilities-about-us {
+  width: 100%;
+  background: rgb(34, 34, 34);
+}
+main section.facilities-about-us h4.facilities-about-us__h4 {
+  background: none;
+  font-size: 0.875em;
+  color: rgb(255, 255, 255);
+  font-family: "Archivo", sans-serif;
+  letter-spacing: 2.8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 18px;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  width: 100%;
+  text-align: center;
+}
+main section.facilities-about-us h2.facilities-about-us__h2 {
+  font-size: 3.5em;
+  font-family: "Old Standard TT", sans-serif;
+  letter-spacing: -1.2px;
+  line-height: 60px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 50px;
+}
+main section.facilities-about-us div#swiper-facilities-about-us {
+  background: rgb(41, 41, 41);
+  width: 90%;
+  margin-bottom: 40px;
+}
+main section.facilities-about-us div#swiper-facilities-about-us div.slider-facilities-about-us-articles {
+  padding: 20px;
+}
+main section.facilities-about-us div#swiper-facilities-about-us div.slider-facilities-about-us-articles img.facilities-about-us-slide__img {
+  background: none;
+}
+main section.facilities-about-us div#swiper-facilities-about-us div.slider-facilities-about-us-articles h3.facilities-about-us-slide__h3 {
+  font-family: rgb(189, 172, 141);
+  font-weight: 400;
+  font-size: 1.875em;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+  color: rgb(255, 255, 255);
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+main section.facilities-about-us div#swiper-facilities-about-us div.slider-facilities-about-us-articles p.facilities-about-us-slide__paraph {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+  margin-bottom: 40px;
+}
+main section.facilities-about-us div#swiper-facilities-about-us div#swiper-facilities-about-us div.facilities-about-us-slide__article1 {
+  background: rgb(41, 41, 41);
+}
+main section.facilities-about-us div#swiper-facilities-about-us div.facilities-about-us-slide__article1 {
+  background: url("../img/01-black.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 10%;
+}
+main section.facilities-about-us div#swiper-facilities-about-us div.facilities-about-us-slide__article2 {
+  background: url("../img/02-black.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 10%;
+}
+main section.facilities-about-us div#swiper-facilities-about-us div.facilities-about-us-slide__article3 {
+  background: url("../img/03-black.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 10%;
+}
+main section.facilities-about-us div#swiper-facilities-about-us div.facilities-about-us-slide__article4 {
+  background: url("../img/04-black.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 10%;
+}
+main section.facilities-about-us div#swiper-facilities-about-us div.facilities-about-us-slide__article5 {
+  background: url("../img/05-black.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 10%;
+}
+main section.facilities-about-us div#swiper-facilities-about-us div.facilities-about-us-slide__article6 {
+  background: url("../img/06-black.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 10%;
+}
+main section.facilities-about-us div#swiper-facilities-about-us div#facilities-about-us-bullets-pagination {
+  background: none;
+}
+
+main section.counter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 30px;
+  position: relative;
+}
+main section.counter h4.counter__h4 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 0.875em;
+  line-height: 16px;
+  letter-spacing: 2.8px;
+  color: rgb(119, 119, 119);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+main section.counter h2.counter__h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 3.5em;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(34, 34, 34);
+  margin-bottom: 50px;
+}
+main section.counter div.counter__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+}
+main section.counter div.counter__container h2.counter-container-info__h2 {
+  font-size: 3.75em;
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.8px;
+  color: rgb(34, 34, 34);
+}
+main section.counter div.counter__container p.counter-container-info__paraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 16px;
+  color: rgb(119, 119, 119);
+}
+main section.counter div.counter__container img.counter-container__img2 {
+  width: 32px;
+  height: 32px;
+  justify-self: center;
+}
+main section.counter div#swiper-counter {
+  width: 95%;
+  margin-top: 30px;
+}
+main section.counter div#swiper-counter img.swiper-slider-counter__img {
+  width: 100%;
+  height: 230px;
+  margin-bottom: 30px;
+}
+main div#swiper-pagination-counter {
+  background: none;
 }/*# sourceMappingURL=styles.css.map */

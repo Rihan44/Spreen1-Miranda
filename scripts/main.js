@@ -54,16 +54,31 @@ const swiperFacilites = new Swiper('#swiper-facilities', {
 
 });
 
+const swiperFacilitesAboutUs = new Swiper('#swiper-facilities-about-us', {
+    direction: 'horizontal',
+    loop: true,
+    autoplay: {
+        delay: 3000
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true
+    }
+
+});
+
 let swiperMenu = new Swiper(".swiper-menu", {
     cssMode: true,
 
     navigation: {
-      nextEl: ".swiper-menu-buttons__next",
-      prevEl: ".swiper-menu-buttons__prev",
+        nextEl: ".swiper-menu-buttons__next",
+        prevEl: ".swiper-menu-buttons__prev",
     },
-  });
+});
 
-  const swiperImagesFood = new Swiper('.swiper-images-food-slider', {
+const swiperImagesFood = new Swiper('.swiper-images-food-slider', {
     direction: 'horizontal',
     loop: true,
     autoplay: {
@@ -78,3 +93,17 @@ let swiperMenu = new Swiper(".swiper-menu", {
     }
 
 });
+
+const swiperCounter = new Swiper('#swiper-counter', {
+    direction: 'horizontal',
+
+    cssMode: true,
+
+    pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true
+    }
+
+});
+
