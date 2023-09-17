@@ -1,0 +1,87 @@
+@import "../variables"
+
+main 
+    section.popular-rooms 
+        margin-top: 60px
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        background: $color-tercero
+        height: auto
+        h3.popular-rooms__h3
+            margin-top: 50px
+            margin-bottom: 30px
+            font-family: $fontPrincipal
+            font-size: 0.875em
+            line-height: 16px 
+            letter-spacing: 2.8px
+            color: rgba(189, 172, 141, 1)
+            text-transform: uppercase
+            font-weight: 500
+        h2.popular-rooms__h2
+            margin-bottom: 50px
+            font-size: $fontSecundaria
+            font-weight: 400 
+            font-size: 2.5em
+            line-height: 48px
+            letter-spacing: -0.8px
+            color: $color-principal
+        div.rooms-list__room
+            width: 90%
+            height: auto
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-bottom: 30px
+            img.rooms-list-room__img
+                width: 100%
+                height: 218px
+                margin-bottom: 10px
+            h3.rooms-list-room__h3
+                font-family: $fontSecundaria
+                font-weight: 400    
+                font-size: 1.5em
+                line-height: 24px 
+                letter-spacing: -0.72px 
+                color: $color-tercero
+                margin-bottom: 20px
+            p.rooms-list-room__paraph
+                font-family: $fontRoboto
+                font-size: 0.875em
+                line-height: 24px
+                text-align: center
+                color: rgba(119, 119, 119, 1)
+                width: 85%
+                margin-bottom: 20px
+            div.rooms-list-room__price-info
+                display: flex
+                width: 60%
+                justify-content: space-between
+                margin-bottom: 20px
+                h2.rooms-list-room-price-info__h2
+                    font-family: $fontPrincipal
+                    font-weight: 700
+                    font-size: 1em
+                    color: rgba(190, 173, 142, 1)
+                    line-height: 18px
+                button.rooms-list-room-price-info__button
+                    cursor: pointer
+                    font-family: $fontPrincipal
+                    font-weight: 700 
+                    font-size: 1em 
+                    line-height: 18px
+                    color: rgba(189, 189, 189, 1)
+                    border: none
+        div.discover-rooms__icons
+            width: 70%
+            background: $color-principal
+            display: flex
+            justify-content: space-evenly
+            padding: 10px
+            position: relative
+            z-index: 2
+            top: -30px
+            img.discover-rooms-icons__img
+                width: 15px
+                height: 15px
