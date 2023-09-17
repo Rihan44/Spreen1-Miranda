@@ -73,6 +73,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 html, * {
   box-sizing: border-box;
   margin: 0;
@@ -2164,4 +2170,137 @@ main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-r
 }
 main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4.luxury-rooms-offers-container-info-price__price-after span {
   font-size: 11px;
+}
+
+/* CONTACT STYLES */
+main div.contact-info {
+  width: 100%;
+  padding: 30px;
+  margin-top: 40px;
+}
+main div.contact-info div.contact-info__container {
+  width: 100%;
+  display: flex;
+  margin-bottom: 120px;
+}
+main div.contact-info div.contact-info__container img.contact-info-container__img {
+  width: 40px;
+  height: 38px;
+}
+main div.contact-info div.contact-info__container div.contact-info-container__data {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  background: none;
+}
+main div.contact-info div.contact-info__container div.contact-info-container__data h4.contact-info-container-data__h4 {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 1.25em;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgb(34, 34, 34);
+  margin-bottom: 30px;
+  background: none;
+}
+main div.contact-info div.contact-info__container div.contact-info-container__data p.contact-info-container-data__paraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: rgb(119, 119, 119);
+  background: none;
+}
+main div.contact-info div.contact-info__container:nth-child(1) {
+  background: url("../img/01.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+main div.contact-info div.contact-info__container:nth-child(2) {
+  background: url("../img/02.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+main div.contact-info div.contact-info__container:nth-child(3) {
+  background: url("../img/03.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  margin-bottom: 0px;
+}
+
+main div.imagen-hotel {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+}
+main div.imagen-hotel img.imagen-hotel__img {
+  width: 90%;
+  height: 200px;
+}
+
+main div.contact-form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+main div.contact-form-container form.contact-form-container__formulario {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+}
+main div.contact-form-container form.contact-form-container__formulario div.contact-form-container-formulario__input-container {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  background: rgb(248, 248, 248);
+  margin-bottom: 20px;
+}
+main div.contact-form-container form.contact-form-container__formulario div.contact-form-container-formulario__input-container img.contact-form-container-formulario-input-container__icon {
+  background: none;
+  width: 14px;
+  height: 14px;
+}
+main div.contact-form-container form.contact-form-container__formulario div.contact-form-container-formulario__input-container input.contact-form-container-formulario-input-container__input {
+  border: none;
+  background: none;
+  margin-left: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 19px;
+  color: rgb(119, 119, 119);
+  outline: none;
+}
+main div.contact-form-container form.contact-form-container__formulario div.contact-form-container-formulario__input-container textarea.contact-form-container-formulario-input-container__textarea {
+  border: none;
+  height: 175px;
+  background: none;
+  margin-left: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 19px;
+  color: rgb(119, 119, 119);
+  resize: none;
+  outline: none;
+}
+main div.contact-form-container form.contact-form-container__formulario button.contact-form-container-formulario__button {
+  width: 80%;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 0.875em;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  background: rgb(190, 173, 142);
+}
+main div.contact-form-container form.contact-form-container__formulario div.contact-form-container-formulario__input-container:nth-child(5) {
+  margin-bottom: 40px;
 }/*# sourceMappingURL=styles.css.map */
