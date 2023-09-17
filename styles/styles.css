@@ -1397,6 +1397,7 @@ main section.facilities-about-us div#swiper-facilities-about-us div.facilities-a
   background-repeat: no-repeat;
   background-position-x: 90%;
   background-position-y: 10%;
+  background-color: rgb(41, 41, 41);
 }
 main section.facilities-about-us div#swiper-facilities-about-us div.facilities-about-us-slide__article2 {
   background: url("../img/02-black.png");
@@ -2062,7 +2063,6 @@ main section.luxury-rooms-offers div.luxury-rooms-offers__container h3.luxury-ro
   letter-spacing: 2.8px;
   text-transform: uppercase;
   color: rgb(119, 119, 119);
-  margin-bottom: 10px;
   padding: 10px;
 }
 main section.luxury-rooms-offers div.luxury-rooms-offers__container h2.luxury-rooms-offers-container__h2 {
@@ -2131,10 +2131,13 @@ main section.luxury-rooms-offers div.luxury-rooms-offers__container button.luxur
 }
 main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__info-price {
   width: 100%;
-  height: 180px;
+  height: 200px;
+  position: relative;
+  margin-bottom: 10px;
 }
 main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__info-price img.luxury-rooms-offers-container-info-price__img {
   width: 100%;
+  height: 100%;
 }
 main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container {
   width: 110px;
