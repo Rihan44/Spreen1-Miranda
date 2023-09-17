@@ -55,6 +55,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 html, * {
   box-sizing: border-box;
   margin: 0;
@@ -147,7 +162,7 @@ header.header nav.header-menu__burguer {
   width: 100%;
   z-index: -1;
   position: absolute;
-  top: -150px;
+  top: -200px;
 }
 header.header nav.header-menu__burguer ul.header-menu__items {
   display: flex;
@@ -1309,6 +1324,7 @@ main section.restaurant div.restaurant__container div.restaurant-container__info
 main section.facilities-about-us {
   width: 100%;
   background: rgb(34, 34, 34);
+  margin-top: 40px;
 }
 main section.facilities-about-us h4.facilities-about-us__h4 {
   background: none;
@@ -1696,4 +1712,317 @@ main section.rooms__banner div.rooms__buttons a.banner-buttons__home {
 main section.rooms__banner div.rooms__buttons a.banner-buttons__about {
   margin-left: 10px;
   color: rgb(190, 173, 142);
+}
+
+main section.room-details__type {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+  margin-top: 30px;
+}
+main section.room-details__type div.room-details-type__info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main section.room-details__type div.room-details-type__info h4.room-details-type-info__h4 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 0.875em;
+  letter-spacing: 2.8px;
+  line-height: 16px;
+  color: rgb(119, 119, 119);
+  margin-bottom: 10px;
+}
+main section.room-details__type div.room-details-type__info h2.room-details-type-info__h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 2.5em;
+  letter-spacing: -1.44px;
+  line-height: 48px;
+  color: rgb(34, 34, 34);
+  margin-bottom: 15px;
+}
+main section.room-details__type div.room-details-type__info h3.room-details-type-info__h3 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 43px;
+  color: rgb(190, 173, 142);
+  margin-bottom: 10px;
+}
+main section.room-details__type div.room-details-type__info h3.room-details-type-info__h3 span.room-details-type-info-h3__span {
+  font-size: 13px;
+}
+main section.room-details__type img.room-details-type__img {
+  width: 100%;
+  height: 214px;
+  margin-bottom: 40px;
+}
+main section.room-details__type div.room-details-type__availability {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+main section.room-details__type div.room-details-type__availability h4.room-details-type-availability__h4 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 1.125em;
+  line-height: 20px;
+  letter-spacing: -0.54px;
+  color: rgb(34, 34, 34);
+  margin-bottom: 20px;
+}
+main section.room-details__type div.room-details-type__availability form.room-details-type-availability__form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+main section.room-details__type div.room-details-type__availability form.room-details-type-availability__form label {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 0.875em;
+  line-height: 16px;
+  color: rgb(34, 34, 34);
+  margin-bottom: 10px;
+}
+main section.room-details__type div.room-details-type__availability form.room-details-type-availability__form input {
+  background: rgb(248, 248, 248);
+  border: none;
+  padding: 20px;
+}
+main section.room-details__type div.room-details-type__availability form.room-details-type-availability__form input#room-details-type-availability-form__check-in {
+  margin-bottom: 20px;
+}
+main section.room-details__type div.room-details-type__availability form.room-details-type-availability__form button.room-details-type-availability-form__button {
+  width: 100%;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 0.875em;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  background: rgb(190, 173, 142);
+}
+main section.room-details__type p.room-details-type__paraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875em;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+  padding: 10px;
+}
+
+main section.room-details__amenities {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+main section.room-details__amenities h2.room-details-amenities__h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 1.875em;
+  line-height: 30px;
+  color: rgb(34, 34, 34);
+}
+main section.room-details__amenities div.room-details-amenitie__container {
+  border-top: 1px solid rgb(241, 241, 241);
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  padding-top: 30px;
+  justify-content: space-between;
+}
+main section.room-details__amenities div.room-details-amenitie__container div.room-details-amenities__icon-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main section.room-details__amenities div.room-details-amenitie__container div.room-details-amenities__icon-container div.room-details-amenities-icon-container__info {
+  display: flex;
+  margin-bottom: 20px;
+}
+main section.room-details__amenities div.room-details-amenitie__container div.room-details-amenities__icon-container div.room-details-amenities-icon-container__info img.room-details-amenities-icon-container-info__img {
+  margin-right: 10px;
+}
+main section.room-details__amenities div.room-details-amenitie__container div.room-details-amenities__icon-container div.room-details-amenities-icon-container__info p.room-details-amenities-icon-container-info__paraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.9375em;
+  line-height: 18px;
+  color: rgb(119, 119, 119);
+}
+main section.room-details__amenities div.room-details-amenitie__container div.room-details-amenities__icon-container.container__2 {
+  padding-left: 25px;
+}
+
+main div.founder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  margin-top: 60px;
+}
+main div.founder div.founder__img-container {
+  height: 180px;
+}
+main div.founder div.founder__img-container img.founder-img-container__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+main div.founder div.founder__img-container div.founder-img-container__square {
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  border: 4px solid rgb(255, 255, 255);
+  background: rgb(189, 172, 141);
+  position: relative;
+  top: -160px;
+  right: -100px;
+}
+main div.founder h2.founder__h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 1.875em;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+  color: rgb(34, 34, 34);
+  margin-bottom: 10px;
+}
+main div.founder h3.founder__h3 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 0.875em;
+  line-height: 16px;
+  letter-spacing: 2.8px;
+  color: rgb(189, 172, 141);
+  margin-bottom: 20px;
+}
+main div.founder p.founder__paraph {
+  font-family: "Archivo", sans-serif;
+  font-size: 1em;
+  line-height: 24px;
+  text-align: center;
+  color: rgb(119, 119, 119);
+}
+
+main section.cancellation-info {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+main section.cancellation-info h2.cancellation-info__h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 1.875em;
+  line-height: 30px;
+  color: rgb(34, 34, 34);
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+main section.cancellation-info p.cancellation-info__paraph {
+  border-top: 1px solid rgb(241, 241, 241);
+  padding-top: 20px;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+
+main section.related-rooms {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  align-items: center;
+}
+main section.related-rooms h2.related-rooms__h2 {
+  align-self: flex-start;
+  padding-left: 20px;
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 1.875em;
+  line-height: 30px;
+  color: rgb(34, 34, 34);
+  margin-bottom: 10px;
+}
+main section.related-rooms div.rooms-list__room {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid rgb(241, 241, 241);
+}
+main section.related-rooms div.rooms-list__room img.rooms-list-room__img {
+  width: 100%;
+  height: 218px;
+  margin-bottom: 40px;
+}
+main section.related-rooms div.rooms-list__room h3.rooms-list-room__h3 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 24px;
+  letter-spacing: -0.72px;
+  color: rgb(34, 34, 34);
+  margin-bottom: 20px;
+}
+main section.related-rooms div.rooms-list__room p.rooms-list-room__paraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875em;
+  line-height: 24px;
+  text-align: center;
+  color: rgb(119, 119, 119);
+  width: 85%;
+  margin-bottom: 20px;
+}
+main section.related-rooms div.rooms-list__room div.rooms-list-room__price-info {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+main section.related-rooms div.rooms-list__room div.rooms-list-room__price-info h2.rooms-list-room-price-info__h2 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  color: rgb(190, 173, 142);
+  line-height: 18px;
+}
+main section.related-rooms div.rooms-list__room div.rooms-list-room__price-info button.rooms-list-room-price-info__button {
+  cursor: pointer;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 18px;
+  color: rgb(189, 189, 189);
+  border: none;
+}
+main section.related-rooms div.discover-rooms__icons {
+  width: 70%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  position: relative;
+  z-index: 2;
+  bottom: -235px;
+}
+main section.related-rooms div.discover-rooms__icons img.discover-rooms-icons__img {
+  width: 15px;
+  height: 15px;
 }/*# sourceMappingURL=styles.css.map */
