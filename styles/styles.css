@@ -1544,6 +1544,14 @@ main section.logros-icon div.logros-icon__container span.logros-icon-container-d
   font-weight: 700;
 }
 
+@media screen and (min-width: 1000px) {
+  main section.logros-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 footer {
   height: auto;
   width: 100%;
