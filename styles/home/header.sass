@@ -1,23 +1,23 @@
 @import "../variables"
 
-header.header 
+header.header
     width: 100%
     height: auto
     background: $color-principal
-    position: fixed  
+    position: fixed
     z-index: 1000
-    div.header__boxgeneral 
+    div.header__boxgeneral
         width: 100%
         display: flex
         padding: 20px
         box-shadow: 0 3px 6px 0 rgba(36, 36, 36, 0.29)
         justify-content: space-between
         align-items: center
-        button.header__menubutton 
+        button.header__menubutton
             border: none
             background: none
             cursor: pointer
-            img 
+            img
                 width: 20px
             img.header-menubutton__icon
                 width: 18px
@@ -58,7 +58,7 @@ header.header
         z-index: -1
         position: absolute
         top: -200px
-        ul.header-menu__items 
+        ul.header-menu__items
             display: flex
             flex-direction: column
             justify-content: space-between
@@ -66,7 +66,7 @@ header.header
             list-style: none
             padding-left: 20px
             padding-bottom: 0px
-            li 
+            li
                 padding: 10px 0px
                 padding-bottom: 0px
                 margin-top: 10px
@@ -76,4 +76,57 @@ header.header
                     font-family: $fontPrincipal
                     font-weight: 600
                     background: none
-/* FIN HEADER */
+    nav.header-menu-desktop 
+        display: none
+@media screen and (min-width: 1000px)
+    header.header
+        background: $color-tercero
+        width: 100%
+        padding: 40px
+        display: flex
+        justify-content: center
+        div.header__boxgeneral
+            width: 80%
+            padding: 20px
+            position: absolute
+            top: 36px
+            button.header__menubutton
+                display: none
+            div.header__titlebox
+                margin-right: 50px
+                div.header__boxlogo
+                    width: 30%
+                    font-size: 40px
+                    margin-right: 10px
+                h1.header-titlebox__title
+                    font-size: 26px
+                    span.header-titlebox-title__span
+                        font-weight: 100
+                        margin-top: 5px
+            div.header-boxgeneral__icons
+                justify-content: space-around
+        nav.header-menu__burguer
+            display: none
+        nav.header-menu-desktop 
+            display: flex
+            width: 50%
+            justify-content: flex-start
+            margin-right: 100px
+            ul.header-menu-desktop-menu__items
+                width: 100%
+                display: flex
+                justify-content: space-between
+                align-items: center
+                list-style: none
+                padding-left: 20px
+                padding-bottom: 0px
+                li
+                    padding: 10px 0px
+                    padding-bottom: 0px
+                    margin-top: 10px
+                    margin-bottom: 10px
+                    a
+                        color: rgba(17, 17, 17, 1)
+                        font-family: $fontPrincipal
+                        font-weight: 600
+                        background: none

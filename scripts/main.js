@@ -15,7 +15,7 @@ burguer_icon.addEventListener('click', () => {
         img_icon.src = '../img/close_icon.png';
         check_menu = false;
     } else {
-        nav_menu.style.top = '-200px';
+        nav_menu.style.top = '-250px';
         nav_menu.style.transition = '0.5s';
         img_icon.src = '../img/burguer_icon.png';
         check_menu = true;
@@ -27,11 +27,11 @@ burguer_icon.addEventListener('click', () => {
 
 const swiperRooms = new Swiper('#swipper-rooms', {
     direction: 'horizontal',
-    loop: true,
+    /* loop: true,
     autoplay: {
         delay: 3000
-    },
-
+    }, */
+    cssMode: true,
     navigation: {
         nextEl: '#swiper-button-next-rooms',
         prevEl: '#swiper-button-prev-rooms',

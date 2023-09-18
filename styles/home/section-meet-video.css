@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+main section.meet-video {
+  width: 100%;
+  height: auto;
+  background: rgb(34, 34, 34);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+main section.meet-video div.meet-video__container {
+  width: 100%;
+  background: none;
+}
+main section.meet-video div.meet-video__container h3.meet-video-container__h3 {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.875em;
+  color: rgb(189, 172, 141);
+  letter-spacing: 2.8px;
+  font-weight: 700;
+  background: none;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+main section.meet-video div.meet-video__container h2.meet-video-container__h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 3.5em;
+  color: rgb(255, 255, 255);
+  letter-spacing: -1.2px;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+main section.meet-video div.meet-video__container p.meet-video-container__paraph {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 24px;
+  color: rgb(194, 194, 194);
+  margin-bottom: 40px;
+}
+main section.meet-video div.meet-video__container button.meet-video-container__button-dektop {
+  display: none;
+}
+main section.meet-video iframe.meet-video__iframe {
+  width: 100%;
+  margin-bottom: 40px;
+}
+main section.meet-video button.meet-video__button {
+  width: 60%;
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 0.875em;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  background: rgb(190, 173, 142);
+}
+main section.meet-video div.meet-video__background-gold-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  main section.meet-video {
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  main section.meet-video div.meet-video__container {
+    width: 50%;
+    background: none;
+    margin-right: 40px;
+  }
+  main section.meet-video div.meet-video__container h3.meet-video-container__h3 {
+    font-family: "Archivo", sans-serif;
+    font-size: 0.875em;
+    color: rgb(189, 172, 141);
+    letter-spacing: 2.8px;
+    font-weight: 700;
+    background: none;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  main section.meet-video div.meet-video__container h2.meet-video-container__h2 {
+    font-family: "Old Standard TT", sans-serif;
+    font-weight: 400;
+    font-size: 3.5em;
+    color: rgb(255, 255, 255);
+    letter-spacing: -1.2px;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+  main section.meet-video div.meet-video__container p.meet-video-container__paraph {
+    font-family: "Archivo", sans-serif;
+    font-weight: 400;
+    font-size: 0.875em;
+    line-height: 24px;
+    color: rgb(194, 194, 194);
+    margin-bottom: 40px;
+  }
+  main section.meet-video div.meet-video__container button.meet-video-container__button-dektop {
+    display: block;
+    width: 40%;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 0.875em;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    font-family: "Archivo", sans-serif;
+    font-weight: 700;
+    background: rgb(190, 173, 142);
+  }
+  main section.meet-video iframe.meet-video__iframe {
+    width: 50%;
+    margin-bottom: 40px;
+    z-index: 10;
+  }
+  main section.meet-video button.meet-video__button {
+    display: none;
+  }
+  main section.meet-video div.meet-video__background-gold-desktop {
+    display: block;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    background: rgb(173, 157, 130);
+    top: 0px;
+    right: 0px;
+  }
+}/*# sourceMappingURL=section-meet-video.css.map */

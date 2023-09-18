@@ -1,7 +1,6 @@
 
 @import "../variables"
 
-
 main
     section.discover
         width: 100%
@@ -61,7 +60,7 @@ main
                 font-family: $fontPrincipal
                 font-weight: 700
                 margin-bottom: 40px
-        div.discover-strong-team 
+        div.discover-strong-team
             display: flex
             flex-direction: column
             align-content: center
@@ -70,7 +69,7 @@ main
             background: $color-principal
             align-items: center
             margin-bottom: 40px
-            div.discover-strong-team__box 
+            div.discover-strong-team__box
                 height: auto
                 width: 75%
                 background: none
@@ -78,7 +77,7 @@ main
                 margin-bottom: 40px
                 position: relative
                 top: -40px
-                div.discover-strong-team__img 
+                div.discover-strong-team__img
                     width: 100%
                     height: auto
                     display: flex
@@ -97,12 +96,12 @@ main
                     flex-direction: column
                     align-items: center
                     background: url('../img/team-nocolor.png')
-                    background-position: top right 
+                    background-position: top right
                     background-repeat: no-repeat
                     h4.discover-strong-team-description__title
                         font-family: $fontSecundaria
                         font-size: 1.875em
-                        font-weight: 400 
+                        font-weight: 400
                         letter-spacing: -0.9px
                         margin-top: 20px
                         margin-bottom: 20px
@@ -116,7 +115,7 @@ main
                         margin-bottom: 40px
                         line-height: 25px
                         background: none
-        div.discover-luxury-room 
+        div.discover-luxury-room
             display: flex
             flex-direction: column
             align-content: center
@@ -124,14 +123,14 @@ main
             height: auto
             background: $color-principal
             align-items: center
-            div.discover-luxury-room__box 
+            div.discover-luxury-room__box
                 height: auto
                 width: 75%
                 background: none
                 margin-bottom: 40px
                 color: $color-principal
                 background: $color-tercero
-                div.discover-luxury-room__img 
+                div.discover-luxury-room__img
                     width: 100%
                     height: auto
                     display: flex
@@ -156,7 +155,7 @@ main
                     h4.discover-luxury-room-description__title
                         font-family: $fontSecundaria
                         font-size: 1.875em
-                        font-weight: 400 
+                        font-weight: 400
                         letter-spacing: -0.9px
                         margin-top: 20px
                         margin-bottom: 20px
@@ -221,7 +220,7 @@ main
                     height: 32px
                     font-size: 10px
                     color: $color-tercero
-                div#swiper-button-prev-rooms::after, .swiper-rtl #swiper-button-prev-rooms::after 
+                div#swiper-button-prev-rooms::after, .swiper-rtl #swiper-button-prev-rooms::after
                     content: 'prev'
                     font-size: 1.1em
                 div#swiper-button-prev-rooms:hover
@@ -233,7 +232,7 @@ main
                     height: 32px
                     font-size: 10px
                     color: $color-tercero
-                div#swiper-button-next-rooms::after, .swiper-rtl #swiper-button-next-rooms::after 
+                div#swiper-button-next-rooms::after, .swiper-rtl #swiper-button-next-rooms::after
                     content: 'next'
                     font-size: 1.1em
                 div#swiper-button-next-rooms:hover
@@ -267,9 +266,89 @@ main
                     margin-bottom: 20px
                 h2.discover-rooms-minimal__h2
                     font-family: $fontPrincipal
-                    font-weight: 700    
+                    font-weight: 700
                     font-size: 2em
                     color: rgba(190, 173, 142, 1)
                     line-height: 43px
                     span.discover-rooms-minimal-h2__span
                         font-size: 13px
+@media screen and (min-width: 1000px)
+    main
+        section.discover
+            margin-top: 90px
+            div.discover-container
+                display: flex
+                flex-direction: row-reverse
+                background: rgba(249, 249, 249, 1)
+                margin-bottom: 80px
+                div.discover__titlebox
+                    button.discover-titlebox__button
+                        width: 50%
+                        margin-bottom: 40px
+                div.discover-container__strong-luxury
+                    background: rgba(249, 249, 249, 1)
+                    div.discover-strong-team
+                        height: 300px
+                        margin: 0px
+                        div.discover-strong-team__box
+                            display: flex
+                            flex-direction: row-reverse
+                            height: auto
+                            width: 85%
+                            div.discover-strong-team__img
+                                width: 100%
+                                height: 300px
+                                img.discover-strong-team-img__imgcover
+                                    width: 100%
+                                    height: 100%
+                            div.discover-strong-team__description
+                                margin-right: 20px
+                    div.discover-luxury-room
+                        height: 300px
+                        margin: 0px
+                        div.discover-luxury-room__box
+                            display: flex
+                            flex-direction: row-reverse
+                            height: auto
+                            width: 85%
+                            div.discover-luxury-room__img
+                                width: 100%
+                                height: 100%
+                                img.discover-luxury-room-img__imgcover
+                                    width: 100%
+                                    height: 100%
+                            div.discover-luxury-room__description
+                                margin-right: 20px
+            div.discover-rooms
+                display: flex
+                flex-direction: column
+                align-items: center
+                width: 100%
+                margin-bottom: 30px
+                div.discover-rooms__icons
+                    width: 50%
+                div#swipper-rooms
+                    width: 100%
+                    height: auto
+                    div#swiper-button-prev-rooms
+                        width: 80px
+                        height: 80px
+                    div#swiper-button-prev-rooms::after, .swiper-rtl #swiper-button-prev-rooms::after
+                        font-size: 2em
+                    div#swiper-button-next-rooms
+                        width: 80px
+                        height: 80px
+                    div#swiper-button-next-rooms::after, .swiper-rtl #swiper-button-next-rooms::after
+                        font-size: 2em
+                div.discover-rooms__minimal
+                    width: 55%
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    div.discover-rooms-minimal__info-container
+                        display: flex
+                        flex-direction: column
+                        align-items: flex-start
+                        p.discover-rooms-minimal__paraph
+                            text-align: left
+                            width: 90%

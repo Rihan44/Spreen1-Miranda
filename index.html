@@ -28,6 +28,14 @@
                     </h1>
                 </a>
             </div>
+            <nav class="header-menu-desktop">
+                <ul class="header-menu-desktop-menu__items">
+                    <li><a href="pages/about_us.html">About Us</a></li>
+                    <li><a href="pages/rooms.html">Rooms</a></li>
+                    <li><a href="pages/offers.html">Offers</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
             <div class="header-boxgeneral__icons">
                 <a class="header__profileicon" href="#">
                     <img class="header-profileicon__icon" src="img/profile_icon.png" alt="profile_icon">
@@ -61,47 +69,57 @@
         </section>
         <section class="banner__checkdate">
             <form class="banner-checkdate__form">
-                <label for="arrive">Arrival date</label>
-                <input type="date" name="" id="">
-                <label>Departure Date</label>
-                <input type="date" name="" id="">
+                <div class="banner-checkdate-form__input-container">
+                    <label for="arrive">Arrival date</label>
+                    <input type="date" name="" id="">
+                </div>
+                <div class="banner-checkdate-form__input-container">
+                    <label>Departure Date</label>
+                    <input type="date" name="" id="">
+                </div>
                 <button class="banner-checkdate-form__button" type="submit">CHECK AVAILABILITY</button>
             </form>
         </section>
         <section class="discover">
-            <div class="discover__titlebox">
-                <h4 class="discover-titlebox__about">About us</h4>
-                <h2 class="discover-titlebox__title">Discover Our Underground.</h2>
-                <p class="discover-titlebox__paraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button class="discover-titlebox__button">Book now</button>
-            </div>
-            <div class="discover-strong-team">
-                <div class="discover-strong-team__box">
-                    <div class="discover-strong-team__img">
-                        <img class="discover-strong-team-img__imgcover" src="img/strong_team.jpg" alt="strong" />
-                    </div>
-                    <div class="discover-strong-team__description">
-                        <img class="discover-strong-team-description__team-img" src="img/team-color.png"
-                            alt="teamcolor" />
-                        <h4 class="discover-strong-team-description__title">Strong team</h4>
-                        <p class="discover-strong-team-description__paraph">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit, sed do eiusmod tempor.</p>
-                    </div>
+            <div class="discover-container">
+                <div class="discover__titlebox">
+                    <h4 class="discover-titlebox__about">About us</h4>
+                    <h2 class="discover-titlebox__title">Discover Our Underground.</h2>
+                    <p class="discover-titlebox__paraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                        do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <button class="discover-titlebox__button">Book now</button>
                 </div>
-            </div>
-            <div class="discover-luxury-room">
-                <div class="discover-luxury-room__box">
-                    <div class="discover-luxury-room__img">
-                        <img class="discover-luxury-room-img__imgcover" src="img/luxury-hotel.jpg" alt="luxury" />
+                <div class="discover-container__strong-luxury">
+                    <div class="discover-strong-team">
+                        <div class="discover-strong-team__box">
+                            <div class="discover-strong-team__img">
+                                <img class="discover-strong-team-img__imgcover" src="img/strong_team.jpg" alt="strong" />
+                            </div>
+                            <div class="discover-strong-team__description">
+                                <img class="discover-strong-team-description__team-img" src="img/team-color.png"
+                                    alt="teamcolor" />
+                                <h4 class="discover-strong-team-description__title">Strong team</h4>
+                                <p class="discover-strong-team-description__paraph">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="discover-luxury-room__description">
-                        <img class="discover-luxury-room-description__team-img" src="img/luxury-icon.png"
-                            alt="luxury-icon" />
-                        <h4 class="discover-luxury-room-description__title">Luxury Room</h4>
-                        <p class="discover-luxury-room-description__paraph">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit, sed do eiusmod tempor.</p>
+                    <div class="discover-luxury-room">
+                        <div class="discover-luxury-room__box">
+                            <div class="discover-luxury-room__img">
+                                <img class="discover-luxury-room-img__imgcover" src="img/luxury-hotel.jpg" alt="luxury" />
+                            </div>
+                            <div class="discover-luxury-room__description">
+                                <img class="discover-luxury-room-description__team-img" src="img/luxury-icon.png"
+                                    alt="luxury-icon" />
+                                <h4 class="discover-luxury-room-description__title">Luxury Room</h4>
+                                <p class="discover-luxury-room-description__paraph">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -136,27 +154,34 @@
                     <div class="swiper-button-next" id="swiper-button-next-rooms"></div>
                 </div>
                 <div class="discover-rooms__minimal">
-                    <h3 class="discover-rooms-minimal__h3">Minimal Duplex Room</h3>
-                    <p class="discover-rooms-minimal__paraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut
-                        labore et dolore.</p>
+                    <div class="discover-rooms-minimal__info-container">
+                        <h3 class="discover-rooms-minimal__h3">Minimal Duplex Room</h3>
+                        <p class="discover-rooms-minimal__paraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut
+                            labore et dolore.</p>
+                    </div>
                     <h2 class="discover-rooms-minimal__h2">$345<span
                             class="discover-rooms-minimal-h2__span">/Night</span></h2>
                 </div>
             </div>
         </section>
         <section class="meet-video">
-            <h3 class="meet-video__h3">Intro video</h3>
-            <h2 class="meet-video__h2">Meet With Our Luxury Place.</h2>
-            <p class="meet-video__paraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.</p>
+            <div class="meet-video__container">
+                <h3 class="meet-video-container__h3">Intro video</h3>
+                <h2 class="meet-video-container__h2">Meet With Our Luxury Place.</h2>
+                <p class="meet-video-container__paraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.</p>
+                <button class="meet-video-container__button-dektop">BOOK NOW</button>
+            </div>
             <iframe class="meet-video__iframe"
                 src="https://www.youtube.com/embed/Bu3Doe45lcU?si=5QAaDhCSNoHIDPD3&amp;start=25&end=69"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             <button class="meet-video__button">BOOK NOW</button>
+            <div class="meet-video__background-gold-desktop">
+            </div>
         </section>
         <section class="facilities">
             <h4 class="facilities__h4">Facilities</h4>
@@ -343,7 +368,8 @@
             </h2>
         </div>
         <p class="footer__paraph">
-            Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
+            Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
         </p>
         <div class="footer__socials">
             <a class="footer-socials__link" href="#">
@@ -384,21 +410,21 @@
         <div class="footer__contact">
             <h3 class="footer-contact__h3">Contact Us.</h3>
             <div class="footer-contact__container">
-                <img class="footer-contact-container__img" src="img/phone-icon.png" alt="phone"/>
+                <img class="footer-contact-container__img" src="img/phone-icon.png" alt="phone" />
                 <div class="footer-contact-container__info">
                     <h4 class="footer-contact-container-info__h4">Phone Number</h4>
                     <p class="footer-contact-container-info__paraph">+987 876 765 76 577</p>
                 </div>
             </div>
             <div class="footer-contact__container">
-                <img class="footer-contact-container__img" src="img/email-icon.png" alt="email"/>
+                <img class="footer-contact-container__img" src="img/email-icon.png" alt="email" />
                 <div class="footer-contact-container__info">
                     <h4 class="footer-contact-container-info__h4">Email</h4>
                     <p class="footer-contact-container-info__paraph">email@gmail.com</p>
                 </div>
             </div>
             <div class="footer-contact__container">
-                <img class="footer-contact-container__img" src="img/location-icon.png" alt="location"/>
+                <img class="footer-contact-container__img" src="img/location-icon.png" alt="location" />
                 <div class="footer-contact-container__info">
                     <h4 class="footer-contact-container-info__h4">Location</h4>
                     <p class="footer-contact-container-info__paraph">Street 2305 f 12</p>
@@ -407,7 +433,7 @@
         </div>
         <div class="footer__copyright">
             <p class="footer-copyright__paraph">Copyright By@Example - 2020</p>
-            <p class="footer-copyright__paraph">Terms of use    |    Privacy Environmental Policy</p>
+            <p class="footer-copyright__paraph">Terms of use | Privacy Environmental Policy</p>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/b85064bdf0.js" crossorigin="anonymous"></script>

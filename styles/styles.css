@@ -197,8 +197,76 @@ header.header nav.header-menu__burguer ul.header-menu__items li a {
   font-weight: 600;
   background: none;
 }
+header.header nav.header-menu-desktop {
+  display: none;
+}
 
-/* FIN HEADER */
+@media screen and (min-width: 1000px) {
+  header.header {
+    background: rgb(34, 34, 34);
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  header.header div.header__boxgeneral {
+    width: 80%;
+    padding: 20px;
+    position: absolute;
+    top: 36px;
+  }
+  header.header div.header__boxgeneral button.header__menubutton {
+    display: none;
+  }
+  header.header div.header__boxgeneral div.header__titlebox {
+    margin-right: 50px;
+  }
+  header.header div.header__boxgeneral div.header__titlebox div.header__boxlogo {
+    width: 30%;
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  header.header div.header__boxgeneral div.header__titlebox h1.header-titlebox__title {
+    font-size: 26px;
+  }
+  header.header div.header__boxgeneral div.header__titlebox h1.header-titlebox__title span.header-titlebox-title__span {
+    font-weight: 100;
+    margin-top: 5px;
+  }
+  header.header div.header__boxgeneral div.header-boxgeneral__icons {
+    justify-content: space-around;
+  }
+  header.header nav.header-menu__burguer {
+    display: none;
+  }
+  header.header nav.header-menu-desktop {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    margin-right: 100px;
+  }
+  header.header nav.header-menu-desktop ul.header-menu-desktop-menu__items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding-left: 20px;
+    padding-bottom: 0px;
+  }
+  header.header nav.header-menu-desktop ul.header-menu-desktop-menu__items li {
+    padding: 10px 0px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  header.header nav.header-menu-desktop ul.header-menu-desktop-menu__items li a {
+    color: rgb(17, 17, 17);
+    font-family: "Archivo", sans-serif;
+    font-weight: 600;
+    background: none;
+  }
+}
 main {
   padding-top: 85px;
   display: flex;
@@ -265,8 +333,54 @@ main section.banner div.banner__buttons button.banner-buttons__more {
   margin-bottom: 60px;
 }
 
-main {
-  /* FIN BANNER CHECKDATE */
+@media screen and (min-width: 1000px) {
+  main {
+    padding-top: 0px;
+  }
+  main section.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    width: 100%;
+    margin-top: 50px;
+    padding-left: 180px;
+  }
+  main section.banner h2.banner__firstitle {
+    width: 50%;
+    margin-top: 160px;
+    margin-left: 10px;
+  }
+  main section.banner h3.banner__secondtitle {
+    width: 70%;
+    margin-top: 40px;
+    font-size: 100px;
+    letter-spacing: -3.6px;
+    line-height: 100px;
+  }
+  main section.banner div.banner__buttons {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    width: 55%;
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+  main section.banner div.banner__buttons button {
+    width: 40%;
+  }
+  main section.banner div.banner__buttons button.banner-buttons__tour {
+    background: rgb(190, 173, 142);
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-right: 40px;
+  }
+  main section.banner div.banner__buttons button.banner-buttons__more {
+    margin-bottom: 0px;
+    border: 1px solid gray;
+  }
 }
 main section.banner__checkdate {
   background: rgb(34, 34, 34);
@@ -279,7 +393,12 @@ main section.banner__checkdate form.banner-checkdate__form {
   color: rgb(255, 255, 255);
   padding: 20px;
 }
-main section.banner__checkdate form.banner-checkdate__form label, main section.banner__checkdate form.banner-checkdate__form input {
+main section.banner__checkdate form.banner-checkdate__form div.banner-checkdate-form__input-container {
+  background: none;
+  display: flex;
+  flex-direction: column;
+}
+main section.banner__checkdate form.banner-checkdate__form div.banner-checkdate-form__input-container label, main section.banner__checkdate form.banner-checkdate__form div.banner-checkdate-form__input-container input {
   background: rgb(34, 34, 34);
   margin-top: 10px;
   margin-bottom: 10px;
@@ -288,7 +407,7 @@ main section.banner__checkdate form.banner-checkdate__form label, main section.b
   font-weight: 700;
   border: none;
 }
-main section.banner__checkdate form.banner-checkdate__form input {
+main section.banner__checkdate form.banner-checkdate__form div.banner-checkdate-form__input-container input {
   border-bottom: 1px solid rgb(190, 173, 142);
   padding-bottom: 10px;
   color: rgb(104, 104, 104);
@@ -309,6 +428,25 @@ main section.banner__checkdate form.banner-checkdate__form button.banner-checkda
   background: rgb(190, 173, 142);
 }
 
+@media screen and (min-width: 1000px) {
+  main section.banner__checkdate form.banner-checkdate__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  main section.banner__checkdate form.banner-checkdate__form div.banner-checkdate-form__input-container {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
+  main section.banner__checkdate form.banner-checkdate__form button.banner-checkdate-form__button {
+    width: 25%;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
 main section.discover {
   width: 100%;
   height: auto;
@@ -619,6 +757,109 @@ main section.discover div.discover-rooms div.discover-rooms__minimal h2.discover
   font-size: 13px;
 }
 
+@media screen and (min-width: 1000px) {
+  main section.discover {
+    margin-top: 90px;
+  }
+  main section.discover div.discover-container {
+    display: flex;
+    flex-direction: row-reverse;
+    background: rgb(249, 249, 249);
+    margin-bottom: 80px;
+  }
+  main section.discover div.discover-container div.discover__titlebox button.discover-titlebox__button {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  main section.discover div.discover-container div.discover-container__strong-luxury {
+    background: rgb(249, 249, 249);
+  }
+  main section.discover div.discover-container div.discover-container__strong-luxury div.discover-strong-team {
+    height: 300px;
+    margin: 0px;
+  }
+  main section.discover div.discover-container div.discover-container__strong-luxury div.discover-strong-team div.discover-strong-team__box {
+    display: flex;
+    flex-direction: row-reverse;
+    height: auto;
+    width: 85%;
+  }
+  main section.discover div.discover-container div.discover-container__strong-luxury div.discover-strong-team div.discover-strong-team__box div.discover-strong-team__img {
+    width: 100%;
+    height: 300px;
+  }
+  main section.discover div.discover-container div.discover-container__strong-luxury div.discover-strong-team div.discover-strong-team__box div.discover-strong-team__img img.discover-strong-team-img__imgcover {
+    width: 100%;
+    height: 100%;
+  }
+  main section.discover div.discover-container div.discover-container__strong-luxury div.discover-strong-team div.discover-strong-team__box div.discover-strong-team__description {
+    margin-right: 20px;
+  }
+  main section.discover div.discover-container div.discover-container__strong-luxury div.discover-luxury-room {
+    height: 300px;
+    margin: 0px;
+  }
+  main section.discover div.discover-container div.discover-container__strong-luxury div.discover-luxury-room div.discover-luxury-room__box {
+    display: flex;
+    flex-direction: row-reverse;
+    height: auto;
+    width: 85%;
+  }
+  main section.discover div.discover-container div.discover-container__strong-luxury div.discover-luxury-room div.discover-luxury-room__box div.discover-luxury-room__img {
+    width: 100%;
+    height: 100%;
+  }
+  main section.discover div.discover-container div.discover-container__strong-luxury div.discover-luxury-room div.discover-luxury-room__box div.discover-luxury-room__img img.discover-luxury-room-img__imgcover {
+    width: 100%;
+    height: 100%;
+  }
+  main section.discover div.discover-container div.discover-container__strong-luxury div.discover-luxury-room div.discover-luxury-room__box div.discover-luxury-room__description {
+    margin-right: 20px;
+  }
+  main section.discover div.discover-rooms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  main section.discover div.discover-rooms div.discover-rooms__icons {
+    width: 50%;
+  }
+  main section.discover div.discover-rooms div#swipper-rooms {
+    width: 100%;
+    height: auto;
+  }
+  main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-prev-rooms {
+    width: 80px;
+    height: 80px;
+  }
+  main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-prev-rooms::after, main section.discover div.discover-rooms div#swipper-rooms .swiper-rtl #swiper-button-prev-rooms::after {
+    font-size: 2em;
+  }
+  main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-next-rooms {
+    width: 80px;
+    height: 80px;
+  }
+  main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-next-rooms::after, main section.discover div.discover-rooms div#swipper-rooms .swiper-rtl #swiper-button-next-rooms::after {
+    font-size: 2em;
+  }
+  main section.discover div.discover-rooms div.discover-rooms__minimal {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  main section.discover div.discover-rooms div.discover-rooms__minimal div.discover-rooms-minimal__info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main section.discover div.discover-rooms div.discover-rooms__minimal div.discover-rooms-minimal__info-container p.discover-rooms-minimal__paraph {
+    text-align: left;
+    width: 90%;
+  }
+}
 main section.meet-video {
   width: 100%;
   height: auto;
@@ -627,7 +868,11 @@ main section.meet-video {
   flex-direction: column;
   padding: 20px;
 }
-main section.meet-video h3.meet-video__h3 {
+main section.meet-video div.meet-video__container {
+  width: 100%;
+  background: none;
+}
+main section.meet-video div.meet-video__container h3.meet-video-container__h3 {
   font-family: "Archivo", sans-serif;
   font-size: 0.875em;
   color: rgb(189, 172, 141);
@@ -638,7 +883,7 @@ main section.meet-video h3.meet-video__h3 {
   margin-bottom: 20px;
   margin-top: 40px;
 }
-main section.meet-video h2.meet-video__h2 {
+main section.meet-video div.meet-video__container h2.meet-video-container__h2 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
   font-size: 3.5em;
@@ -647,13 +892,16 @@ main section.meet-video h2.meet-video__h2 {
   line-height: 60px;
   margin-bottom: 20px;
 }
-main section.meet-video p.meet-video__paraph {
+main section.meet-video div.meet-video__container p.meet-video-container__paraph {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
   font-size: 0.875em;
   line-height: 24px;
   color: rgb(194, 194, 194);
   margin-bottom: 40px;
+}
+main section.meet-video div.meet-video__container button.meet-video-container__button-dektop {
+  display: none;
 }
 main section.meet-video iframe.meet-video__iframe {
   width: 100%;
@@ -673,7 +921,84 @@ main section.meet-video button.meet-video__button {
   font-weight: 700;
   background: rgb(190, 173, 142);
 }
+main section.meet-video div.meet-video__background-gold-desktop {
+  display: none;
+}
 
+@media screen and (min-width: 1000px) {
+  main section.meet-video {
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  main section.meet-video div.meet-video__container {
+    width: 50%;
+    background: none;
+    margin-right: 40px;
+  }
+  main section.meet-video div.meet-video__container h3.meet-video-container__h3 {
+    font-family: "Archivo", sans-serif;
+    font-size: 0.875em;
+    color: rgb(189, 172, 141);
+    letter-spacing: 2.8px;
+    font-weight: 700;
+    background: none;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  main section.meet-video div.meet-video__container h2.meet-video-container__h2 {
+    font-family: "Old Standard TT", sans-serif;
+    font-weight: 400;
+    font-size: 3.5em;
+    color: rgb(255, 255, 255);
+    letter-spacing: -1.2px;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+  main section.meet-video div.meet-video__container p.meet-video-container__paraph {
+    font-family: "Archivo", sans-serif;
+    font-weight: 400;
+    font-size: 0.875em;
+    line-height: 24px;
+    color: rgb(194, 194, 194);
+    margin-bottom: 40px;
+  }
+  main section.meet-video div.meet-video__container button.meet-video-container__button-dektop {
+    display: block;
+    width: 40%;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 0.875em;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    font-family: "Archivo", sans-serif;
+    font-weight: 700;
+    background: rgb(190, 173, 142);
+  }
+  main section.meet-video iframe.meet-video__iframe {
+    width: 50%;
+    margin-bottom: 40px;
+    z-index: 10;
+  }
+  main section.meet-video button.meet-video__button {
+    display: none;
+  }
+  main section.meet-video div.meet-video__background-gold-desktop {
+    display: block;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    background: rgb(173, 157, 130);
+    top: 0px;
+    right: 0px;
+  }
+}
 main section.facilities {
   width: 100%;
   margin-bottom: 40px;
@@ -1746,6 +2071,11 @@ main section.rooms__banner div.rooms__buttons a.banner-buttons__about {
   color: rgb(190, 173, 142);
 }
 
+@media screen and (min-width: 1000px) {
+  main {
+    padding-top: 0px;
+  }
+}
 main section.room-details__type {
   display: flex;
   flex-direction: column;
