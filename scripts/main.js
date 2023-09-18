@@ -160,3 +160,19 @@ const swiperRoomsOffers = new Swiper('#swipper-rooms-offers', {
     }
 
 });
+
+/* TODO HACER MODAL ROOM DETAILS */
+let buttonCheck = document.getElementById('room-details-type-availability-form__button');
+let formCheck = document.getElementById('room-details-type-availability__form');
+let modalCheck = document.querySelector('.modal-rooms-details');
+let buttonCloseModal = document.getElementById('modal-rooms-details__button-close');
+
+formCheck.addEventListener('submit', (e) => e.preventDefault());
+
+buttonCheck.addEventListener('click', () => {
+    modalCheck.style.display = 'flex';
+});
+
+buttonCloseModal.addEventListener('click', () => {
+    modalCheck.style.display = 'none';
+});
