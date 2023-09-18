@@ -7,6 +7,8 @@ let check_menu = true;
 
 img_icon.src = '../img/burguer_icon.png';
 
+/* HEADER MOVIL */
+
 burguer_icon.addEventListener('click', () => {
     if (check_menu) {
         nav_menu.style.top = '85px';
@@ -22,6 +24,46 @@ burguer_icon.addEventListener('click', () => {
     }
 });
 
+/* HEADER DESKTOP */
+
+let scree_width = screen.width;
+
+if(scree_width > 1000){
+    let header_desktop = document.querySelector('.header__boxgeneral');
+    let header = document.querySelector('.header');
+
+    function porcentajeTotal() {
+        let altura_pantalla = window.scrollY;
+        let alturaTotal_pantalla = document.documentElement.scrollHeight - window.innerHeight;
+        let porcentajeTotal = (altura_pantalla / alturaTotal_pantalla) * 100;
+        return Math.floor(porcentajeTotal);
+    }
+    
+    window.addEventListener('mousemove', (e) => {
+        const mouse = e.clientY;
+
+        if(mouse === 0){
+            header_desktop.style.top = '36px';
+            header_desktop.style.transition = '0.5s';
+            header.style.position = 'fixed';
+        } 
+    });
+
+    window.addEventListener('scroll', () => {
+        let porcentaje = porcentajeTotal();
+        
+        if(porcentaje > 0){
+            header_desktop.style.top = '-250px';
+            header_desktop.style.transition = '0.5s';
+            header.style.position = 'absolute';
+        } else if (porcentaje === 0) {
+            header_desktop.style.top = '36px';
+            header_desktop.style.transition = '0.5s';
+            header.style.position = 'fixed';
+        }
+    
+    });
+}
 
 /* SWIPER HOME */
 
@@ -161,18 +203,24 @@ const swiperRoomsOffers = new Swiper('#swipper-rooms-offers', {
 
 });
 
-/* TODO HACER MODAL ROOM DETAILS */
-let buttonCheck = document.getElementById('room-details-type-availability-form__button');
-let formCheck = document.getElementById('room-details-type-availability__form');
-let modalCheck = document.querySelector('.modal-rooms-details');
-let buttonCloseModal = document.getElementById('modal-rooms-details__button-close');
+/* CHECK ROOMS */
 
-formCheck.addEventListener('submit', (e) => e.preventDefault());
+try {
+    let buttonCheck = document.getElementById('room-details-type-availability-form__button');
+    let formCheck = document.getElementById('room-details-type-availability__form');
+    let modalCheck = document.querySelector('.modal-rooms-details');
+    let buttonCloseModal = document.getElementById('modal-rooms-details__button-close');
 
-buttonCheck.addEventListener('click', () => {
-    modalCheck.style.display = 'flex';
-});
+    formCheck.addEventListener('submit', (e) => e.preventDefault());  
 
-buttonCloseModal.addEventListener('click', () => {
-    modalCheck.style.display = 'none';
-});
+    buttonCheck.addEventListener('click', () => {
+        modalCheck.style.display = 'flex';
+    });
+    
+    buttonCloseModal.addEventListener('click', () => {
+        modalCheck.style.display = 'none';
+    });
+} catch (error) {
+    console.log('no estás en la página de rooms details')
+}
+
