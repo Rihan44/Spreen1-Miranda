@@ -139,10 +139,6 @@ const swiperFacilitesAboutUs = new Swiper('#swiper-facilities-about-us', {
 
 });
 
-if(scree_width > 1000) {
-    swiperFacilitesAboutUs.disable();
-}
-
 const swiperCounter = new Swiper('#swiper-counter', {
     direction: 'horizontal',
 
@@ -155,11 +151,6 @@ const swiperCounter = new Swiper('#swiper-counter', {
     }
 
 });
-
-if(scree_width > 1000) {
-    swiperCounter.disable();
-}
-
 
 /* ROOMS */
 const swiper = new Swiper('#swipper-rooms-roomspage', {
@@ -211,6 +202,14 @@ const swiperRoomsOffers = new Swiper('#swipper-rooms-offers', {
     }
 
 });
+
+
+if(scree_width > 1000) {
+    swiperCounter.disable();
+    swiperFacilitesAboutUs.disable();
+    swiperRoomsDetails.disable();
+}
+
 
 /* CHECK ROOMS */
 

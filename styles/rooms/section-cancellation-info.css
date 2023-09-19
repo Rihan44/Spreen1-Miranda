@@ -24,4 +24,11 @@ main section.cancellation-info p.cancellation-info__paraph {
   font-size: 1em;
   line-height: 24px;
   color: rgb(119, 119, 119);
+}
+
+@media screen and (min-width: 1000px) {
+  main section.cancellation-info {
+    width: 70%;
+    margin-left: 120px;
+  }
 }/*# sourceMappingURL=section-cancellation-info.css.map */

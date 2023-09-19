@@ -78,6 +78,7 @@ main section.about-us__banner div.about-us-banner__buttons a.banner-buttons__abo
     padding-top: 0px;
   }
   main section.about-us__banner {
+    width: 100%;
     padding: 10px;
     padding-bottom: 0px;
     padding-top: 40px;
