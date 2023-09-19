@@ -53,4 +53,26 @@ main div.contact-info div.contact-info__container:nth-child(3) {
   background-position: top right;
   background-repeat: no-repeat;
   margin-bottom: 0px;
+}
+
+@media screen and (min-width: 1000px) {
+  main div.contact-info {
+    width: 80%;
+    padding: 0px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+  }
+  main div.contact-info div.contact-info__container {
+    width: 30%;
+    display: flex;
+    margin-bottom: 120px;
+  }
+  main div.contact-info div.contact-info__container img.contact-info-container__img {
+    width: 40px;
+    height: 38px;
+    margin-left: 20px;
+  }
 }/*# sourceMappingURL=contact-info.css.map */
