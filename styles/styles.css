@@ -1993,6 +1993,28 @@ main section.about-us__banner div.about-us-banner__buttons a.banner-buttons__abo
   color: rgb(190, 173, 142);
 }
 
+main {
+  padding-top: 0px;
+}
+main section.about-us__banner {
+  padding: 10px;
+  padding-bottom: 0px;
+  padding-top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+main section.about-us__banner h2.about-us-banner__firsttitle {
+  width: 60%;
+  margin-top: 200px;
+}
+main section.about-us__banner h3.about-us-banner__secondtitle {
+  width: 60%;
+}
+main section.about-us__banner div.about-us-banner__buttons {
+  width: 20%;
+  right: -25%;
+}
+
 main section.video-about__presentation {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+main section.counter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 30px;
+  position: relative;
+}
+main section.counter h4.counter__h4 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 0.875em;
+  line-height: 16px;
+  letter-spacing: 2.8px;
+  color: rgb(119, 119, 119);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+main section.counter h2.counter__h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 3.5em;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(34, 34, 34);
+  margin-bottom: 50px;
+}
+main section.counter div.counter__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+}
+main section.counter div.counter__container h2.counter-container-info__h2 {
+  font-size: 3.75em;
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.8px;
+  color: rgb(34, 34, 34);
+}
+main section.counter div.counter__container p.counter-container-info__paraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 16px;
+  color: rgb(119, 119, 119);
+}
+main section.counter div.counter__container img.counter-container__img2 {
+  width: 32px;
+  height: 32px;
+  justify-self: center;
+}
+main section.counter div#swiper-counter {
+  width: 95%;
+  margin-top: 30px;
+}
+main section.counter div#swiper-counter img.swiper-slider-counter__img {
+  width: 100%;
+  height: 230px;
+  margin-bottom: 30px;
+}
+main div#swiper-pagination-counter {
+  background: none;
+}/*# sourceMappingURL=section-counter.css.map */

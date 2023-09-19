@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+main section.room-details__amenities {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  margin-top: 40px;
+}
+main section.room-details__amenities h2.room-details-amenities__h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 1.875em;
+  line-height: 30px;
+  color: rgb(34, 34, 34);
+}
+main section.room-details__amenities div.room-details-amenitie__container {
+  border-top: 1px solid rgb(241, 241, 241);
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  padding-top: 30px;
+  justify-content: space-between;
+}
+main section.room-details__amenities div.room-details-amenitie__container div.room-details-amenities__icon-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main section.room-details__amenities div.room-details-amenitie__container div.room-details-amenities__icon-container div.room-details-amenities-icon-container__info {
+  display: flex;
+  margin-bottom: 20px;
+}
+main section.room-details__amenities div.room-details-amenitie__container div.room-details-amenities__icon-container div.room-details-amenities-icon-container__info img.room-details-amenities-icon-container-info__img {
+  margin-right: 10px;
+}
+main section.room-details__amenities div.room-details-amenitie__container div.room-details-amenities__icon-container div.room-details-amenities-icon-container__info p.room-details-amenities-icon-container-info__paraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.9375em;
+  line-height: 18px;
+  color: rgb(119, 119, 119);
+}
+main section.room-details__amenities div.room-details-amenitie__container div.room-details-amenities__icon-container.container__2 {
+  padding-left: 25px;
+}/*# sourceMappingURL=section-room-details-amenities.css.map */

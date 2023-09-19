@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+main {
+  padding-top: 85px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  height: auto;
+  background: rgb(255, 255, 255);
+  margin-bottom: 30px;
+}
+main section.rooms__banner {
+  background: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+main section.rooms__banner h2.rooms__firsttitle {
+  background: rgb(51, 51, 51);
+  width: 80%;
+  font-family: "Archivo", sans-serif;
+  line-height: 18px;
+  letter-spacing: 2.8px;
+  font-size: 0.8em;
+  margin-top: 60px;
+}
+main section.rooms__banner h3.rooms__secondtitle {
+  background: rgb(51, 51, 51);
+  font-family: "Old Standard TT", sans-serif;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  font-weight: 400;
+  font-size: 3.5em;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+main section.rooms__banner div.rooms__buttons {
+  background: rgb(255, 255, 255);
+  display: flex;
+  height: auto;
+  width: 40%;
+  position: relative;
+  right: -50%;
+  height: auto;
+  padding: 20px;
+  bottom: 0px;
+  justify-content: center;
+  align-items: center;
+}
+main section.rooms__banner div.rooms__buttons a {
+  font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  font-size: 1em;
+  letter-spacing: -0.48px;
+  line-height: 18px;
+}
+main section.rooms__banner div.rooms__buttons p {
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+}
+main section.rooms__banner div.rooms__buttons a.banner-buttons__home {
+  margin-right: 10px;
+  color: rgb(34, 34, 34);
+}
+main section.rooms__banner div.rooms__buttons a.banner-buttons__about {
+  margin-left: 10px;
+  color: rgb(190, 173, 142);
+}/*# sourceMappingURL=section-rooms-banner.css.map */

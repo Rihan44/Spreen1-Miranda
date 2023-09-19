@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+main section.our-services {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+main section.our-services div.our-services__container {
+  width: 45%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section.our-services h4.our-services-container__h4 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 2.4px;
+  font-size: 0.65em;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+main section.our-services img.our-services-container__img {
+  background: none;
+}
+main section.our-services div.our-services__container.plane {
+  background: rgb(190, 173, 142);
+  color: rgb(255, 255, 255);
+}
+main section.our-services div.our-services__container.plane h4.our-services-container__h4 {
+  width: 100%;
+}/*# sourceMappingURL=section-our-services.css.map */
