@@ -25,19 +25,71 @@ main section.video-about__presentation h3.video-about-presentation__title {
   text-align: center;
   color: rgb(34, 34, 34);
 }
+main section.video-about__presentation div.video-about-presentation__our-services {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  margin-top: 50px;
+}
+main section.video-about__presentation div.video-about-presentation__our-services div.video-about-presentation-our-services__container {
+  width: 45%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section.video-about__presentation div.video-about-presentation__our-services h4.video-about-presentation-our-services-container__h4 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 2.4px;
+  font-size: 0.65em;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+main section.video-about__presentation div.video-about-presentation__our-services img.video-about-presentation-our-services-container__img {
+  background: none;
+}
+main section.video-about__presentation div.video-about-presentation__our-services div.video-about-presentation-our-services__container.plane {
+  background: rgb(190, 173, 142);
+  color: rgb(255, 255, 255);
+}
+main section.video-about__presentation div.video-about-presentation__our-services div.video-about-presentation-our-services__container.plane h4.video-about-presentation-our-services-container__h4 {
+  width: 100%;
+}
 
-main section.video-about__presentation {
-  margin-top: 80px;
-}
-main section.video-about__presentation iframe.video-about-presentation__iframe {
-  width: 90%;
-  height: 650px;
-  margin-bottom: 50px;
-}
-main section.video-about__presentation h3.video-about-presentation__title {
-  width: 80%;
-  font-size: 4.5em;
-  letter-spacing: -2.16px;
-  line-height: 89px;
-  font-weight: 400;
+@media screen and (min-width: 1000px) {
+  main section.video-about__presentation {
+    margin-top: 80px;
+  }
+  main section.video-about__presentation iframe.video-about-presentation__iframe {
+    width: 90%;
+    height: 650px;
+    margin-bottom: 50px;
+  }
+  main section.video-about__presentation h3.video-about-presentation__title {
+    width: 80%;
+    font-size: 4.5em;
+    letter-spacing: -2.16px;
+    line-height: 89px;
+    font-weight: 400;
+  }
+  main section.video-about__presentation div.video-about-presentation__our-services {
+    flex-wrap: nowrap;
+  }
+  main section.video-about__presentation div.video-about-presentation__our-services div.video-about-presentation-our-services__container {
+    width: 25%;
+  }
+  main section.video-about__presentation div.video-about-presentation__our-services div.video-about-presentation-our-services__container.plane {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  main section.video-about__presentation div.video-about-presentation__our-services div.video-about-presentation-our-services__container.plane h4.video-about-presentation-our-services-container__h4 {
+    width: 60%;
+  }
 }/*# sourceMappingURL=section-video-about-presentation.css.map */
