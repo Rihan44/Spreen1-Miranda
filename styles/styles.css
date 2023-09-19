@@ -3150,6 +3150,14 @@ main div.founder p.founder__paraph {
   color: rgb(119, 119, 119);
 }
 
+@media screen and (min-width: 1000px) {
+  main div.founder {
+    width: 370px;
+    box-shadow: 0 14px 24px 0 rgba(190, 173, 142, 0.27);
+    margin-bottom: 80px;
+    margin-left: 120px;
+  }
+}
 main section.cancellation-info {
   width: 100%;
   padding: 20px;

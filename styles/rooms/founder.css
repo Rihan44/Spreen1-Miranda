@@ -57,4 +57,13 @@ main div.founder p.founder__paraph {
   line-height: 24px;
   text-align: center;
   color: rgb(119, 119, 119);
+}
+
+@media screen and (min-width: 1000px) {
+  main div.founder {
+    width: 370px;
+    box-shadow: 0 14px 24px 0 rgba(190, 173, 142, 0.27);
+    margin-bottom: 80px;
+    margin-left: 120px;
+  }
 }/*# sourceMappingURL=founder.css.map */
