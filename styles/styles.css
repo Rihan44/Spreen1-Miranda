@@ -2649,6 +2649,29 @@ main section.rooms__banner div.rooms__buttons a.banner-buttons__about {
   color: rgb(190, 173, 142);
 }
 
+@media screen and (min-width: 1000px) {
+  main {
+    padding-top: 120px;
+  }
+  main section.rooms__banner {
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 410px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main section.rooms__banner h2#rooms__firsttitle {
+    width: 60%;
+    margin-top: 200px;
+  }
+  main section.rooms__banner h3#rooms__secondtitle {
+    width: 60%;
+  }
+  main section.rooms__banner div#rooms__buttons {
+    width: 20%;
+    right: -25%;
+  }
+}
 main section.rooms__list {
   width: 100%;
   display: flex;
@@ -2742,6 +2765,17 @@ main section.rooms__list div#swipper-rooms-roomspage .swiper-pagination-bullet-a
   background: rgb(190, 173, 142);
 }
 
+@media screen and (min-width: 1000px) {
+  main section.rooms__list div.rooms-list-grid__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    place-items: center;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
 main {
   padding-top: 85px;
   display: flex;

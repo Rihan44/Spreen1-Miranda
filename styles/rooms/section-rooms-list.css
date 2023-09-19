@@ -92,4 +92,16 @@ main section.rooms__list div#swipper-rooms-roomspage .swiper-pagination-bullet {
 main section.rooms__list div#swipper-rooms-roomspage .swiper-pagination-bullet-active {
   color: #fff;
   background: rgb(190, 173, 142);
+}
+
+@media screen and (min-width: 1000px) {
+  main section.rooms__list div.rooms-list-grid__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    place-items: center;
+    height: auto;
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=section-rooms-list.css.map */
