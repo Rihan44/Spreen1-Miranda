@@ -69,10 +69,10 @@ if(scree_width > 1000){
 
 const swiperRooms = new Swiper('#swipper-rooms', {
     direction: 'horizontal',
-    /* loop: true,
+   loop: true,
     autoplay: {
         delay: 3000
-    }, */
+    },
     cssMode: true,
     navigation: {
         nextEl: '#swiper-button-next-rooms',
@@ -139,6 +139,10 @@ const swiperFacilitesAboutUs = new Swiper('#swiper-facilities-about-us', {
 
 });
 
+/* if(scree_width > 1000) {
+    swiperFacilitesAboutUs.disable();
+}
+ */
 const swiperCounter = new Swiper('#swiper-counter', {
     direction: 'horizontal',
 

@@ -27,6 +27,8 @@ main
             color: $color-principal
             text-align: center
             margin-bottom: 50px
+        div#swiper-facilities-about-us:nth-child(2)
+            background: rgba(41, 41, 41, 1)
         div#swiper-facilities-about-us
             background: rgba(41, 41, 41, 1)
             width: 90%
@@ -51,7 +53,7 @@ main
                     line-height: 24px
                     color: rgba(119, 119, 119, 1)
                     margin-bottom: 40px
-            div#swiper-facilities-about-us 
+            div#swiper-facilities-about-us
                 div.facilities-about-us-slide__article1
                     background: rgba(41, 41, 41, 1)
             div.facilities-about-us-slide__article1
@@ -93,3 +95,94 @@ main
                 background-position-y: 10%
             div#facilities-about-us-bullets-pagination
                 background: none
+        div.swiper-facilities-about-us__desktop 
+            display: none
+
+@media screen and (min-width: 1000px)
+    main
+        section.facilities-about-us
+            width: 100%
+            margin-bottom: 40px
+            div#swiper-facilities-about-us
+                display: none 
+            div.swiper-facilities-about-us__desktop 
+                display: flex
+                background: $color-tercero
+                width: 90%
+                margin: 0 auto
+                margin-bottom: 60px
+                div, h3, img, p
+                    background: none
+                div.swiper-wrapper-desktop
+                    width: 100%
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: space-around
+                    div.slider-facilities-about-us-articles:hover 
+                        transform: scale(1.2, 1.2)
+                    div.slider-facilities-about-us-articles
+                        width: 30%
+                        padding: 20px
+                        height: auto
+                        margin: 10px
+                        transition: 0.5s
+                        img.facilities-about-us-slide__img
+                            background: none
+                        h3.facilities-about-us-slide__h3
+                            font-family: $color-secundario
+                            font-weight: 400
+                            font-size: 1.875em
+                            line-height: 30px
+                            letter-spacing: -0.9px
+                            color: $color-principal
+                            margin-top: 40px
+                            margin-bottom: 30px
+                        p.facilities-about-us-slide__paraph
+                            font-family: $fontPrincipal
+                            font-weight: 400
+                            font-size: 0.875em
+                            line-height: 24px
+                            color: rgba(119, 119, 119, 1)
+                    div.facilities-about-us-slide__article1
+                        background: url('../img/01-black.png')
+                        background-position: top right
+                        background-repeat: no-repeat
+                        background-position-x: 90%
+                        background-position-y: 10%
+                        background-color: rgba(41, 41, 41, 1)
+                    div.facilities-about-us-slide__article2
+                        background: url('../img/02-black.png')
+                        background-position: top right
+                        background-repeat: no-repeat
+                        background-position-x: 90%
+                        background-position-y: 10%
+                        background-color: rgba(41, 41, 41, 1)
+                    div.facilities-about-us-slide__article3
+                        background: url('../img/03-black.png')
+                        background-position: top right
+                        background-repeat: no-repeat
+                        background-position-x: 90%
+                        background-position-y: 10%
+                        background-color: rgba(41, 41, 41, 1)
+                    div.facilities-about-us-slide__article4
+                        background: url('../img/04-black.png')
+                        background-position: top right
+                        background-repeat: no-repeat
+                        background-position-x: 90%
+                        background-position-y: 10%
+                        background-color: rgba(41, 41, 41, 1)
+                    div.facilities-about-us-slide__article5
+                        background: url('../img/05-black.png')
+                        background-position: top right
+                        background-repeat: no-repeat
+                        background-position-x: 90%
+                        background-position-y: 10%
+                        background-color: rgba(41, 41, 41, 1)
+                    div.facilities-about-us-slide__article6
+                        background: url('../img/06-black.png')
+                        background-position: top right
+                        background-repeat: no-repeat
+                        background-position-x: 90%
+                        background-position-y: 10%
+                        background-color: rgba(41, 41, 41, 1)
+
