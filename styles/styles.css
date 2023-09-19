@@ -2076,9 +2076,13 @@ main section.video-about__presentation div.video-about-presentation__our-service
 @media screen and (min-width: 1000px) {
   main section.video-about__presentation {
     margin-top: 80px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
   }
   main section.video-about__presentation iframe.video-about-presentation__iframe {
-    width: 90%;
+    width: 100%;
     height: 650px;
     margin-bottom: 50px;
   }
@@ -2173,6 +2177,74 @@ main section.restaurant div.restaurant__container div.restaurant-container__info
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 1000px) {
+  main section.restaurant {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 40px;
+  }
+  main section.restaurant div.restaurant__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  main section.restaurant div.restaurant__container img.restaurant-container__img {
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+  }
+  main section.restaurant div.restaurant__container div.restaurant-container__info {
+    width: 50%;
+  }
+  main section.restaurant div.restaurant__container div.restaurant-container__info h4.restaurant-container-info__h4 {
+    width: 100%;
+    background: none;
+    font-size: 0.875em;
+    color: rgb(119, 119, 119);
+    font-family: "Archivo", sans-serif;
+    letter-spacing: 2.8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  main section.restaurant div.restaurant__container div.restaurant-container__info h2.restaurant-container-info__h2 {
+    width: 100%;
+    background: none;
+    font-family: "Old Standard TT", sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+    line-height: 60px;
+    letter-spacing: -1.2px;
+    color: rgb(34, 34, 34);
+    margin-bottom: 20px;
+  }
+  main section.restaurant div.restaurant__container div.restaurant-container__info p.restaurant-container-info__paraph {
+    width: 100%;
+    font-family: "Archivo", sans-serif;
+    background: none;
+    font-size: 0.9em;
+    color: rgb(119, 119, 119);
+    margin-bottom: 30px;
+    line-height: 25px;
+  }
+  main section.restaurant div.restaurant__container div.restaurant-container__info button.restaurant-container-info__button {
+    background: rgb(189, 172, 141);
+    border: none;
+    width: 65%;
+    padding: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 0.875em;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    font-family: "Archivo", sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+}
 main section.facilities-about-us {
   width: 100%;
   background: rgb(34, 34, 34);
