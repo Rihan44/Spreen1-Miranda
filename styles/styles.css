@@ -2668,7 +2668,7 @@ main section.rooms__banner div.rooms__buttons a.banner-buttons__about {
     width: 60%;
   }
   main section.rooms__banner div#rooms__buttons {
-    width: 20%;
+    width: 25%;
     right: -25%;
   }
 }
@@ -3020,6 +3020,7 @@ main section.room-details__type div.modal-rooms-details.modal-rooms-details butt
     align-items: center;
     justify-content: space-around;
     position: absolute;
+    padding: 10px;
   }
   main section.room-details__type img.room-details-type__img {
     width: 50%;
@@ -3075,6 +3076,22 @@ main section.room-details__amenities div.room-details-amenitie__container div.ro
   padding-left: 25px;
 }
 
+@media screen and (min-width: 1000px) {
+  main section.room-details__amenities {
+    width: 100%;
+  }
+  main section.room-details__amenities h2.room-details-amenities__h2 {
+    margin-left: 120px;
+  }
+  main section.room-details__amenities div.room-details-amenitie__container {
+    justify-content: center;
+  }
+  main section.room-details__amenities div.room-details-amenitie__container div.room-details-amenities__icon-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+}
 main div.founder {
   width: 100%;
   display: flex;

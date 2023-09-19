@@ -45,4 +45,21 @@ main section.room-details__amenities div.room-details-amenitie__container div.ro
 }
 main section.room-details__amenities div.room-details-amenitie__container div.room-details-amenities__icon-container.container__2 {
   padding-left: 25px;
+}
+
+@media screen and (min-width: 1000px) {
+  main section.room-details__amenities {
+    width: 100%;
+  }
+  main section.room-details__amenities h2.room-details-amenities__h2 {
+    margin-left: 120px;
+  }
+  main section.room-details__amenities div.room-details-amenitie__container {
+    justify-content: center;
+  }
+  main section.room-details__amenities div.room-details-amenitie__container div.room-details-amenities__icon-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
 }/*# sourceMappingURL=section-room-details-amenities.css.map */

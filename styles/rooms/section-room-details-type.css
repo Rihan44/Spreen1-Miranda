@@ -168,6 +168,7 @@ main section.room-details__type div.modal-rooms-details.modal-rooms-details butt
     align-items: center;
     justify-content: space-around;
     position: absolute;
+    padding: 10px;
   }
   main section.room-details__type img.room-details-type__img {
     width: 50%;
