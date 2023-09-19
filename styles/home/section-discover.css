@@ -384,6 +384,9 @@ main section.discover div.discover-rooms div.discover-rooms__minimal h2.discover
     width: 100%;
     height: auto;
   }
+  main section.discover div.discover-rooms div#swipper-rooms img.swiper-slide__img {
+    height: 450px;
+  }
   main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-prev-rooms {
     width: 80px;
     height: 80px;

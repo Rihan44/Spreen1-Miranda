@@ -827,6 +827,9 @@ main section.discover div.discover-rooms div.discover-rooms__minimal h2.discover
     width: 100%;
     height: auto;
   }
+  main section.discover div.discover-rooms div#swipper-rooms img.swiper-slide__img {
+    height: 450px;
+  }
   main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-prev-rooms {
     width: 80px;
     height: 80px;
@@ -2489,14 +2492,14 @@ main section.counter h2.counter__h2 {
   color: rgb(34, 34, 34);
   margin-bottom: 50px;
 }
-main section.counter div.counter__container {
+main section.counter div.counter-container__box {
   display: flex;
   width: 100%;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 40px;
 }
-main section.counter div.counter__container h2.counter-container-info__h2 {
+main section.counter div.counter-container__box h2.counter-container-info__h2 {
   font-size: 3.75em;
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
@@ -2504,14 +2507,14 @@ main section.counter div.counter__container h2.counter-container-info__h2 {
   letter-spacing: -1.8px;
   color: rgb(34, 34, 34);
 }
-main section.counter div.counter__container p.counter-container-info__paraph {
+main section.counter div.counter-container__box p.counter-container-info__paraph {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1em;
   line-height: 16px;
   color: rgb(119, 119, 119);
 }
-main section.counter div.counter__container img.counter-container__img2 {
+main section.counter div.counter-container__box img.counter-container__img2 {
   width: 32px;
   height: 32px;
   justify-self: center;
@@ -2528,7 +2531,51 @@ main section.counter div#swiper-counter img.swiper-slider-counter__img {
 main div#swiper-pagination-counter {
   background: none;
 }
+main div.swiper-counter-desktop {
+  display: none;
+}
 
+@media screen and (min-width: 1000px) {
+  main section.counter {
+    align-items: center;
+  }
+  main section.counter h4.counter__h4 {
+    align-self: flex-start;
+    margin-left: 50px;
+  }
+  main section.counter h2.counter__h2 {
+    align-self: flex-start;
+    margin-left: 50px;
+  }
+  main section.counter div.counter-container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+  }
+  main section.counter div.counter-container div.counter-container__box {
+    margin-left: 20px;
+  }
+  main section.counter div#swiper-counter {
+    display: none;
+  }
+  main section.counter div.swiper-counter-desktop {
+    display: block;
+    width: 100%;
+  }
+  main section.counter div.swiper-counter-desktop div.swiper-wrapper-counter-desktop {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  main section.counter div.swiper-counter-desktop div.swiper-wrapper-counter-desktop div.swiper-slide-counter {
+    width: 45%;
+    margin-right: 20px;
+  }
+  main section.counter div.swiper-counter-desktop div.swiper-wrapper-counter-desktop div.swiper-slide-counter img.swiper-slider-counter__img {
+    width: 100%;
+    height: 400px;
+  }
+}
 /* ROOMS STYLES */
 main {
   padding-top: 85px;
