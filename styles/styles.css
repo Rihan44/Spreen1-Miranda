@@ -3795,19 +3795,22 @@ main div.contact-form-container form.contact-form-container__formulario {
   width: 90%;
   align-items: center;
 }
-main div.contact-form-container form.contact-form-container__formulario div.contact-form-container-formulario__input-container {
+main div.contact-form-container form.contact-form-container__formulario div.inputs-box {
+  width: 100%;
+}
+main div.contact-form-container form.contact-form-container__formulario div.inputs-box div.contact-form-container-formulario__input-container {
   width: 100%;
   display: flex;
   padding: 20px;
   background: rgb(248, 248, 248);
   margin-bottom: 20px;
 }
-main div.contact-form-container form.contact-form-container__formulario div.contact-form-container-formulario__input-container img.contact-form-container-formulario-input-container__icon {
+main div.contact-form-container form.contact-form-container__formulario div.inputs-box div.contact-form-container-formulario__input-container img.contact-form-container-formulario-input-container__icon {
   background: none;
   width: 14px;
   height: 14px;
 }
-main div.contact-form-container form.contact-form-container__formulario div.contact-form-container-formulario__input-container input.contact-form-container-formulario-input-container__input {
+main div.contact-form-container form.contact-form-container__formulario div.inputs-box div.contact-form-container-formulario__input-container input.contact-form-container-formulario-input-container__input {
   border: none;
   background: none;
   margin-left: 30px;
@@ -3818,7 +3821,7 @@ main div.contact-form-container form.contact-form-container__formulario div.cont
   color: rgb(119, 119, 119);
   outline: none;
 }
-main div.contact-form-container form.contact-form-container__formulario div.contact-form-container-formulario__input-container textarea.contact-form-container-formulario-input-container__textarea {
+main div.contact-form-container form.contact-form-container__formulario div.inputs-box div.contact-form-container-formulario__input-container textarea.contact-form-container-formulario-input-container__textarea {
   border: none;
   height: 175px;
   background: none;
@@ -3831,11 +3834,13 @@ main div.contact-form-container form.contact-form-container__formulario div.cont
   resize: none;
   outline: none;
 }
+main div.contact-form-container form.contact-form-container__formulario div.inputs-box div.contact-form-container-formulario__input-container:nth-child(5) {
+  margin-bottom: 40px;
+}
 main div.contact-form-container form.contact-form-container__formulario button.contact-form-container-formulario__button {
   width: 80%;
   padding: 20px;
   margin-bottom: 20px;
-  margin-left: 20px;
   cursor: pointer;
   border: none;
   color: rgb(255, 255, 255);
@@ -3846,6 +3851,29 @@ main div.contact-form-container form.contact-form-container__formulario button.c
   font-weight: 700;
   background: rgb(190, 173, 142);
 }
-main div.contact-form-container form.contact-form-container__formulario div.contact-form-container-formulario__input-container:nth-child(5) {
-  margin-bottom: 40px;
+
+@media screen and (min-width: 1000px) {
+  main div.contact-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  main div.contact-form-container form.contact-form-container__formulario {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+  }
+  main div.contact-form-container form.contact-form-container__formulario div.inputs-box {
+    width: 100%;
+    display: flex;
+  }
+  main div.contact-form-container form.contact-form-container__formulario div.inputs-box div.contact-form-container-formulario__input-container {
+    margin-right: 10px;
+  }
+  main div.contact-form-container form.contact-form-container__formulario button.contact-form-container-formulario__button {
+    width: 40%;
+  }
 }/*# sourceMappingURL=styles.css.map */
