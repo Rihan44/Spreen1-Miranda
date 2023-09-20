@@ -77,7 +77,7 @@ main section.related-rooms div.rooms-list__room div#swipper-rooms-details div.di
   position: relative;
   z-index: 2;
   top: 285px;
-  right: -30px;
+  transform: translateX(12%);
   box-shadow: 0 8px 16px 0 rgba(138, 138, 138, 0.05);
 }
 main section.related-rooms div.rooms-list__room div#swipper-rooms-details div.discover-rooms__icons img.discover-rooms-icons__img {
