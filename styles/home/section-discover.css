@@ -195,6 +195,8 @@ main section.discover div.discover-rooms {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  max-width: 800px;
+  margin: auto;
 }
 main section.discover div.discover-rooms h4.discover-rooms__h4 {
   background: none;
@@ -375,6 +377,7 @@ main section.discover div.discover-rooms div.discover-rooms__minimal h2.discover
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin: auto;
     margin-bottom: 30px;
   }
   main section.discover div.discover-rooms div.discover-rooms__icons {

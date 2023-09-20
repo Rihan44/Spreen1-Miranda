@@ -2,15 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 main section.luxury-rooms-offers {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
   margin-top: 60px;
+  box-shadow: 0 14px 24px 0 rgba(184, 184, 184, 0.1);
 }
 main section.luxury-rooms-offers div.luxury-rooms-offers__container {
-  width: 90%;
-  box-shadow: 0 14px 24px 0 rgba(184, 184, 184, 0.1);
+  width: 100%;
 }
 main section.luxury-rooms-offers div.luxury-rooms-offers__container h3.luxury-rooms-offers-container__h3 {
   font-family: "Archivo", sans-serif;
@@ -42,34 +43,41 @@ main section.luxury-rooms-offers div.luxury-rooms-offers__container p.luxury-roo
 }
 main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__amenities {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   margin-top: 10px;
   padding: 10px;
-  justify-content: space-between;
 }
-main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__amenities div.room-details-amenities__icon-container {
+main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__amenities div.container-icons {
+  display: flex;
+  width: 90%;
+}
+main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__amenities div.container-icons div.room-details-amenities__icon-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 50%;
+  background: none;
 }
-main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__amenities div.room-details-amenities__icon-container div.room-details-amenities-icon-container__info {
+main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__amenities div.container-icons div.room-details-amenities__icon-container div.room-details-amenities-icon-container__info {
   display: flex;
   margin-bottom: 20px;
+  justify-content: flex-start;
 }
-main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__amenities div.room-details-amenities__icon-container div.room-details-amenities-icon-container__info img.room-details-amenities-icon-container-info__img {
+main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__amenities div.container-icons div.room-details-amenities__icon-container div.room-details-amenities-icon-container__info img.room-details-amenities-icon-container-info__img {
   margin-right: 10px;
 }
-main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__amenities div.room-details-amenities__icon-container div.room-details-amenities-icon-container__info p.room-details-amenities-icon-container-info__paraph {
+main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__amenities div.container-icons div.room-details-amenities__icon-container div.room-details-amenities-icon-container__info p.room-details-amenities-icon-container-info__paraph {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 0.9375em;
   line-height: 18px;
   color: rgb(119, 119, 119);
 }
-main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__amenities div.room-details-amenities__icon-container.container__2 {
+main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__amenities div.container-icons div.room-details-amenities__icon-container.container__2 {
   padding-left: 25px;
 }
-main section.luxury-rooms-offers div.luxury-rooms-offers__container button.luxury-rooms-offers-container__button {
+main section.luxury-rooms-offers button.luxury-rooms-offers-container__button {
   width: 60%;
   padding: 20px;
   margin-top: 30px;
@@ -84,18 +92,19 @@ main section.luxury-rooms-offers div.luxury-rooms-offers__container button.luxur
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   background: rgb(190, 173, 142);
+  align-self: baseline;
 }
-main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__info-price {
+main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price {
   width: 100%;
   height: 200px;
   position: relative;
   margin-bottom: 10px;
 }
-main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__info-price img.luxury-rooms-offers-container-info-price__img {
+main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price img.luxury-rooms-offers-container-info-price__img {
   width: 100%;
   height: 100%;
 }
-main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container {
+main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container {
   width: 110px;
   position: relative;
   background: none;
@@ -104,10 +113,10 @@ main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-r
   display: flex;
   flex-direction: column;
 }
-main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4, main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container del, main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container span {
+main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4, main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container del, main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container span {
   background: none;
 }
-main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4.luxury-rooms-offers-container-info-price__price-before {
+main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4.luxury-rooms-offers-container-info-price__price-before {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   font-size: 1.4375em;
@@ -116,17 +125,114 @@ main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-r
   background: none;
   align-self: flex-end;
 }
-main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4.luxury-rooms-offers-container-info-price__price-before span {
+main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4.luxury-rooms-offers-container-info-price__price-before span {
   background: none;
   font-size: 11px;
 }
-main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4.luxury-rooms-offers-container-info-price__price-after {
+main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4.luxury-rooms-offers-container-info-price__price-after {
   font-family: "Archivo", sans-serif;
   font-size: 1.875em;
   font-weight: 700;
   line-height: 33px;
   color: rgb(222, 87, 119);
 }
-main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4.luxury-rooms-offers-container-info-price__price-after span {
+main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4.luxury-rooms-offers-container-info-price__price-after span {
   font-size: 11px;
+}
+
+@media screen and (min-width: 1000px) {
+  main section.luxury-rooms-offers {
+    margin-top: 100px;
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 120px;
+    box-shadow: none;
+  }
+  main section.luxury-rooms-offers div.luxury-rooms-offers__container {
+    width: 80%;
+    z-index: 2;
+    padding: 40px 60px;
+    margin-top: 300px;
+    border-top: 5px solid rgb(189, 172, 141);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main section.luxury-rooms-offers div.luxury-rooms-offers__container div.container-info {
+    width: 100%;
+  }
+  main section.luxury-rooms-offers div.luxury-rooms-offers__container div.container-info h2.luxury-rooms-offers-container__h2 {
+    border-bottom: 2px solid rgb(236, 236, 236);
+    width: 200%;
+    margin-bottom: 36px;
+  }
+  main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__amenities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 145px;
+    padding: 10px;
+  }
+  main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__amenities div.container-icons {
+    display: flex;
+    width: 90%;
+  }
+  main section.luxury-rooms-offers div.luxury-rooms-offers__container div.luxury-rooms-offers-container__amenities div.container-icons div.room-details-amenities__icon-container {
+    width: 70%;
+  }
+  main section.luxury-rooms-offers button.luxury-rooms-offers-container__button {
+    display: block;
+    position: relative;
+    top: -70px;
+    z-index: 2;
+    left: 135px;
+    width: 25%;
+  }
+  main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price {
+    width: 90%;
+    height: 200px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price img.luxury-rooms-offers-container-info-price__img {
+    width: 100%;
+    height: 570px;
+  }
+  main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container {
+    width: 110px;
+    position: relative;
+    background: none;
+    top: -30%;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    transform: translateX(50%) translateY(90%);
+  }
+  main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4, main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container del, main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container span {
+    background: none;
+  }
+  main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4.luxury-rooms-offers-container-info-price__price-before {
+    font-family: "Archivo", sans-serif;
+    font-weight: 700;
+    font-size: 1.4375em;
+    line-height: 25px;
+    color: rgb(190, 173, 142);
+    background: none;
+    align-self: flex-end;
+  }
+  main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4.luxury-rooms-offers-container-info-price__price-before span {
+    background: none;
+    font-size: 11px;
+  }
+  main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4.luxury-rooms-offers-container-info-price__price-after {
+    font-family: "Archivo", sans-serif;
+    font-size: 1.875em;
+    font-weight: 700;
+    line-height: 33px;
+    color: rgb(222, 87, 119);
+  }
+  main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4.luxury-rooms-offers-container-info-price__price-after span {
+    font-size: 11px;
+  }
 }/*# sourceMappingURL=section-luxury-rooms-offers.css.map */
