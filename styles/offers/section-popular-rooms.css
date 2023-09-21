@@ -10,7 +10,7 @@ main section.popular-rooms {
   background: rgb(34, 34, 34);
   height: auto;
 }
-main section.popular-rooms h3.popular-rooms__h3 {
+main section.popular-rooms h2.popular-rooms__h2 {
   margin-top: 50px;
   margin-bottom: 30px;
   font-family: "Archivo", sans-serif;
@@ -21,7 +21,7 @@ main section.popular-rooms h3.popular-rooms__h3 {
   text-transform: uppercase;
   font-weight: 500;
 }
-main section.popular-rooms h2.popular-rooms__h2 {
+main section.popular-rooms h3.popular-rooms__h3 {
   margin-bottom: 50px;
   font-size: "Old Standard TT", sans-serif;
   font-weight: 400;
@@ -42,7 +42,9 @@ main section.popular-rooms div.rooms-list__room {
 main section.popular-rooms div.rooms-list__room div#swipper-rooms-offers {
   width: 100%;
   height: auto;
+  margin: auto;
   margin-bottom: 50px;
+  max-width: 600px;
 }
 main section.popular-rooms div.rooms-list__room div#swipper-rooms-offers img.swiper-slide__img {
   width: 100%;

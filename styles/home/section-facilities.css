@@ -5,7 +5,7 @@ main section.facilities {
   width: 100%;
   margin-bottom: 40px;
 }
-main section.facilities h4.facilities__h4 {
+main section.facilities h2.facilities__h2 {
   background: none;
   font-size: 0.875em;
   color: rgb(119, 119, 119);
@@ -19,7 +19,7 @@ main section.facilities h4.facilities__h4 {
   width: 100%;
   text-align: center;
 }
-main section.facilities h2.facilities__h2 {
+main section.facilities h4.facilities__h4 {
   font-size: 3.5em;
   font-family: "Old Standard TT", sans-serif;
   letter-spacing: -1.2px;

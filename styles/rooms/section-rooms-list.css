@@ -17,6 +17,7 @@ main section.rooms__list div.rooms-list-grid__container div.rooms-list__room {
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+  max-width: 600px;
 }
 main section.rooms__list div.rooms-list-grid__container div.rooms-list__room img.rooms-list-room__img {
   width: 100%;
@@ -97,6 +98,10 @@ main section.rooms__list div.rooms-list-grid__container div#swipper-rooms-roomsp
 }
 
 @media screen and (min-width: 1000px) {
+  main section.rooms__list {
+    max-width: 1300px;
+    margin: auto;
+  }
   main section.rooms__list div.rooms-list-grid__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

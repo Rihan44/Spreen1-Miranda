@@ -6,14 +6,16 @@ main section.room-details__type {
   flex-direction: column;
   padding: 10px;
   width: 100%;
+  margin: auto;
   margin-top: 30px;
+  max-width: 600px;
 }
 main section.room-details__type div.room-details-type__info {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-main section.room-details__type div.room-details-type__info h4.room-details-type-info__h4 {
+main section.room-details__type div.room-details-type__info h2.room-details-type-info__h2 {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   font-size: 0.875em;
@@ -22,7 +24,7 @@ main section.room-details__type div.room-details-type__info h4.room-details-type
   color: rgb(119, 119, 119);
   margin-bottom: 10px;
 }
-main section.room-details__type div.room-details-type__info h2.room-details-type-info__h2 {
+main section.room-details__type div.room-details-type__info h4.room-details-type-info__h4 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
   font-size: 2.5em;
@@ -155,6 +157,7 @@ main section.room-details__type div.modal-rooms-details.modal-rooms-details butt
     display: flex;
     flex-direction: column;
     padding: 60px;
+    max-width: 1700px;
   }
   main section.room-details__type div.room-details-type__availability {
     width: 30%;

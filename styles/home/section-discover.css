@@ -18,7 +18,7 @@ main section.discover div.discover__titlebox {
   padding: 20px;
   padding-bottom: 120px;
 }
-main section.discover div.discover__titlebox h4.discover-titlebox__about {
+main section.discover div.discover__titlebox h2.discover-titlebox__about {
   width: 100%;
   background: none;
   font-size: 0.875em;
@@ -31,7 +31,7 @@ main section.discover div.discover__titlebox h4.discover-titlebox__about {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-main section.discover div.discover__titlebox h2.discover-titlebox__title {
+main section.discover div.discover__titlebox h4.discover-titlebox__title {
   width: 100%;
   background: none;
   font-family: "Old Standard TT", sans-serif;
@@ -198,7 +198,7 @@ main section.discover div.discover-rooms {
   max-width: 800px;
   margin: auto;
 }
-main section.discover div.discover-rooms h4.discover-rooms__h4 {
+main section.discover div.discover-rooms h2.discover-rooms__h2 {
   background: none;
   font-size: 0.875em;
   color: rgb(119, 119, 119);
@@ -210,7 +210,7 @@ main section.discover div.discover-rooms h4.discover-rooms__h4 {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-main section.discover div.discover-rooms h2.discover-rooms__h2 {
+main section.discover div.discover-rooms h4.discover-rooms__h4 {
   font-size: 3.5em;
   font-family: "Old Standard TT", sans-serif;
   letter-spacing: -1.2px;

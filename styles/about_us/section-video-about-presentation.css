@@ -12,8 +12,9 @@ main section.video-about__presentation {
 }
 main section.video-about__presentation iframe.video-about-presentation__iframe {
   width: 90%;
-  height: 186px;
+  height: 335px;
   margin-bottom: 30px;
+  max-width: 750px;
 }
 main section.video-about__presentation h3.video-about-presentation__title {
   width: 90%;
@@ -35,6 +36,7 @@ main section.video-about__presentation div.video-about-presentation__our-service
 }
 main section.video-about__presentation div.video-about-presentation__our-services div.video-about-presentation-our-services__container {
   width: 45%;
+  max-width: 170px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -73,6 +75,7 @@ main section.video-about__presentation div.video-about-presentation__our-service
     width: 100%;
     height: 650px;
     margin-bottom: 50px;
+    max-width: 1000px;
   }
   main section.video-about__presentation h3.video-about-presentation__title {
     width: 80%;

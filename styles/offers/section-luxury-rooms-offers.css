@@ -8,6 +8,7 @@ main section.luxury-rooms-offers {
   align-items: center;
   margin: auto;
   margin-top: 60px;
+  max-width: 650px;
   box-shadow: 0 14px 24px 0 rgba(184, 184, 184, 0.1);
 }
 main section.luxury-rooms-offers div.luxury-rooms-offers__container {
@@ -147,6 +148,7 @@ main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price d
     margin: auto;
     margin-top: 120px;
     box-shadow: none;
+    max-width: 1170px;
   }
   main section.luxury-rooms-offers div.luxury-rooms-offers__container {
     width: 80%;

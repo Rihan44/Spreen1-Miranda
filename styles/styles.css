@@ -461,7 +461,7 @@ main section.discover div.discover__titlebox {
   padding: 20px;
   padding-bottom: 120px;
 }
-main section.discover div.discover__titlebox h4.discover-titlebox__about {
+main section.discover div.discover__titlebox h2.discover-titlebox__about {
   width: 100%;
   background: none;
   font-size: 0.875em;
@@ -474,7 +474,7 @@ main section.discover div.discover__titlebox h4.discover-titlebox__about {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-main section.discover div.discover__titlebox h2.discover-titlebox__title {
+main section.discover div.discover__titlebox h4.discover-titlebox__title {
   width: 100%;
   background: none;
   font-family: "Old Standard TT", sans-serif;
@@ -641,7 +641,7 @@ main section.discover div.discover-rooms {
   max-width: 800px;
   margin: auto;
 }
-main section.discover div.discover-rooms h4.discover-rooms__h4 {
+main section.discover div.discover-rooms h2.discover-rooms__h2 {
   background: none;
   font-size: 0.875em;
   color: rgb(119, 119, 119);
@@ -653,7 +653,7 @@ main section.discover div.discover-rooms h4.discover-rooms__h4 {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-main section.discover div.discover-rooms h2.discover-rooms__h2 {
+main section.discover div.discover-rooms h4.discover-rooms__h4 {
   font-size: 3.5em;
   font-family: "Old Standard TT", sans-serif;
   letter-spacing: -1.2px;
@@ -875,7 +875,7 @@ main section.meet-video div.meet-video__container {
   width: 100%;
   background: none;
 }
-main section.meet-video div.meet-video__container h3.meet-video-container__h3 {
+main section.meet-video div.meet-video__container h2.meet-video-container__h2 {
   font-family: "Archivo", sans-serif;
   font-size: 0.875em;
   color: rgb(189, 172, 141);
@@ -886,7 +886,7 @@ main section.meet-video div.meet-video__container h3.meet-video-container__h3 {
   margin-bottom: 20px;
   margin-top: 40px;
 }
-main section.meet-video div.meet-video__container h2.meet-video-container__h2 {
+main section.meet-video div.meet-video__container h3.meet-video-container__h3 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
   font-size: 3.5em;
@@ -1006,7 +1006,7 @@ main section.facilities {
   width: 100%;
   margin-bottom: 40px;
 }
-main section.facilities h4.facilities__h4 {
+main section.facilities h2.facilities__h2 {
   background: none;
   font-size: 0.875em;
   color: rgb(119, 119, 119);
@@ -1020,7 +1020,7 @@ main section.facilities h4.facilities__h4 {
   width: 100%;
   text-align: center;
 }
-main section.facilities h2.facilities__h2 {
+main section.facilities h4.facilities__h4 {
   font-size: 3.5em;
   font-family: "Old Standard TT", sans-serif;
   letter-spacing: -1.2px;
@@ -1564,7 +1564,11 @@ footer {
   background-repeat: no-repeat;
   padding-top: 40px;
 }
-footer div.footer__titlebox {
+footer div.footer-container__socials {
+  max-width: 600px;
+  margin: auto;
+}
+footer div.footer-container__socials div.footer__titlebox {
   display: flex;
   justify-content: flex-start;
   padding: 20px;
@@ -1572,7 +1576,7 @@ footer div.footer__titlebox {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-footer div.footer__titlebox div.footer__boxlogo {
+footer div.footer-container__socials div.footer__titlebox div.footer__boxlogo {
   width: 80px;
   height: 80px;
   background: rgb(190, 173, 142);
@@ -1585,7 +1589,7 @@ footer div.footer__titlebox div.footer__boxlogo {
   font-size: 2.5em;
   box-shadow: 0 14px 24px 0 rgba(139, 139, 139, 0.15);
 }
-footer div.footer__titlebox h2.footer-titlebox__title {
+footer div.footer-container__socials div.footer__titlebox h2.footer-titlebox__title {
   background: none;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
@@ -1597,11 +1601,11 @@ footer div.footer__titlebox h2.footer-titlebox__title {
   justify-content: center;
   margin-left: 30px;
 }
-footer div.footer__titlebox h2.footer-titlebox__title span.footer-titlebox-title__span {
+footer div.footer-container__socials div.footer__titlebox h2.footer-titlebox__title span.footer-titlebox-title__span {
   font-weight: 400;
   background: none;
 }
-footer p.footer__paraph {
+footer div.footer-container__socials p.footer__paraph {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
   font-size: 1em;
@@ -1610,7 +1614,7 @@ footer p.footer__paraph {
   padding: 20px;
   background: none;
 }
-footer div.footer__socials {
+footer div.footer-container__socials div.footer__socials {
   display: flex;
   justify-content: flex-start;
   margin-left: 10px;
@@ -1619,16 +1623,16 @@ footer div.footer__socials {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-footer div.footer__socials a.footer-socials__link {
+footer div.footer-container__socials div.footer__socials a.footer-socials__link {
   color: rgb(119, 119, 119);
   background: none;
   transition: 0.3s;
 }
-footer div.footer__socials a.footer-socials__link i.fa-brands {
+footer div.footer-container__socials div.footer__socials a.footer-socials__link i.fa-brands {
   margin-right: 20px;
   font-size: 1.8em;
 }
-footer div.footer__socials a.footer-socials__link:hover {
+footer div.footer-container__socials div.footer__socials a.footer-socials__link:hover {
   color: rgb(190, 173, 142);
   transform: scale(1.1, 1.2);
 }
@@ -1641,6 +1645,8 @@ footer div.footer__services {
   background: url("../img/footer-mobile-bg.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  max-width: 600px;
+  margin: auto;
 }
 footer div.footer__services h3.footer-services__h3 {
   margin-bottom: 20px;
@@ -1653,7 +1659,7 @@ footer div.footer__services h3.footer-services__h3 {
 }
 footer div.footer__services div.footer-services__list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   background: url("../img/footer-mobile-bg.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -1682,6 +1688,8 @@ footer div.footer__contact {
   background: url("../img/footer-mobile-bg.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  max-width: 600px;
+  margin: auto;
 }
 footer div.footer__contact h3.footer-contact__h3 {
   margin-bottom: 30px;
@@ -1696,6 +1704,11 @@ footer div.footer__contact div.footer-contact__container {
   display: flex;
   margin-bottom: 30px;
   background: none;
+}
+@media screen and (min-width: 500px) {
+  footer div.footer__contact div.footer-contact__container {
+    justify-content: space-evenly;
+  }
 }
 footer div.footer__contact div.footer-contact__container img.footer-contact-container__img {
   margin-right: 30px;
@@ -1726,6 +1739,11 @@ footer div.footer__copyright {
   background: rgb(248, 248, 248);
   width: 100%;
   padding: 20px;
+}
+@media screen and (min-width: 600px) {
+  footer div.footer__copyright {
+    text-align: center;
+  }
 }
 footer div.footer__copyright p.footer-copyright__paraph {
   font-family: "Roboto", sans-serif;
@@ -2031,8 +2049,9 @@ main section.video-about__presentation {
 }
 main section.video-about__presentation iframe.video-about-presentation__iframe {
   width: 90%;
-  height: 186px;
+  height: 335px;
   margin-bottom: 30px;
+  max-width: 750px;
 }
 main section.video-about__presentation h3.video-about-presentation__title {
   width: 90%;
@@ -2054,6 +2073,7 @@ main section.video-about__presentation div.video-about-presentation__our-service
 }
 main section.video-about__presentation div.video-about-presentation__our-services div.video-about-presentation-our-services__container {
   width: 45%;
+  max-width: 170px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -2092,6 +2112,7 @@ main section.video-about__presentation div.video-about-presentation__our-service
     width: 100%;
     height: 650px;
     margin-bottom: 50px;
+    max-width: 1000px;
   }
   main section.video-about__presentation h3.video-about-presentation__title {
     width: 80%;
@@ -2128,6 +2149,7 @@ main section.restaurant div.restaurant__container {
   width: 90%;
   box-shadow: 0 14px 24px 0 rgba(184, 184, 184, 0.1);
   height: auto;
+  max-width: 750px;
 }
 main section.restaurant div.restaurant__container img.restaurant-container__img {
   width: 100%;
@@ -2136,7 +2158,7 @@ main section.restaurant div.restaurant__container img.restaurant-container__img 
 main section.restaurant div.restaurant__container div.restaurant-container__info {
   padding: 10px;
 }
-main section.restaurant div.restaurant__container div.restaurant-container__info h4.restaurant-container-info__h4 {
+main section.restaurant div.restaurant__container div.restaurant-container__info h2.restaurant-container-info__h2 {
   width: 100%;
   background: none;
   font-size: 0.875em;
@@ -2149,7 +2171,7 @@ main section.restaurant div.restaurant__container div.restaurant-container__info
   margin-bottom: 20px;
   margin-top: 20px;
 }
-main section.restaurant div.restaurant__container div.restaurant-container__info h2.restaurant-container-info__h2 {
+main section.restaurant div.restaurant__container div.restaurant-container__info h4.restaurant-container-info__h4 {
   width: 100%;
   background: none;
   font-family: "Old Standard TT", sans-serif;
@@ -2195,6 +2217,7 @@ main section.restaurant div.restaurant__container div.restaurant-container__info
     width: 100%;
     display: flex;
     flex-direction: row;
+    max-width: 1300px;
   }
   main section.restaurant div.restaurant__container img.restaurant-container__img {
     width: 50%;
@@ -2205,51 +2228,13 @@ main section.restaurant div.restaurant__container div.restaurant-container__info
     width: 50%;
   }
   main section.restaurant div.restaurant__container div.restaurant-container__info h4.restaurant-container-info__h4 {
-    width: 100%;
-    background: none;
-    font-size: 0.875em;
-    color: rgb(119, 119, 119);
-    font-family: "Archivo", sans-serif;
-    letter-spacing: 2.8px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 18px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  main section.restaurant div.restaurant__container div.restaurant-container__info h2.restaurant-container-info__h2 {
-    width: 100%;
-    background: none;
-    font-family: "Old Standard TT", sans-serif;
-    font-weight: 400;
-    font-size: 2.5em;
-    line-height: 60px;
-    letter-spacing: -1.2px;
-    color: rgb(34, 34, 34);
-    margin-bottom: 20px;
+    width: 70%;
   }
   main section.restaurant div.restaurant__container div.restaurant-container__info p.restaurant-container-info__paraph {
-    width: 100%;
-    font-family: "Archivo", sans-serif;
-    background: none;
-    font-size: 0.9em;
-    color: rgb(119, 119, 119);
-    margin-bottom: 30px;
-    line-height: 25px;
+    width: 80%;
   }
   main section.restaurant div.restaurant__container div.restaurant-container__info button.restaurant-container-info__button {
-    background: rgb(189, 172, 141);
-    border: none;
-    width: 65%;
-    padding: 20px;
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    font-size: 0.875em;
-    letter-spacing: 2.8px;
-    text-transform: uppercase;
-    font-family: "Archivo", sans-serif;
-    font-weight: 700;
-    margin-bottom: 10px;
+    width: 40%;
   }
 }
 main section.facilities-about-us {
@@ -2257,7 +2242,7 @@ main section.facilities-about-us {
   background: rgb(34, 34, 34);
   margin-top: 40px;
 }
-main section.facilities-about-us h4.facilities-about-us__h4 {
+main section.facilities-about-us h2.facilities-about-us__h2 {
   background: none;
   font-size: 0.875em;
   color: rgb(255, 255, 255);
@@ -2271,7 +2256,7 @@ main section.facilities-about-us h4.facilities-about-us__h4 {
   width: 100%;
   text-align: center;
 }
-main section.facilities-about-us h2.facilities-about-us__h2 {
+main section.facilities-about-us h4.facilities-about-us__h4 {
   font-size: 3.5em;
   font-family: "Old Standard TT", sans-serif;
   letter-spacing: -1.2px;
@@ -2288,6 +2273,7 @@ main section.facilities-about-us div#swiper-facilities-about-us {
   background: rgb(41, 41, 41);
   width: 90%;
   margin-bottom: 40px;
+  max-width: 700px;
 }
 main section.facilities-about-us div#swiper-facilities-about-us div.slider-facilities-about-us-articles {
   padding: 20px;
@@ -2313,9 +2299,6 @@ main section.facilities-about-us div#swiper-facilities-about-us div.slider-facil
   color: rgb(119, 119, 119);
   margin-bottom: 40px;
 }
-main section.facilities-about-us div#swiper-facilities-about-us div#swiper-facilities-about-us div.facilities-about-us-slide__article1 {
-  background: rgb(41, 41, 41);
-}
 main section.facilities-about-us div#swiper-facilities-about-us div.facilities-about-us-slide__article1 {
   background: url("../img/01-black.png");
   background-position: top right;
@@ -2330,6 +2313,7 @@ main section.facilities-about-us div#swiper-facilities-about-us div.facilities-a
   background-repeat: no-repeat;
   background-position-x: 90%;
   background-position-y: 10%;
+  background-color: rgb(41, 41, 41);
 }
 main section.facilities-about-us div#swiper-facilities-about-us div.facilities-about-us-slide__article3 {
   background: url("../img/03-black.png");
@@ -2337,6 +2321,7 @@ main section.facilities-about-us div#swiper-facilities-about-us div.facilities-a
   background-repeat: no-repeat;
   background-position-x: 90%;
   background-position-y: 10%;
+  background-color: rgb(41, 41, 41);
 }
 main section.facilities-about-us div#swiper-facilities-about-us div.facilities-about-us-slide__article4 {
   background: url("../img/04-black.png");
@@ -2344,6 +2329,7 @@ main section.facilities-about-us div#swiper-facilities-about-us div.facilities-a
   background-repeat: no-repeat;
   background-position-x: 90%;
   background-position-y: 10%;
+  background-color: rgb(41, 41, 41);
 }
 main section.facilities-about-us div#swiper-facilities-about-us div.facilities-about-us-slide__article5 {
   background: url("../img/05-black.png");
@@ -2351,6 +2337,7 @@ main section.facilities-about-us div#swiper-facilities-about-us div.facilities-a
   background-repeat: no-repeat;
   background-position-x: 90%;
   background-position-y: 10%;
+  background-color: rgb(41, 41, 41);
 }
 main section.facilities-about-us div#swiper-facilities-about-us div.facilities-about-us-slide__article6 {
   background: url("../img/06-black.png");
@@ -2358,6 +2345,7 @@ main section.facilities-about-us div#swiper-facilities-about-us div.facilities-a
   background-repeat: no-repeat;
   background-position-x: 90%;
   background-position-y: 10%;
+  background-color: rgb(41, 41, 41);
 }
 main section.facilities-about-us div#swiper-facilities-about-us div#facilities-about-us-bullets-pagination {
   background: none;
@@ -2477,7 +2465,7 @@ main section.counter {
   margin-top: 30px;
   position: relative;
 }
-main section.counter h4.counter__h4 {
+main section.counter h2.counter__h2 {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   font-size: 0.875em;
@@ -2485,23 +2473,37 @@ main section.counter h4.counter__h4 {
   letter-spacing: 2.8px;
   color: rgb(119, 119, 119);
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
-main section.counter h2.counter__h2 {
+@media screen and (min-width: 700px) {
+  main section.counter h2.counter__h2 {
+    margin: auto;
+    margin-bottom: 24px;
+  }
+}
+main section.counter h4.counter__h4 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
   font-size: 3.5em;
   line-height: 60px;
   letter-spacing: -1.2px;
   color: rgb(34, 34, 34);
-  margin-bottom: 50px;
+  margin-bottom: 36px;
+}
+@media screen and (min-width: 700px) {
+  main section.counter h4.counter__h4 {
+    margin: auto;
+    margin-bottom: 36px;
+  }
 }
 main section.counter div.counter-container__box {
   display: flex;
   width: 100%;
   justify-content: space-around;
   align-items: center;
+  margin: auto;
   margin-bottom: 40px;
+  max-width: 700px;
 }
 main section.counter div.counter-container__box h2.counter-container-info__h2 {
   font-size: 3.75em;
@@ -2527,10 +2529,14 @@ main section.counter div#swiper-counter {
   width: 95%;
   margin-top: 30px;
 }
-main section.counter div#swiper-counter img.swiper-slider-counter__img {
+main section.counter div#swiper-counter div.swiper-slide {
+  text-align: center;
+}
+main section.counter div#swiper-counter div.swiper-slide img.swiper-slider-counter__img {
   width: 100%;
-  height: 230px;
+  height: 335px;
   margin-bottom: 30px;
+  max-width: 700px;
 }
 main div#swiper-pagination-counter {
   background: none;
@@ -2543,18 +2549,20 @@ main div.swiper-counter-desktop {
   main section.counter {
     align-items: center;
   }
-  main section.counter h4.counter__h4 {
-    align-self: flex-start;
-    margin-left: 50px;
-  }
   main section.counter h2.counter__h2 {
     align-self: flex-start;
     margin-left: 50px;
+  }
+  main section.counter h4.counter__h4 {
+    align-self: flex-start;
+    margin-left: 50px;
+    margin-bottom: 43px;
   }
   main section.counter div.counter-container {
     display: flex;
     justify-content: space-around;
     width: 90%;
+    margin-bottom: 60px;
   }
   main section.counter div.counter-container div.counter-container__box {
     margin-left: 20px;
@@ -2574,9 +2582,11 @@ main div.swiper-counter-desktop {
   main section.counter div.swiper-counter-desktop div.swiper-wrapper-counter-desktop div.swiper-slide-counter {
     width: 45%;
     margin-right: 20px;
+    text-align: center;
   }
   main section.counter div.swiper-counter-desktop div.swiper-wrapper-counter-desktop div.swiper-slide-counter img.swiper-slider-counter__img {
     width: 100%;
+    max-width: 570px;
     height: 400px;
   }
 }
@@ -2692,6 +2702,7 @@ main section.rooms__list div.rooms-list-grid__container div.rooms-list__room {
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+  max-width: 600px;
 }
 main section.rooms__list div.rooms-list-grid__container div.rooms-list__room img.rooms-list-room__img {
   width: 100%;
@@ -2772,6 +2783,10 @@ main section.rooms__list div.rooms-list-grid__container div#swipper-rooms-roomsp
 }
 
 @media screen and (min-width: 1000px) {
+  main section.rooms__list {
+    max-width: 1300px;
+    margin: auto;
+  }
   main section.rooms__list div.rooms-list-grid__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -2864,14 +2879,16 @@ main section.room-details__type {
   flex-direction: column;
   padding: 10px;
   width: 100%;
+  margin: auto;
   margin-top: 30px;
+  max-width: 600px;
 }
 main section.room-details__type div.room-details-type__info {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-main section.room-details__type div.room-details-type__info h4.room-details-type-info__h4 {
+main section.room-details__type div.room-details-type__info h2.room-details-type-info__h2 {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   font-size: 0.875em;
@@ -2880,7 +2897,7 @@ main section.room-details__type div.room-details-type__info h4.room-details-type
   color: rgb(119, 119, 119);
   margin-bottom: 10px;
 }
-main section.room-details__type div.room-details-type__info h2.room-details-type-info__h2 {
+main section.room-details__type div.room-details-type__info h4.room-details-type-info__h4 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
   font-size: 2.5em;
@@ -3013,6 +3030,7 @@ main section.room-details__type div.modal-rooms-details.modal-rooms-details butt
     display: flex;
     flex-direction: column;
     padding: 60px;
+    max-width: 1700px;
   }
   main section.room-details__type div.room-details-type__availability {
     width: 30%;
@@ -3041,7 +3059,9 @@ main section.room-details__amenities {
   flex-direction: column;
   width: 100%;
   padding: 10px;
+  margin: auto;
   margin-top: 40px;
+  max-width: 600px;
 }
 main section.room-details__amenities h2.room-details-amenities__h2 {
   font-family: "Old Standard TT", sans-serif;
@@ -3085,6 +3105,7 @@ main section.room-details__amenities div.room-details-amenitie__container div.ro
 @media screen and (min-width: 1000px) {
   main section.room-details__amenities {
     width: 100%;
+    max-width: 1500px;
   }
   main section.room-details__amenities h2.room-details-amenities__h2 {
     margin-left: 120px;
@@ -3104,7 +3125,9 @@ main div.founder {
   flex-direction: column;
   padding: 20px;
   align-items: center;
+  margin: auto;
   margin-top: 60px;
+  max-width: 600px;
 }
 main div.founder div.founder__img-container {
   height: 180px;
@@ -3149,6 +3172,7 @@ main div.founder h3.founder__h3 {
   margin-bottom: 20px;
 }
 main div.founder p.founder__paraph {
+  width: 60%;
   font-family: "Archivo", sans-serif;
   font-size: 1em;
   line-height: 24px;
@@ -3169,6 +3193,8 @@ main section.cancellation-info {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  max-width: 600px;
+  margin: auto;
 }
 main section.cancellation-info h2.cancellation-info__h2 {
   font-family: "Old Standard TT", sans-serif;
@@ -3199,8 +3225,10 @@ main section.related-rooms {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin: auto;
   margin-top: 50px;
   align-items: center;
+  max-width: 700px;
 }
 main section.related-rooms h2.related-rooms__h2 {
   align-self: flex-start;
@@ -3335,6 +3363,7 @@ main section.related-rooms div.rooms-container-photos__dektop {
   }
   main section.related-rooms {
     margin-bottom: 0px;
+    max-width: 1400px;
   }
   main section.related-rooms h2.related-rooms__h2 {
     margin-left: 80px;
@@ -3432,6 +3461,7 @@ main section.luxury-rooms-offers {
   align-items: center;
   margin: auto;
   margin-top: 60px;
+  max-width: 650px;
   box-shadow: 0 14px 24px 0 rgba(184, 184, 184, 0.1);
 }
 main section.luxury-rooms-offers div.luxury-rooms-offers__container {
@@ -3571,6 +3601,7 @@ main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price d
     margin: auto;
     margin-top: 120px;
     box-shadow: none;
+    max-width: 1170px;
   }
   main section.luxury-rooms-offers div.luxury-rooms-offers__container {
     width: 80%;
@@ -3669,7 +3700,7 @@ main section.popular-rooms {
   background: rgb(34, 34, 34);
   height: auto;
 }
-main section.popular-rooms h3.popular-rooms__h3 {
+main section.popular-rooms h2.popular-rooms__h2 {
   margin-top: 50px;
   margin-bottom: 30px;
   font-family: "Archivo", sans-serif;
@@ -3680,7 +3711,7 @@ main section.popular-rooms h3.popular-rooms__h3 {
   text-transform: uppercase;
   font-weight: 500;
 }
-main section.popular-rooms h2.popular-rooms__h2 {
+main section.popular-rooms h3.popular-rooms__h3 {
   margin-bottom: 50px;
   font-size: "Old Standard TT", sans-serif;
   font-weight: 400;
@@ -3701,7 +3732,9 @@ main section.popular-rooms div.rooms-list__room {
 main section.popular-rooms div.rooms-list__room div#swipper-rooms-offers {
   width: 100%;
   height: auto;
+  margin: auto;
   margin-bottom: 50px;
+  max-width: 600px;
 }
 main section.popular-rooms div.rooms-list__room div#swipper-rooms-offers img.swiper-slide__img {
   width: 100%;
@@ -3909,7 +3942,9 @@ main section.popular-rooms div.rooms-container-photos__dektop {
 main div.contact-info {
   width: 100%;
   padding: 30px;
+  margin: auto;
   margin-top: 40px;
+  max-width: 500px;
 }
 main div.contact-info div.contact-info__container {
   width: 100%;
@@ -3969,6 +4004,7 @@ main div.contact-info div.contact-info__container:nth-child(3) {
     display: flex;
     height: 100px;
     justify-content: center;
+    max-width: 1300px;
   }
   main div.contact-info div.contact-info__container {
     width: 30%;
@@ -3981,23 +4017,26 @@ main div.contact-info div.contact-info__container:nth-child(3) {
     margin-left: 20px;
   }
 }
-main div.imagen-hotel {
+main div.mapa-hotel {
   width: 100%;
   text-align: center;
+  margin: auto;
   margin-top: 60px;
+  max-width: 600px;
 }
-main div.imagen-hotel img.imagen-hotel__img {
+main div.mapa-hotel iframe.mapa-hotel__iframe {
   width: 90%;
   height: 200px;
 }
 
 @media screen and (min-width: 1000px) {
-  main div.imagen-hotel {
+  main div.mapa-hotel {
     width: 100%;
     text-align: center;
     margin-top: 60px;
+    max-width: 1300px;
   }
-  main div.imagen-hotel img.imagen-hotel__img {
+  main div.mapa-hotel iframe.mapa-hotel__iframe {
     width: 80%;
     height: 700px;
   }
@@ -4007,7 +4046,9 @@ main div.contact-form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
   margin-top: 50px;
+  max-width: 600px;
 }
 main div.contact-form-container form.contact-form-container__formulario {
   display: flex;
@@ -4079,6 +4120,7 @@ main div.contact-form-container form.contact-form-container__formulario button.c
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    max-width: 1300px;
   }
   main div.contact-form-container form.contact-form-container__formulario {
     display: flex;

@@ -13,7 +13,7 @@ main section.meet-video div.meet-video__container {
   width: 100%;
   background: none;
 }
-main section.meet-video div.meet-video__container h3.meet-video-container__h3 {
+main section.meet-video div.meet-video__container h2.meet-video-container__h2 {
   font-family: "Archivo", sans-serif;
   font-size: 0.875em;
   color: rgb(189, 172, 141);
@@ -24,7 +24,7 @@ main section.meet-video div.meet-video__container h3.meet-video-container__h3 {
   margin-bottom: 20px;
   margin-top: 40px;
 }
-main section.meet-video div.meet-video__container h2.meet-video-container__h2 {
+main section.meet-video div.meet-video__container h3.meet-video-container__h3 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
   font-size: 3.5em;

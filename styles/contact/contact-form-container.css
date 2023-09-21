@@ -6,7 +6,9 @@ main div.contact-form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
   margin-top: 50px;
+  max-width: 600px;
 }
 main div.contact-form-container form.contact-form-container__formulario {
   display: flex;
@@ -78,6 +80,7 @@ main div.contact-form-container form.contact-form-container__formulario button.c
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    max-width: 1300px;
   }
   main div.contact-form-container form.contact-form-container__formulario {
     display: flex;

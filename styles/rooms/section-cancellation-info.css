@@ -6,6 +6,8 @@ main section.cancellation-info {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  max-width: 600px;
+  margin: auto;
 }
 main section.cancellation-info h2.cancellation-info__h2 {
   font-family: "Old Standard TT", sans-serif;

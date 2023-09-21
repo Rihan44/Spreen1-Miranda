@@ -10,7 +10,11 @@ footer {
   background-repeat: no-repeat;
   padding-top: 40px;
 }
-footer div.footer__titlebox {
+footer div.footer-container__socials {
+  max-width: 600px;
+  margin: auto;
+}
+footer div.footer-container__socials div.footer__titlebox {
   display: flex;
   justify-content: flex-start;
   padding: 20px;
@@ -18,7 +22,7 @@ footer div.footer__titlebox {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-footer div.footer__titlebox div.footer__boxlogo {
+footer div.footer-container__socials div.footer__titlebox div.footer__boxlogo {
   width: 80px;
   height: 80px;
   background: rgb(190, 173, 142);
@@ -31,7 +35,7 @@ footer div.footer__titlebox div.footer__boxlogo {
   font-size: 2.5em;
   box-shadow: 0 14px 24px 0 rgba(139, 139, 139, 0.15);
 }
-footer div.footer__titlebox h2.footer-titlebox__title {
+footer div.footer-container__socials div.footer__titlebox h2.footer-titlebox__title {
   background: none;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
@@ -43,11 +47,11 @@ footer div.footer__titlebox h2.footer-titlebox__title {
   justify-content: center;
   margin-left: 30px;
 }
-footer div.footer__titlebox h2.footer-titlebox__title span.footer-titlebox-title__span {
+footer div.footer-container__socials div.footer__titlebox h2.footer-titlebox__title span.footer-titlebox-title__span {
   font-weight: 400;
   background: none;
 }
-footer p.footer__paraph {
+footer div.footer-container__socials p.footer__paraph {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
   font-size: 1em;
@@ -56,7 +60,7 @@ footer p.footer__paraph {
   padding: 20px;
   background: none;
 }
-footer div.footer__socials {
+footer div.footer-container__socials div.footer__socials {
   display: flex;
   justify-content: flex-start;
   margin-left: 10px;
@@ -65,16 +69,16 @@ footer div.footer__socials {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-footer div.footer__socials a.footer-socials__link {
+footer div.footer-container__socials div.footer__socials a.footer-socials__link {
   color: rgb(119, 119, 119);
   background: none;
   transition: 0.3s;
 }
-footer div.footer__socials a.footer-socials__link i.fa-brands {
+footer div.footer-container__socials div.footer__socials a.footer-socials__link i.fa-brands {
   margin-right: 20px;
   font-size: 1.8em;
 }
-footer div.footer__socials a.footer-socials__link:hover {
+footer div.footer-container__socials div.footer__socials a.footer-socials__link:hover {
   color: rgb(190, 173, 142);
   transform: scale(1.1, 1.2);
 }
@@ -87,6 +91,8 @@ footer div.footer__services {
   background: url("../img/footer-mobile-bg.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  max-width: 600px;
+  margin: auto;
 }
 footer div.footer__services h3.footer-services__h3 {
   margin-bottom: 20px;
@@ -99,7 +105,7 @@ footer div.footer__services h3.footer-services__h3 {
 }
 footer div.footer__services div.footer-services__list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   background: url("../img/footer-mobile-bg.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -128,6 +134,8 @@ footer div.footer__contact {
   background: url("../img/footer-mobile-bg.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  max-width: 600px;
+  margin: auto;
 }
 footer div.footer__contact h3.footer-contact__h3 {
   margin-bottom: 30px;
@@ -142,6 +150,11 @@ footer div.footer__contact div.footer-contact__container {
   display: flex;
   margin-bottom: 30px;
   background: none;
+}
+@media screen and (min-width: 500px) {
+  footer div.footer__contact div.footer-contact__container {
+    justify-content: space-evenly;
+  }
 }
 footer div.footer__contact div.footer-contact__container img.footer-contact-container__img {
   margin-right: 30px;
@@ -172,6 +185,11 @@ footer div.footer__copyright {
   background: rgb(248, 248, 248);
   width: 100%;
   padding: 20px;
+}
+@media screen and (min-width: 600px) {
+  footer div.footer__copyright {
+    text-align: center;
+  }
 }
 footer div.footer__copyright p.footer-copyright__paraph {
   font-family: "Roboto", sans-serif;
