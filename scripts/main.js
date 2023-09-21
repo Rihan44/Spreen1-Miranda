@@ -123,7 +123,10 @@ function initSwiperFacilities() {
 
 }
 
-initSwiperFacilities();
+if(swiper__facilities != null) {
+    initSwiperFacilities();
+}
+
 
 let swiperMenu = new Swiper(".swiper-menu", {
     cssMode: true,
@@ -178,7 +181,10 @@ function initSwiperAbout() {
 
 }
 
-initSwiperAbout();
+if(initSwiperAbout != null){  
+    initSwiperAbout();
+}
+
 
 const swiperCounter = new Swiper('#swiper-counter', {
     direction: 'horizontal',

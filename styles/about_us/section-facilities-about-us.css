@@ -114,9 +114,6 @@ main section.facilities-about-us div#swiper-facilities-about-us div.facilities-a
 main section.facilities-about-us div#swiper-facilities-about-us div#facilities-about-us-bullets-pagination {
   background: none;
 }
-main section.facilities-about-us div.swiper-facilities-about-us__desktop {
-  display: none;
-}
 
 @media screen and (min-width: 1000px) {
   main section.facilities-about-us {
@@ -124,38 +121,37 @@ main section.facilities-about-us div.swiper-facilities-about-us__desktop {
     margin-bottom: 40px;
   }
   main section.facilities-about-us div#swiper-facilities-about-us {
-    display: none;
-  }
-  main section.facilities-about-us div.swiper-facilities-about-us__desktop {
     display: flex;
     background: rgb(34, 34, 34);
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 60px;
   }
-  main section.facilities-about-us div.swiper-facilities-about-us__desktop div, main section.facilities-about-us div.swiper-facilities-about-us__desktop h3, main section.facilities-about-us div.swiper-facilities-about-us__desktop img, main section.facilities-about-us div.swiper-facilities-about-us__desktop p {
+  main section.facilities-about-us div#swiper-facilities-about-us div, main section.facilities-about-us div#swiper-facilities-about-us h3, main section.facilities-about-us div#swiper-facilities-about-us img, main section.facilities-about-us div#swiper-facilities-about-us p {
     background: none;
   }
-  main section.facilities-about-us div.swiper-facilities-about-us__desktop div.swiper-wrapper-desktop {
+  main section.facilities-about-us div#swiper-facilities-about-us div.swiper-wrapper-about-us {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     justify-content: space-around;
+    gap: 2%;
   }
-  main section.facilities-about-us div.swiper-facilities-about-us__desktop div.swiper-wrapper-desktop div.slider-facilities-about-us-articles:hover {
+  main section.facilities-about-us div#swiper-facilities-about-us div.swiper-wrapper-about-us div.slider-facilities-about-us-articles:hover {
     transform: scale(1.2, 1.2);
   }
-  main section.facilities-about-us div.swiper-facilities-about-us__desktop div.swiper-wrapper-desktop div.slider-facilities-about-us-articles {
-    width: 30%;
+  main section.facilities-about-us div#swiper-facilities-about-us div.swiper-wrapper-about-us div.slider-facilities-about-us-articles {
+    width: 31.33%;
     padding: 20px;
     height: auto;
-    margin: 10px;
+    margin-bottom: 20px;
     transition: 0.5s;
   }
-  main section.facilities-about-us div.swiper-facilities-about-us__desktop div.swiper-wrapper-desktop div.slider-facilities-about-us-articles img.facilities-about-us-slide__img {
+  main section.facilities-about-us div#swiper-facilities-about-us div.swiper-wrapper-about-us div.slider-facilities-about-us-articles img.facilities-about-us-slide__img {
     background: none;
   }
-  main section.facilities-about-us div.swiper-facilities-about-us__desktop div.swiper-wrapper-desktop div.slider-facilities-about-us-articles h3.facilities-about-us-slide__h3 {
+  main section.facilities-about-us div#swiper-facilities-about-us div.swiper-wrapper-about-us div.slider-facilities-about-us-articles h3.facilities-about-us-slide__h3 {
     font-family: rgb(189, 172, 141);
     font-weight: 400;
     font-size: 1.875em;
@@ -165,59 +161,65 @@ main section.facilities-about-us div.swiper-facilities-about-us__desktop {
     margin-top: 40px;
     margin-bottom: 30px;
   }
-  main section.facilities-about-us div.swiper-facilities-about-us__desktop div.swiper-wrapper-desktop div.slider-facilities-about-us-articles p.facilities-about-us-slide__paraph {
+  main section.facilities-about-us div#swiper-facilities-about-us div.swiper-wrapper-about-us div.slider-facilities-about-us-articles p.facilities-about-us-slide__paraph {
     font-family: "Archivo", sans-serif;
     font-weight: 400;
     font-size: 0.875em;
     line-height: 24px;
     color: rgb(119, 119, 119);
   }
-  main section.facilities-about-us div.swiper-facilities-about-us__desktop div.swiper-wrapper-desktop div.facilities-about-us-slide__article1 {
+  main section.facilities-about-us div#swiper-facilities-about-us div.swiper-wrapper-about-us div.facilities-about-us-slide__article1 {
     background: url("../img/01-black.png");
     background-position: top right;
     background-repeat: no-repeat;
     background-position-x: 90%;
     background-position-y: 10%;
     background-color: rgb(41, 41, 41);
+    background-size: 100px;
   }
-  main section.facilities-about-us div.swiper-facilities-about-us__desktop div.swiper-wrapper-desktop div.facilities-about-us-slide__article2 {
+  main section.facilities-about-us div#swiper-facilities-about-us div.swiper-wrapper-about-us div.facilities-about-us-slide__article2 {
     background: url("../img/02-black.png");
     background-position: top right;
     background-repeat: no-repeat;
     background-position-x: 90%;
     background-position-y: 10%;
     background-color: rgb(41, 41, 41);
+    background-size: 100px;
   }
-  main section.facilities-about-us div.swiper-facilities-about-us__desktop div.swiper-wrapper-desktop div.facilities-about-us-slide__article3 {
+  main section.facilities-about-us div#swiper-facilities-about-us div.swiper-wrapper-about-us div.facilities-about-us-slide__article3 {
     background: url("../img/03-black.png");
     background-position: top right;
     background-repeat: no-repeat;
     background-position-x: 90%;
     background-position-y: 10%;
     background-color: rgb(41, 41, 41);
+    background-size: 100px;
   }
-  main section.facilities-about-us div.swiper-facilities-about-us__desktop div.swiper-wrapper-desktop div.facilities-about-us-slide__article4 {
+  main section.facilities-about-us div#swiper-facilities-about-us div.swiper-wrapper-about-us div.facilities-about-us-slide__article4 {
     background: url("../img/04-black.png");
     background-position: top right;
     background-repeat: no-repeat;
     background-position-x: 90%;
     background-position-y: 10%;
     background-color: rgb(41, 41, 41);
+    background-size: 100px;
   }
-  main section.facilities-about-us div.swiper-facilities-about-us__desktop div.swiper-wrapper-desktop div.facilities-about-us-slide__article5 {
+  main section.facilities-about-us div#swiper-facilities-about-us div.swiper-wrapper-about-us div.facilities-about-us-slide__article5 {
     background: url("../img/05-black.png");
     background-position: top right;
     background-repeat: no-repeat;
     background-position-x: 90%;
     background-position-y: 10%;
     background-color: rgb(41, 41, 41);
+    background-size: 100px;
   }
-  main section.facilities-about-us div.swiper-facilities-about-us__desktop div.swiper-wrapper-desktop div.facilities-about-us-slide__article6 {
+  main section.facilities-about-us div#swiper-facilities-about-us div.swiper-wrapper-about-us div.facilities-about-us-slide__article6 {
     background: url("../img/06-black.png");
     background-position: top right;
     background-repeat: no-repeat;
     background-position-x: 90%;
     background-position-y: 10%;
     background-color: rgb(41, 41, 41);
+    background-size: 100px;
   }
 }/*# sourceMappingURL=section-facilities-about-us.css.map */
