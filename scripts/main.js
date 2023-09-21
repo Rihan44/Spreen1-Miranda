@@ -282,11 +282,23 @@ if(swipper_rooms_offers != null){
 window.addEventListener('resize', () => {
     /* TODO HACER LO DEL NULL */
     initSwiperRooms();
-    initSwiperFacilities();
-    initSwiperAbout();
-    initSwiperCounter();
-    initSwiperRoomsDetails();
-    initSwiperRoomsOffers();
+    if(swiper__facilities != null) {
+        initSwiperFacilities();
+    }
+    if(swiper__facilities_about != null){  
+        initSwiperAbout();
+    }
+    if(swiper_counter != null){
+        initSwiperCounter();
+    }
+    
+    if(swiper_rooms_details != null){
+        initSwiperRoomsDetails();
+    }
+    
+    if(swipper_rooms_offers != null){
+        initSwiperRoomsOffers();
+    }
 })
 
 
