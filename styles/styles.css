@@ -2401,9 +2401,10 @@ main section.facilities-about-us div#swiper-facilities-about-us div#facilities-a
   main section.facilities-about-us div#swiper-facilities-about-us {
     display: flex;
     background: rgb(34, 34, 34);
-    width: 100%;
-    margin: 0 auto;
+    width: 90%;
+    margin: auto;
     margin-bottom: 60px;
+    max-width: 1300px;
   }
   main section.facilities-about-us div#swiper-facilities-about-us div, main section.facilities-about-us div#swiper-facilities-about-us h3, main section.facilities-about-us div#swiper-facilities-about-us img, main section.facilities-about-us div#swiper-facilities-about-us p {
     background: none;
@@ -2422,7 +2423,7 @@ main section.facilities-about-us div#swiper-facilities-about-us div#facilities-a
   main section.facilities-about-us div#swiper-facilities-about-us div.swiper-wrapper-about-us div.slider-facilities-about-us-articles {
     width: 31.33%;
     padding: 20px;
-    height: auto;
+    height: 349px;
     margin-bottom: 20px;
     transition: 0.5s;
   }
