@@ -4,6 +4,8 @@ let burguer_icon = document.getElementById('burguer__icon');
 let img_icon = document.getElementById('img_icon');
 let nav_menu = document.getElementById('nav_menu');
 let check_menu = true;
+let swiper__facilities = document.querySelector('.swiper__facilities');
+let swiper__wrapper = document.querySelector('.swiper-wrapper__facilities');
 
 img_icon.src = '../img/burguer_icon.png';
 
@@ -97,22 +99,31 @@ function initSwiperRooms() {
 initSwiperRooms();
 
 function initSwiperFacilities() {
-    let swiperFacilites = new Swiper('#swiper-facilities', {
-        direction: 'horizontal',
-        loop: true,
-        autoplay: {
-            delay: 3000
-        },
-        cssMode: true,
-        pagination: {
-            el: ".swiper-pagination",
-            type: "bullets",
-            clickable: true
-        }
-    
-    });
+    if (window.matchMedia("(max-width: 1000px").matches) {
+        swiper__facilities.classList.add('swiper');
+        let swiperFacilites = new Swiper('.swiper__facilities', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay: {
+                delay: 3000
+            },
+            cssMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "bullets",
+                clickable: true
+            }
+        
+        });
+    } else {
+        swiper__facilities.classList.remove("swiper");
+        swiper__wrapper.classList.remove("swiper-wrapper");
+        /* swiper__facilities.classList.add('facilities-container__desktop'); */
+    }
+
 }
 
+initSwiperFacilities();
 
 let swiperMenu = new Swiper(".swiper-menu", {
     cssMode: true,
@@ -222,6 +233,7 @@ const swiperRoomsOffers = new Swiper('#swipper-rooms-offers', {
 
 window.addEventListener('resize', () => {
     initSwiperRooms();
+    initSwiperFacilities();
 })
 
 
