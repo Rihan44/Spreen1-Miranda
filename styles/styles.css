@@ -3290,17 +3290,17 @@ main section.related-rooms div.rooms-list__room {
   align-items: center;
   border-top: 1px solid rgb(241, 241, 241);
 }
-main section.related-rooms div.rooms-list__room div#swipper-rooms-details {
+main section.related-rooms div.rooms-list__room div#swiper-rooms-details {
   width: 100%;
   height: auto;
   margin-bottom: 50px;
 }
-main section.related-rooms div.rooms-list__room div#swipper-rooms-details img.swiper-slide__img {
+main section.related-rooms div.rooms-list__room div#swiper-rooms-details img.swiper-slide__img {
   width: 100%;
   height: 270px;
   z-index: -3;
 }
-main section.related-rooms div.rooms-list__room div#swipper-rooms-details div#swiper-button-prev-rooms-details {
+main section.related-rooms div.rooms-list__room div#swiper-rooms-details div#swiper-button-prev-rooms-details {
   background: rgb(255, 255, 255);
   width: 32px;
   height: 32px;
@@ -3308,15 +3308,15 @@ main section.related-rooms div.rooms-list__room div#swipper-rooms-details div#sw
   color: rgb(34, 34, 34);
   top: 180px;
 }
-main section.related-rooms div.rooms-list__room div#swipper-rooms-details div#swiper-button-prev-rooms-details::after, main section.related-rooms div.rooms-list__room div#swipper-rooms-details .swiper-rtl #swiper-button-prev-rooms-details::after {
+main section.related-rooms div.rooms-list__room div#swiper-rooms-details div#swiper-button-prev-rooms-details::after, main section.related-rooms div.rooms-list__room div#swiper-rooms-details .swiper-rtl #swiper-button-prev-rooms-details::after {
   content: "prev";
   font-size: 1.1em;
 }
-main section.related-rooms div.rooms-list__room div#swipper-rooms-details div#swiper-button-prev-rooms-details:hover {
+main section.related-rooms div.rooms-list__room div#swiper-rooms-details div#swiper-button-prev-rooms-details:hover {
   background: rgb(189, 172, 141);
   color: rgb(255, 255, 255);
 }
-main section.related-rooms div.rooms-list__room div#swipper-rooms-details div#swiper-button-next-rooms-details {
+main section.related-rooms div.rooms-list__room div#swiper-rooms-details div#swiper-button-next-rooms-details {
   background: rgb(255, 255, 255);
   width: 32px;
   height: 32px;
@@ -3324,15 +3324,15 @@ main section.related-rooms div.rooms-list__room div#swipper-rooms-details div#sw
   color: rgb(34, 34, 34);
   top: 180px;
 }
-main section.related-rooms div.rooms-list__room div#swipper-rooms-details div#swiper-button-next-rooms-details::after, main section.related-rooms div.rooms-list__room div#swipper-rooms-details .swiper-rtl #swiper-button-next-rooms-details::after {
+main section.related-rooms div.rooms-list__room div#swiper-rooms-details div#swiper-button-next-rooms-details::after, main section.related-rooms div.rooms-list__room div#swiper-rooms-details .swiper-rtl #swiper-button-next-rooms-details::after {
   content: "next";
   font-size: 1.1em;
 }
-main section.related-rooms div.rooms-list__room div#swipper-rooms-details div#swiper-button-next-rooms-details:hover {
+main section.related-rooms div.rooms-list__room div#swiper-rooms-details div#swiper-button-next-rooms-details:hover {
   background: rgb(189, 172, 141);
   color: rgb(255, 255, 255);
 }
-main section.related-rooms div.rooms-list__room div#swipper-rooms-details div.discover-rooms__icons {
+main section.related-rooms div.rooms-list__room div#swiper-rooms-details div.discover-rooms__icons {
   width: 80%;
   background: rgb(255, 255, 255);
   display: flex;
@@ -3344,17 +3344,17 @@ main section.related-rooms div.rooms-list__room div#swipper-rooms-details div.di
   transform: translateX(12%);
   box-shadow: 0 8px 16px 0 rgba(138, 138, 138, 0.05);
 }
-main section.related-rooms div.rooms-list__room div#swipper-rooms-details div.discover-rooms__icons img.discover-rooms-icons__img {
+main section.related-rooms div.rooms-list__room div#swiper-rooms-details div.discover-rooms__icons img.discover-rooms-icons__img {
   width: 15px;
   height: 15px;
 }
-main section.related-rooms div.rooms-list__room div#swipper-rooms-details div.box-container {
+main section.related-rooms div.rooms-list__room div#swiper-rooms-details div.box-container {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
   align-items: center;
 }
-main section.related-rooms div.rooms-list__room div#swipper-rooms-details div.box-container h3.rooms-list-room__h3 {
+main section.related-rooms div.rooms-list__room div#swiper-rooms-details div.box-container h3.rooms-list-room__h3 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
   font-size: 1.5em;
@@ -3364,7 +3364,7 @@ main section.related-rooms div.rooms-list__room div#swipper-rooms-details div.bo
   margin-bottom: 20px;
   background: none;
 }
-main section.related-rooms div.rooms-list__room div#swipper-rooms-details div.box-container p.rooms-list-room__paraph {
+main section.related-rooms div.rooms-list__room div#swiper-rooms-details div.box-container p.rooms-list-room__paraph {
   font-family: "Roboto", sans-serif;
   font-size: 0.875em;
   line-height: 24px;
@@ -3374,19 +3374,19 @@ main section.related-rooms div.rooms-list__room div#swipper-rooms-details div.bo
   margin-bottom: 20px;
   background: none;
 }
-main section.related-rooms div.rooms-list__room div#swipper-rooms-details div.box-container div.rooms-list-room__price-info {
+main section.related-rooms div.rooms-list__room div#swiper-rooms-details div.box-container div.rooms-list-room__price-info {
   display: flex;
   width: 60%;
   justify-content: space-between;
 }
-main section.related-rooms div.rooms-list__room div#swipper-rooms-details div.box-container div.rooms-list-room__price-info h2.rooms-list-room-price-info__h2 {
+main section.related-rooms div.rooms-list__room div#swiper-rooms-details div.box-container div.rooms-list-room__price-info h2.rooms-list-room-price-info__h2 {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   font-size: 1em;
   color: rgb(190, 173, 142);
   line-height: 18px;
 }
-main section.related-rooms div.rooms-list__room div#swipper-rooms-details div.box-container div.rooms-list-room__price-info button.rooms-list-room-price-info__button {
+main section.related-rooms div.rooms-list__room div#swiper-rooms-details div.box-container div.rooms-list-room__price-info button.rooms-list-room-price-info__button {
   cursor: pointer;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
@@ -3394,9 +3394,6 @@ main section.related-rooms div.rooms-list__room div#swipper-rooms-details div.bo
   line-height: 18px;
   color: rgb(189, 189, 189);
   border: none;
-}
-main section.related-rooms div.rooms-container-photos__dektop {
-  display: none;
 }
 
 @media screen and (min-width: 1000px) {
@@ -3413,22 +3410,22 @@ main section.related-rooms div.rooms-container-photos__dektop {
   main section.related-rooms div.rooms-list__room {
     width: 80%;
   }
-  main section.related-rooms div.rooms-list__room div.rooms-container-photos__dektop {
+  main section.related-rooms div.rooms-list__room div.swiper-wrapper__rooms-details {
     width: 100%;
     height: auto;
     margin-bottom: 50px;
     display: flex;
     justify-content: space-around;
   }
-  main section.related-rooms div.rooms-list__room div.rooms-container-photos__dektop div.swiper-slide {
+  main section.related-rooms div.rooms-list__room div.swiper-wrapper__rooms-details div.swiper-slide {
     width: 45%;
   }
-  main section.related-rooms div.rooms-list__room div.rooms-container-photos__dektop img.swiper-slide__img {
+  main section.related-rooms div.rooms-list__room div.swiper-wrapper__rooms-details img.swiper-slide__img {
     width: 100%;
     height: 370px;
     z-index: -3;
   }
-  main section.related-rooms div.rooms-list__room div.rooms-container-photos__dektop div.discover-rooms__icons {
+  main section.related-rooms div.rooms-list__room div.swiper-wrapper__rooms-details div.discover-rooms__icons {
     width: 80%;
     background: rgb(255, 255, 255);
     display: flex;
@@ -3440,17 +3437,17 @@ main section.related-rooms div.rooms-container-photos__dektop {
     right: -30px;
     box-shadow: 0 8px 16px 0 rgba(138, 138, 138, 0.05);
   }
-  main section.related-rooms div.rooms-list__room div.rooms-container-photos__dektop div.discover-rooms__icons img.discover-rooms-icons__img {
+  main section.related-rooms div.rooms-list__room div.swiper-wrapper__rooms-details div.discover-rooms__icons img.discover-rooms-icons__img {
     width: 15px;
     height: 15px;
   }
-  main section.related-rooms div.rooms-list__room div.rooms-container-photos__dektop div.box-container {
+  main section.related-rooms div.rooms-list__room div.swiper-wrapper__rooms-details div.box-container {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
     align-items: center;
   }
-  main section.related-rooms div.rooms-list__room div.rooms-container-photos__dektop div.box-container h3.rooms-list-room__h3 {
+  main section.related-rooms div.rooms-list__room div.swiper-wrapper__rooms-details div.box-container h3.rooms-list-room__h3 {
     font-family: "Old Standard TT", sans-serif;
     font-weight: 400;
     font-size: 1.5em;
@@ -3460,7 +3457,7 @@ main section.related-rooms div.rooms-container-photos__dektop {
     margin-bottom: 20px;
     background: none;
   }
-  main section.related-rooms div.rooms-list__room div.rooms-container-photos__dektop div.box-container p.rooms-list-room__paraph {
+  main section.related-rooms div.rooms-list__room div.swiper-wrapper__rooms-details div.box-container p.rooms-list-room__paraph {
     font-family: "Roboto", sans-serif;
     font-size: 0.875em;
     line-height: 24px;
@@ -3470,19 +3467,19 @@ main section.related-rooms div.rooms-container-photos__dektop {
     margin-bottom: 20px;
     background: none;
   }
-  main section.related-rooms div.rooms-list__room div.rooms-container-photos__dektop div.box-container div.rooms-list-room__price-info {
+  main section.related-rooms div.rooms-list__room div.swiper-wrapper__rooms-details div.box-container div.rooms-list-room__price-info {
     display: flex;
     width: 60%;
     justify-content: space-between;
   }
-  main section.related-rooms div.rooms-list__room div.rooms-container-photos__dektop div.box-container div.rooms-list-room__price-info h2.rooms-list-room-price-info__h2 {
+  main section.related-rooms div.rooms-list__room div.swiper-wrapper__rooms-details div.box-container div.rooms-list-room__price-info h2.rooms-list-room-price-info__h2 {
     font-family: "Archivo", sans-serif;
     font-weight: 700;
     font-size: 1em;
     color: rgb(190, 173, 142);
     line-height: 18px;
   }
-  main section.related-rooms div.rooms-list__room div.rooms-container-photos__dektop div.box-container div.rooms-list-room__price-info button.rooms-list-room-price-info__button {
+  main section.related-rooms div.rooms-list__room div.swiper-wrapper__rooms-details div.box-container div.rooms-list-room__price-info button.rooms-list-room-price-info__button {
     cursor: pointer;
     font-family: "Archivo", sans-serif;
     font-weight: 700;
@@ -3490,9 +3487,6 @@ main section.related-rooms div.rooms-container-photos__dektop {
     line-height: 18px;
     color: rgb(189, 189, 189);
     border: none;
-  }
-  main section.related-rooms div#swipper-rooms-details {
-    display: none;
   }
 }
 /* OFFERS STYLES */

@@ -181,7 +181,7 @@ function initSwiperAbout() {
 
 }
 
-if(initSwiperAbout != null){  
+if(swiper__facilities_about != null){  
     initSwiperAbout();
 }
 
@@ -192,7 +192,7 @@ let swiper_wrapper_counter = document.querySelector('.swiper-wrapper__counter');
 function initSwiperCounter() {
     if (window.matchMedia("(max-width: 1000px").matches) {
         swiper_counter.classList.add('swiper');
-        const swiperCounter = new Swiper('#swiper-counter', {
+        let swiperCounter = new Swiper('#swiper-counter', {
             direction: 'horizontal',
         
             cssMode: true,
@@ -215,41 +215,38 @@ if(swiper_counter != null){
     initSwiperCounter();
 }
 
-/* ROOMS */
-const swiper = new Swiper('#swipper-rooms-roomspage', {
-    direction: 'horizontal',
-    loop: true,
-
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + (index + 1) + "</span>";
-        },
-    },
-
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-});
-
-
-
 /* SWIPER ROOMS DETAILS */
-const swiperRoomsDetails = new Swiper('#swipper-rooms-details', {
-    direction: 'horizontal',
-    loop: true,
-    autoplay: {
-        delay: 3000
-    },
+ 
+let swiper_rooms_details = document.querySelector('#swiper-rooms-details');
+let swiper_wrapper__rooms_details = document.querySelector('.swiper-wrapper__rooms-details');
 
-    navigation: {
-        nextEl: '#swiper-button-next-rooms-details',
-        prevEl: '#swiper-button-prev-rooms-details',
+function initSwiperRoomsDetails() {
+    if (window.matchMedia("(max-width: 1000px").matches) {
+        swiper_rooms_details.classList.add('swiper');
+        let swiperRoomsDetails = new Swiper('#swiper-rooms-details', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay: {
+                delay: 3000
+            },
+
+            navigation: {
+                nextEl: '#swiper-button-next-rooms-details',
+                prevEl: '#swiper-button-prev-rooms-details',
+            }
+
+        });
+    } else {
+        swiper_rooms_details.classList.remove("swiper");
+        swiper_wrapper__rooms_details.classList.remove("swiper-wrapper");
     }
 
-});
+}
+
+if(swiper_rooms_details != null){
+    initSwiperRoomsDetails();
+}
+
 
 /* OFFERS */
 const swiperRoomsOffers = new Swiper('#swipper-rooms-offers', {
@@ -271,6 +268,7 @@ window.addEventListener('resize', () => {
     initSwiperFacilities();
     initSwiperAbout();
     initSwiperCounter();
+    initSwiperRoomsDetails();
 })
 
 
