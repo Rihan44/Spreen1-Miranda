@@ -103,15 +103,14 @@ let swiper__wrapper = document.querySelector('.swiper-wrapper__facilities');
 function initSwiperFacilities() {
     if (window.matchMedia("(max-width: 1000px").matches) {
         swiper__facilities.classList.add('swiper');
-        let swiperFacilites = new Swiper('.swiper__facilities', {
+        let swiperFacilites = new Swiper('#swiper__facilities', {
             direction: 'horizontal',
             loop: true,
             autoplay: {
                 delay: 3000
             },
-            cssMode: true,
             pagination: {
-                el: ".swiper-pagination",
+                el: "#facilities-bullets-pagination",
                 type: "bullets",
                 clickable: true
             }
@@ -153,20 +152,33 @@ let swiperImagesFood = new Swiper('.swiper-images-food-slider', {
 
 /* SWIPER ABOUT US */
 
-const swiperFacilitesAboutUs = new Swiper('#swiper-facilities-about-us', {
-    direction: 'horizontal',
-    loop: true,
-    autoplay: {
-        delay: 3000
-    },
-    cssMode: true,
-    pagination: {
-        el: ".swiper-pagination",
-        type: "bullets",
-        clickable: true
+let swiper__facilities_about = document.querySelector('.swiper-facilities-about-us');
+let swiper__wrapper_about = document.querySelector('.swiper-wrapper-about-us');
+
+function initSwiperAbout() {
+    if (window.matchMedia("(max-width: 1000px").matches) {
+        swiper__facilities_about.classList.add('swiper');
+        let swiperFacilitesAboutUs = new Swiper('#swiper-facilities-about-us', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay: {
+                delay: 3000
+            },
+            pagination: {
+                el: "#facilities-about-us-bullets-pagination",
+                type: "bullets",
+                clickable: true
+            }
+        
+        });
+    } else {
+        swiper__facilities_about.classList.remove("swiper");
+        swiper__wrapper_about.classList.remove("swiper-wrapper");
     }
 
-});
+}
+
+initSwiperAbout();
 
 const swiperCounter = new Swiper('#swiper-counter', {
     direction: 'horizontal',
@@ -235,6 +247,7 @@ const swiperRoomsOffers = new Swiper('#swipper-rooms-offers', {
 window.addEventListener('resize', () => {
     initSwiperRooms();
     initSwiperFacilities();
+    initSwiperAbout();
 })
 
 
