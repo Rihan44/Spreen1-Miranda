@@ -11,6 +11,8 @@ main
         div.meet-video__container
             width: 100%
             background: none
+            margin: auto
+            max-width: 700px
             h2.meet-video-container__h2
                 font-family: $fontPrincipal
                 font-size: 0.875em
@@ -40,9 +42,13 @@ main
                 display: none
         iframe.meet-video__iframe
             width: 100%
+            margin: auto
+            max-width: 700px
             margin-bottom: 40px
+            height: 270px
         button.meet-video__button
             width: 60%
+            max-width: 300px
             padding: 20px
             margin-bottom: 20px
             cursor: pointer
@@ -54,6 +60,9 @@ main
             font-family: $fontPrincipal
             font-weight: 700
             background: rgba(190, 173, 142, 1)
+            @media screen and ( min-width: 700px )
+                margin: auto
+                margin-bottom: 20px
         div.meet-video__background-gold-desktop
             display: none
 @media screen and (min-width: 1000px)
@@ -68,6 +77,7 @@ main
                 width: 50%
                 background: none
                 margin-right: 40px
+                max-width: 1300px
                 h3.meet-video-container__h3
                     font-family: $fontPrincipal
                     font-size: 0.875em

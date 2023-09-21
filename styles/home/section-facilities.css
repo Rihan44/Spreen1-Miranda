@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 main section.facilities {
   width: 100%;
+  max-width: 700px;
+  margin: auto;
   margin-bottom: 40px;
 }
 main section.facilities h2.facilities__h2 {
@@ -100,6 +102,7 @@ main section.facilities div.facilities-container__desktop {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1300px;
   }
   main section.facilities div.swiper-wrapper__facilities {
     display: flex;

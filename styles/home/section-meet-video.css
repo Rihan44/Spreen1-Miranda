@@ -12,6 +12,8 @@ main section.meet-video {
 main section.meet-video div.meet-video__container {
   width: 100%;
   background: none;
+  margin: auto;
+  max-width: 700px;
 }
 main section.meet-video div.meet-video__container h2.meet-video-container__h2 {
   font-family: "Archivo", sans-serif;
@@ -46,10 +48,14 @@ main section.meet-video div.meet-video__container button.meet-video-container__b
 }
 main section.meet-video iframe.meet-video__iframe {
   width: 100%;
+  margin: auto;
+  max-width: 700px;
   margin-bottom: 40px;
+  height: 270px;
 }
 main section.meet-video button.meet-video__button {
   width: 60%;
+  max-width: 300px;
   padding: 20px;
   margin-bottom: 20px;
   cursor: pointer;
@@ -61,6 +67,12 @@ main section.meet-video button.meet-video__button {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   background: rgb(190, 173, 142);
+}
+@media screen and (min-width: 700px) {
+  main section.meet-video button.meet-video__button {
+    margin: auto;
+    margin-bottom: 20px;
+  }
 }
 main section.meet-video div.meet-video__background-gold-desktop {
   display: none;
@@ -78,6 +90,7 @@ main section.meet-video div.meet-video__background-gold-desktop {
     width: 50%;
     background: none;
     margin-right: 40px;
+    max-width: 1300px;
   }
   main section.meet-video div.meet-video__container h3.meet-video-container__h3 {
     font-family: "Archivo", sans-serif;
