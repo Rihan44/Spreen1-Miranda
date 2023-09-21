@@ -3975,6 +3975,12 @@ main section.popular-rooms div.rooms-list__room div#swipper-rooms-offers div.box
     color: rgb(189, 189, 189);
     border: none;
   }
+  main section.popular-rooms div.rooms-list__room div#swipper-rooms-offers div#swiper-button-prev-rooms-offers {
+    display: none;
+  }
+  main section.popular-rooms div.rooms-list__room div#swipper-rooms-offers div#swiper-button-next-rooms-offers {
+    display: none;
+  }
 }
 /* CONTACT STYLES */
 main div.contact-info {
