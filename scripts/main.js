@@ -186,18 +186,34 @@ if(initSwiperAbout != null){
 }
 
 
-const swiperCounter = new Swiper('#swiper-counter', {
-    direction: 'horizontal',
+let swiper_counter = document.querySelector('#swiper-counter');
+let swiper_wrapper_counter = document.querySelector('.swiper-wrapper__counter');
 
-    cssMode: true,
-
-    pagination: {
-        el: ".swiper-pagination",
-        type: "bullets",
-        clickable: true
+function initSwiperCounter() {
+    if (window.matchMedia("(max-width: 1000px").matches) {
+        swiper_counter.classList.add('swiper');
+        const swiperCounter = new Swiper('#swiper-counter', {
+            direction: 'horizontal',
+        
+            cssMode: true,
+        
+            pagination: {
+                el: "#swiper-pagination-counter",
+                type: "bullets",
+                clickable: true
+            }
+        
+        });
+    } else {
+        swiper_counter.classList.remove("swiper");
+        swiper_wrapper_counter.classList.remove("swiper-wrapper");
     }
 
-});
+} 
+
+if(swiper_counter != null){
+    initSwiperCounter();
+}
 
 /* ROOMS */
 const swiper = new Swiper('#swipper-rooms-roomspage', {
@@ -254,6 +270,7 @@ window.addEventListener('resize', () => {
     initSwiperRooms();
     initSwiperFacilities();
     initSwiperAbout();
+    initSwiperCounter();
 })
 
 

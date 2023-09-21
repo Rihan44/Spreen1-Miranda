@@ -82,12 +82,6 @@ main section.counter div#swiper-counter div.swiper-slide img.swiper-slider-count
   margin-bottom: 30px;
   max-width: 700px;
 }
-main div#swiper-pagination-counter {
-  background: none;
-}
-main div.swiper-counter-desktop {
-  display: none;
-}
 
 @media screen and (min-width: 1000px) {
   main section.counter {
@@ -112,23 +106,19 @@ main div.swiper-counter-desktop {
     margin-left: 20px;
   }
   main section.counter div#swiper-counter {
-    display: none;
-  }
-  main section.counter div.swiper-counter-desktop {
-    display: block;
     width: 100%;
   }
-  main section.counter div.swiper-counter-desktop div.swiper-wrapper-counter-desktop {
+  main section.counter div#swiper-counter div.swiper-wrapper__counter {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  main section.counter div.swiper-counter-desktop div.swiper-wrapper-counter-desktop div.swiper-slide-counter {
+  main section.counter div#swiper-counter div.swiper-wrapper__counter div.swiper-slide-counter {
     width: 45%;
     margin-right: 20px;
     text-align: center;
   }
-  main section.counter div.swiper-counter-desktop div.swiper-wrapper-counter-desktop div.swiper-slide-counter img.swiper-slider-counter__img {
+  main section.counter div#swiper-counter div.swiper-wrapper__counter div.swiper-slide-counter img.swiper-slider-counter__img {
     width: 100%;
     max-width: 570px;
     height: 400px;

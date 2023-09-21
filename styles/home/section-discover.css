@@ -396,6 +396,13 @@ main section.discover div.discover-rooms div.discover-rooms__minimal h2.discover
     width: 100%;
     height: auto;
   }
+  main section.discover div.discover-rooms div#swipper-rooms div.swiper-slide {
+    opacity: 0.4;
+    transition: 0.7s;
+  }
+  main section.discover div.discover-rooms div#swipper-rooms div.swiper-slide-active {
+    opacity: 1;
+  }
   main section.discover div.discover-rooms div#swipper-rooms img.swiper-slide__img {
     height: 450px;
   }
