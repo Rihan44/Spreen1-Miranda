@@ -28,7 +28,7 @@ burguer_icon.addEventListener('click', () => {
 
 let scree_width = screen.width;
 
-if(scree_width > 1000){
+if (scree_width > 1000) {
     let header_desktop = document.querySelector('.header__boxgeneral');
     let header = document.querySelector('.header');
 
@@ -38,21 +38,21 @@ if(scree_width > 1000){
         let porcentajeTotal = (altura_pantalla / alturaTotal_pantalla) * 100;
         return Math.floor(porcentajeTotal);
     }
-    
+
     window.addEventListener('mousemove', (e) => {
         const mouse = e.clientY;
 
-        if(mouse === 0){
+        if (mouse === 0) {
             header_desktop.style.top = '36px';
             header_desktop.style.transition = '0.5s';
             header.style.position = 'fixed';
-        } 
+        }
     });
 
     window.addEventListener('scroll', () => {
         let porcentaje = porcentajeTotal();
-        
-        if(porcentaje > 0){
+
+        if (porcentaje > 0) {
             header_desktop.style.top = '-250px';
             header_desktop.style.transition = '0.5s';
             header.style.position = 'absolute';
@@ -61,41 +61,58 @@ if(scree_width > 1000){
             header_desktop.style.transition = '0.5s';
             header.style.position = 'fixed';
         }
-    
+
     });
 }
 
 /* SWIPER HOME */
-
-const swiperRooms = new Swiper('#swipper-rooms', {
-    direction: 'horizontal',
-   loop: true,
-    autoplay: {
-        delay: 3000
-    },
-    cssMode: true,
-    navigation: {
-        nextEl: '#swiper-button-next-rooms',
-        prevEl: '#swiper-button-prev-rooms',
+function initSwiperRooms() {
+    if (window.matchMedia("(max-width: 1000px").matches) {
+        let swiperRooms = new Swiper('#swipper-rooms', {
+            keyboard: true,
+            loop: true,
+            autoplay: {
+                delay: 3000
+            },
+            cssMode: true,
+            navigation: {
+                nextEl: '#swiper-button-next-rooms',
+                prevEl: '#swiper-button-prev-rooms',
+            }
+        });
+    } else {
+        let swiperRooms = new Swiper('#swipper-rooms', {
+            slidesPerView: 1.5,
+            centeredSlides: true,
+            spaceBetween: 50,
+            loop: true,
+            navigation: {
+                nextEl: '#swiper-button-next-rooms',
+                prevEl: '#swiper-button-prev-rooms',
+            }
+        });
     }
+}
 
-});
+initSwiperRooms();
 
+function initSwiperFacilities() {
+    let swiperFacilites = new Swiper('#swiper-facilities', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay: {
+            delay: 3000
+        },
+        cssMode: true,
+        pagination: {
+            el: ".swiper-pagination",
+            type: "bullets",
+            clickable: true
+        }
+    
+    });
+}
 
-const swiperFacilites = new Swiper('#swiper-facilities', {
-    direction: 'horizontal',
-    loop: true,
-    autoplay: {
-        delay: 3000
-    },
-    cssMode: true,
-    pagination: {
-        el: ".swiper-pagination",
-        type: "bullets",
-        clickable: true
-    }
-
-});
 
 let swiperMenu = new Swiper(".swiper-menu", {
     cssMode: true,
@@ -156,21 +173,21 @@ const swiperCounter = new Swiper('#swiper-counter', {
 const swiper = new Swiper('#swipper-rooms-roomspage', {
     direction: 'horizontal',
     loop: true,
-  
+
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+        el: '.swiper-pagination',
+        clickable: true,
         renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + "</span>";
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
         },
     },
-  
+
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
-  });
-  
+});
+
 
 
 /* SWIPER ROOMS DETAILS */
@@ -203,13 +220,9 @@ const swiperRoomsOffers = new Swiper('#swipper-rooms-offers', {
 
 });
 
-
-if(scree_width > 1000) {
-    swiperCounter.disable();
-    swiperFacilitesAboutUs.disable();
-    swiperRoomsDetails.disable();
-    /* orientationchange */
-}
+window.addEventListener('resize', () => {
+    initSwiperRooms();
+})
 
 
 /* CHECK ROOMS */
@@ -220,12 +233,12 @@ try {
     let modalCheck = document.querySelector('.modal-rooms-details');
     let buttonCloseModal = document.getElementById('modal-rooms-details__button-close');
 
-    formCheck.addEventListener('submit', (e) => e.preventDefault());  
+    formCheck.addEventListener('submit', (e) => e.preventDefault());
 
     buttonCheck.addEventListener('click', () => {
         modalCheck.style.display = 'flex';
     });
-    
+
     buttonCloseModal.addEventListener('click', () => {
         modalCheck.style.display = 'none';
     });

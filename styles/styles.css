@@ -640,6 +640,7 @@ main section.discover div.discover-rooms {
   width: 100%;
   max-width: 800px;
   margin: auto;
+  max-width: 100%;
 }
 main section.discover div.discover-rooms h2.discover-rooms__h2 {
   background: none;
