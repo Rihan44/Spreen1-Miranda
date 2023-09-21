@@ -28,8 +28,10 @@ main section.discover div.discover__titlebox h2.discover-titlebox__about {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 18px;
+  margin: auto;
   margin-bottom: 20px;
   margin-top: 20px;
+  max-width: 600px;
 }
 main section.discover div.discover__titlebox h4.discover-titlebox__title {
   width: 100%;
@@ -40,7 +42,9 @@ main section.discover div.discover__titlebox h4.discover-titlebox__title {
   line-height: 60px;
   letter-spacing: -1.2px;
   color: rgb(17, 17, 17);
+  margin: auto;
   margin-bottom: 20px;
+  max-width: 600px;
 }
 main section.discover div.discover__titlebox p.discover-titlebox__paraph {
   width: 100%;
@@ -48,13 +52,17 @@ main section.discover div.discover__titlebox p.discover-titlebox__paraph {
   background: none;
   font-size: 0.9em;
   color: rgb(119, 119, 119);
+  margin: auto;
   margin-bottom: 30px;
   line-height: 25px;
+  max-width: 600px;
 }
 main section.discover div.discover__titlebox button.discover-titlebox__button {
   background: rgb(189, 172, 141);
   border: none;
   width: 65%;
+  max-width: 600px;
+  margin: auto;
   padding: 20px;
   cursor: pointer;
   color: rgb(255, 255, 255);
@@ -195,9 +203,8 @@ main section.discover div.discover-rooms {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 800px;
   margin: auto;
-  max-width: 100%;
+  max-width: 650px;
 }
 main section.discover div.discover-rooms h2.discover-rooms__h2 {
   background: none;
@@ -380,6 +387,7 @@ main section.discover div.discover-rooms div.discover-rooms__minimal h2.discover
     width: 100%;
     margin: auto;
     margin-bottom: 30px;
+    max-width: 100%;
   }
   main section.discover div.discover-rooms div.discover-rooms__icons {
     width: 50%;
