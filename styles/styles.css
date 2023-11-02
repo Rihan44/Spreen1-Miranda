@@ -1,3 +1,8 @@
+@charset "UTF-8";
+/* METER EN EL ARCHIVO _BASE */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
@@ -102,7 +107,15 @@ h2, h3, h4, p {
   --swiper-theme-color: rgba(190, 173, 142, 1);
 }
 
-/* HOME STYLES */   
+/* 
+Common breakpoints:
+- 320px — 480px: Mobile devices
+- 481px — 768px: iPads, Tablets
+- 769px — 1024px: Small screens, laptops
+- 1025px — 1200px: Desktops, large screens
+- 1201px and more —  Extra large screens, TV
+*/
+/* Screen media variables */
 header.header {
   width: 100%;
   height: auto;
@@ -264,6 +277,431 @@ header.header nav.header-menu-desktop {
     background: none;
   }
 }
+footer {
+  height: auto;
+  width: 100%;
+  margin-top: 60px;
+  background: url("../img/footer-mobile-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+}
+footer div.footer-container__socials {
+  max-width: 600px;
+  margin: auto;
+}
+footer div.footer-container__socials div.footer__titlebox {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  background: url("../img/footer-mobile-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+footer div.footer-container__socials div.footer__titlebox div.footer__boxlogo {
+  width: 80px;
+  height: 80px;
+  background: rgb(190, 173, 142);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-family: "Archivo", sans-serif;
+  font-size: 2.5em;
+  box-shadow: 0 14px 24px 0 rgba(139, 139, 139, 0.15);
+}
+footer div.footer-container__socials div.footer__titlebox h2.footer-titlebox__title {
+  background: none;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 1.625em;
+  letter-spacing: 2.6px;
+  color: rgb(17, 17, 17);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+}
+footer div.footer-container__socials div.footer__titlebox h2.footer-titlebox__title span.footer-titlebox-title__span {
+  font-weight: 400;
+  background: none;
+}
+footer div.footer-container__socials p.footer__paraph {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+  padding: 20px;
+  background: none;
+}
+footer div.footer-container__socials div.footer__socials {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
+  padding: 20px;
+  background: url("../img/footer-mobile-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+footer div.footer-container__socials div.footer__socials a.footer-socials__link {
+  color: rgb(119, 119, 119);
+  background: none;
+  transition: 0.3s;
+}
+footer div.footer-container__socials div.footer__socials a.footer-socials__link i.fa-brands {
+  margin-right: 20px;
+  font-size: 1.8em;
+}
+footer div.footer-container__socials div.footer__socials a.footer-socials__link:hover {
+  color: rgb(190, 173, 142);
+  transform: scale(1.1, 1.2);
+}
+footer div.footer__services {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background: url("../img/footer-mobile-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  max-width: 600px;
+  margin: auto;
+}
+footer div.footer__services h3.footer-services__h3 {
+  margin-bottom: 20px;
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 24px;
+  color: rgb(34, 34, 34);
+  background: none;
+}
+footer div.footer__services div.footer-services__list {
+  display: flex;
+  justify-content: space-around;
+  background: url("../img/footer-mobile-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+footer div.footer__services div.footer-services__list div.footer-services-list__first {
+  margin-right: 20px;
+  background: none;
+}
+footer div.footer__services div.footer-services__list p.footer-services-list__paraphs {
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 48px;
+  color: rgb(119, 119, 119);
+  background: none;
+}
+footer div.footer__services div.footer-services__list div.footer-services-list__second {
+  background: none;
+}
+footer div.footer__contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  background: url("../img/footer-mobile-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  max-width: 600px;
+  margin: auto;
+}
+footer div.footer__contact h3.footer-contact__h3 {
+  margin-bottom: 30px;
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 24px;
+  color: rgb(34, 34, 34);
+  background: none;
+}
+footer div.footer__contact div.footer-contact__container {
+  display: flex;
+  margin-bottom: 30px;
+  background: none;
+}
+@media screen and (min-width: 500px) {
+  footer div.footer__contact div.footer-contact__container {
+    justify-content: space-evenly;
+  }
+}
+footer div.footer__contact div.footer-contact__container img.footer-contact-container__img {
+  margin-right: 30px;
+  background: none;
+}
+footer div.footer__contact div.footer-contact__container div.footer-contact-container__info {
+  background: none;
+}
+footer div.footer__contact div.footer-contact__container div.footer-contact-container__info h4.footer-contact-container-info__h4 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 24px;
+  background: none;
+}
+footer div.footer__contact div.footer-contact__container div.footer-contact-container__info p.footer-contact-container-info__paraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875em;
+  line-height: 17px;
+  color: rgb(119, 119, 119);
+  font-weight: 400;
+  background: none;
+}
+footer div.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  background: rgb(248, 248, 248);
+  width: 100%;
+  padding: 20px;
+}
+@media screen and (min-width: 600px) {
+  footer div.footer__copyright {
+    text-align: center;
+  }
+}
+footer div.footer__copyright p.footer-copyright__paraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 19px;
+  letter-spacing: -0.48px;
+  color: rgb(34, 34, 34);
+}
+
+@media screen and (min-width: 1000px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer div.footer-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    background: url("../img/footer-mobile-bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  footer div.footer-container div.footer-container__socials {
+    width: 30%;
+    margin-left: 40px;
+    background: url("../img/footer-mobile-bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  footer div.footer-container div.footer-container__socials div.footer__titlebox {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    background: none;
+  }
+  footer div.footer-container div.footer-container__socials div.footer__titlebox div.footer__boxlogo {
+    width: 80px;
+    height: 80px;
+    background: rgb(190, 173, 142);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-family: "Archivo", sans-serif;
+    font-size: 2.5em;
+    box-shadow: 0 14px 24px 0 rgba(139, 139, 139, 0.15);
+  }
+  footer div.footer-container div.footer-container__socials div.footer__titlebox h2.footer-titlebox__title {
+    background: none;
+    font-family: "Archivo", sans-serif;
+    font-weight: 700;
+    font-size: 1.625em;
+    letter-spacing: 2.6px;
+    color: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+  }
+  footer div.footer-container div.footer-container__socials div.footer__titlebox h2.footer-titlebox__title span.footer-titlebox-title__span {
+    font-weight: 400;
+    background: none;
+  }
+  footer div.footer-container div.footer-container__socials p.footer__paraph {
+    font-family: "Archivo", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 24px;
+    color: rgb(119, 119, 119);
+    padding: 20px;
+    background: none;
+  }
+  footer div.footer-container div.footer-container__socials div.footer__socials {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+    padding: 20px;
+    background: none;
+  }
+  footer div.footer-container div.footer-container__socials div.footer__socials a.footer-socials__link {
+    color: rgb(119, 119, 119);
+    background: none;
+    transition: 0.3s;
+  }
+  footer div.footer-container div.footer-container__socials div.footer__socials a.footer-socials__link i.fa-brands {
+    margin-right: 20px;
+    font-size: 1.8em;
+  }
+  footer div.footer-container div.footer-container__socials div.footer__socials a.footer-socials__link:hover {
+    color: rgb(190, 173, 142);
+    transform: scale(1.1, 1.2);
+  }
+  footer div.footer-container div.footer-service-contact__container {
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    background: url("../img/footer-mobile-bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  footer div.footer-container div.footer-service-contact__container div.footer__services {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    width: 50%;
+    background: none;
+  }
+  footer div.footer-container div.footer-service-contact__container div.footer__services h3.footer-services__h3 {
+    margin-bottom: 20px;
+    font-family: "Old Standard TT", sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 24px;
+    color: rgb(34, 34, 34);
+  }
+  footer div.footer-container div.footer-service-contact__container div.footer__services div.footer-services__list {
+    display: flex;
+    justify-content: flex-start;
+    background: none;
+  }
+  footer div.footer-container div.footer-service-contact__container div.footer__services div.footer-services__list div.footer-services-list__first {
+    margin-right: 20px;
+    background: none;
+  }
+  footer div.footer-container div.footer-service-contact__container div.footer__services div.footer-services__list div.footer-services-list__first p.footer-services-list__paraphs {
+    background: none;
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 48px;
+    color: rgb(119, 119, 119);
+  }
+  footer div.footer-container div.footer-service-contact__container div.footer__services div.footer-services__list div.footer-services-list__second {
+    background: none;
+  }
+  footer div.footer-container div.footer__contact {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 20px;
+    background: none;
+  }
+  footer div.footer-container div.footer__contact h3.footer-contact__h3 {
+    margin-bottom: 30px;
+    font-family: "Old Standard TT", sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 24px;
+    color: rgb(34, 34, 34);
+  }
+  footer div.footer-container div.footer__contact div.footer-contact__container {
+    display: flex;
+    margin-bottom: 30px;
+    background: none;
+  }
+  footer div.footer-container div.footer__contact div.footer-contact__container img.footer-contact-container__img {
+    margin-right: 30px;
+    background: none;
+  }
+  footer div.footer-container div.footer__contact div.footer-contact__container div.footer-contact-container__info h4.footer-contact-container-info__h4 {
+    font-family: "Old Standard TT", sans-serif;
+    font-weight: 400;
+    font-size: 1.25em;
+    line-height: 24px;
+    background: none;
+  }
+  footer div.footer-container div.footer__contact div.footer-contact__container div.footer-contact-container__info p.footer-contact-container-info__paraph {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875em;
+    line-height: 17px;
+    color: rgb(119, 119, 119);
+    font-weight: 400;
+    background: none;
+  }
+  footer div.footer__copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: auto;
+    background: rgb(248, 248, 248);
+    width: 100%;
+    padding: 20px;
+  }
+  footer div.footer__copyright p.footer-copyright__paraph {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 19px;
+    letter-spacing: -0.48px;
+    color: rgb(34, 34, 34);
+  }
+}
+main div.swiper-images-food-slider {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+main div.swiper-images-food-slider div.swiper-images-food__container {
+  width: 100%;
+  height: 335px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main div.swiper-images-food-slider div.swiper-images-food__container img.swiper-images-food-container__img {
+  margin: 0 auto;
+  width: 335px;
+  height: 335px;
+  margin-bottom: 40px;
+}
+main div.images-food__slider-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  main div.images-food__slider-desktop {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+  main div.images-food__slider-desktop img.swiper-images-food-container__img {
+    width: 330px;
+    height: 330px;
+    margin-bottom: 40px;
+  }
+  main div.images-food__slider {
+    display: none;
+  }
+}
+/* HOME STYLES */
 main {
   padding-top: 85px;
   display: flex;
@@ -405,7 +843,8 @@ main section.banner__checkdate form.banner-checkdate__form div.banner-checkdate-
   display: flex;
   flex-direction: column;
 }
-main section.banner__checkdate form.banner-checkdate__form div.banner-checkdate-form__input-container label, main section.banner__checkdate form.banner-checkdate__form div.banner-checkdate-form__input-container input {
+main section.banner__checkdate form.banner-checkdate__form div.banner-checkdate-form__input-container label,
+main section.banner__checkdate form.banner-checkdate__form div.banner-checkdate-form__input-container input {
   background: rgb(34, 34, 34);
   margin-top: 10px;
   margin-bottom: 10px;
@@ -418,6 +857,7 @@ main section.banner__checkdate form.banner-checkdate__form div.banner-checkdate-
   border-bottom: 1px solid rgb(190, 173, 142);
   padding-bottom: 10px;
   color: rgb(104, 104, 104);
+  outline-color: rgb(190, 173, 142);
 }
 main section.banner__checkdate form.banner-checkdate__form button.banner-checkdate-form__button {
   width: 80%;
@@ -712,7 +1152,8 @@ main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-pre
   font-size: 10px;
   color: rgb(34, 34, 34);
 }
-main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-prev-rooms::after, main section.discover div.discover-rooms div#swipper-rooms .swiper-rtl #swiper-button-prev-rooms::after {
+main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-prev-rooms::after,
+main section.discover div.discover-rooms div#swipper-rooms .swiper-rtl #swiper-button-prev-rooms::after {
   content: "prev";
   font-size: 1.1em;
 }
@@ -727,7 +1168,8 @@ main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-nex
   font-size: 10px;
   color: rgb(34, 34, 34);
 }
-main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-next-rooms::after, main section.discover div.discover-rooms div#swipper-rooms .swiper-rtl #swiper-button-next-rooms::after {
+main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-next-rooms::after,
+main section.discover div.discover-rooms div#swipper-rooms .swiper-rtl #swiper-button-next-rooms::after {
   content: "next";
   font-size: 1.1em;
 }
@@ -864,14 +1306,16 @@ main section.discover div.discover-rooms div.discover-rooms__minimal h2.discover
     width: 80px;
     height: 80px;
   }
-  main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-prev-rooms::after, main section.discover div.discover-rooms div#swipper-rooms .swiper-rtl #swiper-button-prev-rooms::after {
+  main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-prev-rooms::after,
+  main section.discover div.discover-rooms div#swipper-rooms .swiper-rtl #swiper-button-prev-rooms::after {
     font-size: 2em;
   }
   main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-next-rooms {
     width: 80px;
     height: 80px;
   }
-  main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-next-rooms::after, main section.discover div.discover-rooms div#swipper-rooms .swiper-rtl #swiper-button-next-rooms::after {
+  main section.discover div.discover-rooms div#swipper-rooms div#swiper-button-next-rooms::after,
+  main section.discover div.discover-rooms div#swipper-rooms .swiper-rtl #swiper-button-next-rooms::after {
     font-size: 2em;
   }
   main section.discover div.discover-rooms div.discover-rooms__minimal {
@@ -1281,7 +1725,8 @@ main section.menu div#swiper-menu div.swiper-menu__buttons div.swiper-menu-butto
   font-size: 10px;
   color: rgb(34, 34, 34);
 }
-main section.menu div#swiper-menu div.swiper-menu__buttons div.swiper-menu-buttons__prev::after, main section.menu div#swiper-menu div.swiper-menu__buttons .swiper-rtl .swiper-menu-buttons__prev::after {
+main section.menu div#swiper-menu div.swiper-menu__buttons div.swiper-menu-buttons__prev::after,
+main section.menu div#swiper-menu div.swiper-menu__buttons .swiper-rtl .swiper-menu-buttons__prev::after {
   content: "prev";
   font-size: 1.1em;
 }
@@ -1298,7 +1743,8 @@ main section.menu div#swiper-menu div.swiper-menu__buttons div.swiper-menu-butto
   font-size: 10px;
   color: rgb(34, 34, 34);
 }
-main section.menu div#swiper-menu div.swiper-menu__buttons div.swiper-menu-buttons__next::after, main section.menu div#swiper-menu div.swiper-menu__buttons .swiper-rtl .swiper-menu-buttons__next::after {
+main section.menu div#swiper-menu div.swiper-menu__buttons div.swiper-menu-buttons__next::after,
+main section.menu div#swiper-menu div.swiper-menu__buttons .swiper-rtl .swiper-menu-buttons__next::after {
   content: "next";
   font-size: 1.1em;
 }
@@ -1487,7 +1933,8 @@ main section.menu div.swiper-menu-desktop {
     font-size: 10px;
     color: rgb(34, 34, 34);
   }
-  main section.menu div#swiper-menu-desktop div.swiper-menu__buttons div.swiper-menu-buttons__prev::after, main section.menu div#swiper-menu-desktop div.swiper-menu__buttons .swiper-rtl .swiper-menu-buttons__prev::after {
+  main section.menu div#swiper-menu-desktop div.swiper-menu__buttons div.swiper-menu-buttons__prev::after,
+  main section.menu div#swiper-menu-desktop div.swiper-menu__buttons .swiper-rtl .swiper-menu-buttons__prev::after {
     content: "prev";
     font-size: 1.1em;
   }
@@ -1504,7 +1951,8 @@ main section.menu div.swiper-menu-desktop {
     font-size: 10px;
     color: rgb(34, 34, 34);
   }
-  main section.menu div#swiper-menu-desktop div.swiper-menu__buttons div.swiper-menu-buttons__next::after, main section.menu div#swiper-menu-desktop div.swiper-menu__buttons .swiper-rtl .swiper-menu-buttons__next::after {
+  main section.menu div#swiper-menu-desktop div.swiper-menu__buttons div.swiper-menu-buttons__next::after,
+  main section.menu div#swiper-menu-desktop div.swiper-menu__buttons .swiper-rtl .swiper-menu-buttons__next::after {
     content: "next";
     font-size: 1.1em;
   }
@@ -1602,392 +2050,6 @@ main section.logros-icon div.logros-icon__container span.logros-icon-container-d
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-  }
-}
-footer {
-  height: auto;
-  width: 100%;
-  margin-top: 60px;
-  background: url("../img/footer-mobile-bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  padding-top: 40px;
-}
-footer div.footer-container__socials {
-  max-width: 600px;
-  margin: auto;
-}
-footer div.footer-container__socials div.footer__titlebox {
-  display: flex;
-  justify-content: flex-start;
-  padding: 20px;
-  background: url("../img/footer-mobile-bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-footer div.footer-container__socials div.footer__titlebox div.footer__boxlogo {
-  width: 80px;
-  height: 80px;
-  background: rgb(190, 173, 142);
-  color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 400;
-  font-family: "Archivo", sans-serif;
-  font-size: 2.5em;
-  box-shadow: 0 14px 24px 0 rgba(139, 139, 139, 0.15);
-}
-footer div.footer-container__socials div.footer__titlebox h2.footer-titlebox__title {
-  background: none;
-  font-family: "Archivo", sans-serif;
-  font-weight: 700;
-  font-size: 1.625em;
-  letter-spacing: 2.6px;
-  color: rgb(17, 17, 17);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 30px;
-}
-footer div.footer-container__socials div.footer__titlebox h2.footer-titlebox__title span.footer-titlebox-title__span {
-  font-weight: 400;
-  background: none;
-}
-footer div.footer-container__socials p.footer__paraph {
-  font-family: "Archivo", sans-serif;
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 24px;
-  color: rgb(119, 119, 119);
-  padding: 20px;
-  background: none;
-}
-footer div.footer-container__socials div.footer__socials {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 10px;
-  padding: 20px;
-  background: url("../img/footer-mobile-bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-footer div.footer-container__socials div.footer__socials a.footer-socials__link {
-  color: rgb(119, 119, 119);
-  background: none;
-  transition: 0.3s;
-}
-footer div.footer-container__socials div.footer__socials a.footer-socials__link i.fa-brands {
-  margin-right: 20px;
-  font-size: 1.8em;
-}
-footer div.footer-container__socials div.footer__socials a.footer-socials__link:hover {
-  color: rgb(190, 173, 142);
-  transform: scale(1.1, 1.2);
-}
-footer div.footer__services {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  padding: 20px;
-  background: url("../img/footer-mobile-bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  max-width: 600px;
-  margin: auto;
-}
-footer div.footer__services h3.footer-services__h3 {
-  margin-bottom: 20px;
-  font-family: "Old Standard TT", sans-serif;
-  font-weight: 400;
-  font-size: 1.5em;
-  line-height: 24px;
-  color: rgb(34, 34, 34);
-  background: none;
-}
-footer div.footer__services div.footer-services__list {
-  display: flex;
-  justify-content: space-around;
-  background: url("../img/footer-mobile-bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-footer div.footer__services div.footer-services__list div.footer-services-list__first {
-  margin-right: 20px;
-  background: none;
-}
-footer div.footer__services div.footer-services__list p.footer-services-list__paraphs {
-  margin-bottom: 10px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 48px;
-  color: rgb(119, 119, 119);
-  background: none;
-}
-footer div.footer__services div.footer-services__list div.footer-services-list__second {
-  background: none;
-}
-footer div.footer__contact {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 20px;
-  background: url("../img/footer-mobile-bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  max-width: 600px;
-  margin: auto;
-}
-footer div.footer__contact h3.footer-contact__h3 {
-  margin-bottom: 30px;
-  font-family: "Old Standard TT", sans-serif;
-  font-weight: 400;
-  font-size: 1.5em;
-  line-height: 24px;
-  color: rgb(34, 34, 34);
-  background: none;
-}
-footer div.footer__contact div.footer-contact__container {
-  display: flex;
-  margin-bottom: 30px;
-  background: none;
-}
-@media screen and (min-width: 500px) {
-  footer div.footer__contact div.footer-contact__container {
-    justify-content: space-evenly;
-  }
-}
-footer div.footer__contact div.footer-contact__container img.footer-contact-container__img {
-  margin-right: 30px;
-  background: none;
-}
-footer div.footer__contact div.footer-contact__container div.footer-contact-container__info {
-  background: none;
-}
-footer div.footer__contact div.footer-contact__container div.footer-contact-container__info h4.footer-contact-container-info__h4 {
-  font-family: "Old Standard TT", sans-serif;
-  font-weight: 400;
-  font-size: 1.25em;
-  line-height: 24px;
-  background: none;
-}
-footer div.footer__contact div.footer-contact__container div.footer-contact-container__info p.footer-contact-container-info__paraph {
-  font-family: "Roboto", sans-serif;
-  font-size: 0.875em;
-  line-height: 17px;
-  color: rgb(119, 119, 119);
-  font-weight: 400;
-  background: none;
-}
-footer div.footer__copyright {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  background: rgb(248, 248, 248);
-  width: 100%;
-  padding: 20px;
-}
-@media screen and (min-width: 600px) {
-  footer div.footer__copyright {
-    text-align: center;
-  }
-}
-footer div.footer__copyright p.footer-copyright__paraph {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 1em;
-  line-height: 19px;
-  letter-spacing: -0.48px;
-  color: rgb(34, 34, 34);
-}
-
-@media screen and (min-width: 1000px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-  }
-  footer div.footer-container {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    background: url("../img/footer-mobile-bg.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-  footer div.footer-container div.footer-container__socials {
-    width: 30%;
-    margin-left: 40px;
-    background: url("../img/footer-mobile-bg.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-  footer div.footer-container div.footer-container__socials div.footer__titlebox {
-    display: flex;
-    justify-content: flex-start;
-    padding: 20px;
-    background: none;
-  }
-  footer div.footer-container div.footer-container__socials div.footer__titlebox div.footer__boxlogo {
-    width: 80px;
-    height: 80px;
-    background: rgb(190, 173, 142);
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 400;
-    font-family: "Archivo", sans-serif;
-    font-size: 2.5em;
-    box-shadow: 0 14px 24px 0 rgba(139, 139, 139, 0.15);
-  }
-  footer div.footer-container div.footer-container__socials div.footer__titlebox h2.footer-titlebox__title {
-    background: none;
-    font-family: "Archivo", sans-serif;
-    font-weight: 700;
-    font-size: 1.625em;
-    letter-spacing: 2.6px;
-    color: rgb(17, 17, 17);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 30px;
-  }
-  footer div.footer-container div.footer-container__socials div.footer__titlebox h2.footer-titlebox__title span.footer-titlebox-title__span {
-    font-weight: 400;
-    background: none;
-  }
-  footer div.footer-container div.footer-container__socials p.footer__paraph {
-    font-family: "Archivo", sans-serif;
-    font-weight: 400;
-    font-size: 1em;
-    line-height: 24px;
-    color: rgb(119, 119, 119);
-    padding: 20px;
-    background: none;
-  }
-  footer div.footer-container div.footer-container__socials div.footer__socials {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 10px;
-    padding: 20px;
-    background: none;
-  }
-  footer div.footer-container div.footer-container__socials div.footer__socials a.footer-socials__link {
-    color: rgb(119, 119, 119);
-    background: none;
-    transition: 0.3s;
-  }
-  footer div.footer-container div.footer-container__socials div.footer__socials a.footer-socials__link i.fa-brands {
-    margin-right: 20px;
-    font-size: 1.8em;
-  }
-  footer div.footer-container div.footer-container__socials div.footer__socials a.footer-socials__link:hover {
-    color: rgb(190, 173, 142);
-    transform: scale(1.1, 1.2);
-  }
-  footer div.footer-container div.footer-service-contact__container {
-    width: 65%;
-    display: flex;
-    justify-content: space-around;
-    background: url("../img/footer-mobile-bg.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-  footer div.footer-container div.footer-service-contact__container div.footer__services {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
-    width: 50%;
-    background: none;
-  }
-  footer div.footer-container div.footer-service-contact__container div.footer__services h3.footer-services__h3 {
-    margin-bottom: 20px;
-    font-family: "Old Standard TT", sans-serif;
-    font-weight: 400;
-    font-size: 1.5em;
-    line-height: 24px;
-    color: rgb(34, 34, 34);
-  }
-  footer div.footer-container div.footer-service-contact__container div.footer__services div.footer-services__list {
-    display: flex;
-    justify-content: flex-start;
-    background: none;
-  }
-  footer div.footer-container div.footer-service-contact__container div.footer__services div.footer-services__list div.footer-services-list__first {
-    margin-right: 20px;
-    background: none;
-  }
-  footer div.footer-container div.footer-service-contact__container div.footer__services div.footer-services__list div.footer-services-list__first p.footer-services-list__paraphs {
-    background: none;
-    margin-bottom: 10px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 1em;
-    line-height: 48px;
-    color: rgb(119, 119, 119);
-  }
-  footer div.footer-container div.footer-service-contact__container div.footer__services div.footer-services__list div.footer-services-list__second {
-    background: none;
-  }
-  footer div.footer-container div.footer__contact {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    padding: 20px;
-    background: none;
-  }
-  footer div.footer-container div.footer__contact h3.footer-contact__h3 {
-    margin-bottom: 30px;
-    font-family: "Old Standard TT", sans-serif;
-    font-weight: 400;
-    font-size: 1.5em;
-    line-height: 24px;
-    color: rgb(34, 34, 34);
-  }
-  footer div.footer-container div.footer__contact div.footer-contact__container {
-    display: flex;
-    margin-bottom: 30px;
-    background: none;
-  }
-  footer div.footer-container div.footer__contact div.footer-contact__container img.footer-contact-container__img {
-    margin-right: 30px;
-    background: none;
-  }
-  footer div.footer-container div.footer__contact div.footer-contact__container div.footer-contact-container__info h4.footer-contact-container-info__h4 {
-    font-family: "Old Standard TT", sans-serif;
-    font-weight: 400;
-    font-size: 1.25em;
-    line-height: 24px;
-    background: none;
-  }
-  footer div.footer-container div.footer__contact div.footer-contact__container div.footer-contact-container__info p.footer-contact-container-info__paraph {
-    font-family: "Roboto", sans-serif;
-    font-size: 0.875em;
-    line-height: 17px;
-    color: rgb(119, 119, 119);
-    font-weight: 400;
-    background: none;
-  }
-  footer div.footer__copyright {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: auto;
-    background: rgb(248, 248, 248);
-    width: 100%;
-    padding: 20px;
-  }
-  footer div.footer__copyright p.footer-copyright__paraph {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 1em;
-    line-height: 19px;
-    letter-spacing: -0.48px;
-    color: rgb(34, 34, 34);
   }
 }
 /* ABOUT US STYLES */
@@ -2413,7 +2475,10 @@ main section.facilities-about-us div#swiper-facilities-about-us div#facilities-a
     margin-bottom: 60px;
     max-width: 1300px;
   }
-  main section.facilities-about-us div#swiper-facilities-about-us div, main section.facilities-about-us div#swiper-facilities-about-us h3, main section.facilities-about-us div#swiper-facilities-about-us img, main section.facilities-about-us div#swiper-facilities-about-us p {
+  main section.facilities-about-us div#swiper-facilities-about-us div,
+  main section.facilities-about-us div#swiper-facilities-about-us h3,
+  main section.facilities-about-us div#swiper-facilities-about-us img,
+  main section.facilities-about-us div#swiper-facilities-about-us p {
     background: none;
   }
   main section.facilities-about-us div#swiper-facilities-about-us div.swiper-wrapper-about-us {
@@ -3308,7 +3373,8 @@ main section.related-rooms div.rooms-list__room div#swiper-rooms-details div#swi
   color: rgb(34, 34, 34);
   top: 180px;
 }
-main section.related-rooms div.rooms-list__room div#swiper-rooms-details div#swiper-button-prev-rooms-details::after, main section.related-rooms div.rooms-list__room div#swiper-rooms-details .swiper-rtl #swiper-button-prev-rooms-details::after {
+main section.related-rooms div.rooms-list__room div#swiper-rooms-details div#swiper-button-prev-rooms-details::after,
+main section.related-rooms div.rooms-list__room div#swiper-rooms-details .swiper-rtl #swiper-button-prev-rooms-details::after {
   content: "prev";
   font-size: 1.1em;
 }
@@ -3324,7 +3390,8 @@ main section.related-rooms div.rooms-list__room div#swiper-rooms-details div#swi
   color: rgb(34, 34, 34);
   top: 180px;
 }
-main section.related-rooms div.rooms-list__room div#swiper-rooms-details div#swiper-button-next-rooms-details::after, main section.related-rooms div.rooms-list__room div#swiper-rooms-details .swiper-rtl #swiper-button-next-rooms-details::after {
+main section.related-rooms div.rooms-list__room div#swiper-rooms-details div#swiper-button-next-rooms-details::after,
+main section.related-rooms div.rooms-list__room div#swiper-rooms-details .swiper-rtl #swiper-button-next-rooms-details::after {
   content: "next";
   font-size: 1.1em;
 }
@@ -3609,7 +3676,9 @@ main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price d
   display: flex;
   flex-direction: column;
 }
-main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4, main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container del, main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container span {
+main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4,
+main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container del,
+main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container span {
   background: none;
 }
 main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4.luxury-rooms-offers-container-info-price__price-before {
@@ -3706,7 +3775,9 @@ main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price d
     z-index: 3;
     transform: translateX(50%) translateY(90%);
   }
-  main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4, main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container del, main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container span {
+  main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4,
+  main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container del,
+  main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container span {
     background: none;
   }
   main section.luxury-rooms-offers div.luxury-rooms-offers-container__info-price div.luxury-rooms-offers-container-info-prices__container h4.luxury-rooms-offers-container-info-price__price-before {
@@ -3794,7 +3865,8 @@ main section.popular-rooms div.rooms-list__room div#swipper-rooms-offers div#swi
   color: rgb(34, 34, 34);
   top: 180px;
 }
-main section.popular-rooms div.rooms-list__room div#swipper-rooms-offers div#swiper-button-prev-rooms-offers::after, main section.popular-rooms div.rooms-list__room div#swipper-rooms-offers .swiper-rtl #swiper-button-prev-rooms-offers::after {
+main section.popular-rooms div.rooms-list__room div#swipper-rooms-offers div#swiper-button-prev-rooms-offers::after,
+main section.popular-rooms div.rooms-list__room div#swipper-rooms-offers .swiper-rtl #swiper-button-prev-rooms-offers::after {
   content: "prev";
   font-size: 1.1em;
 }
@@ -3810,7 +3882,8 @@ main section.popular-rooms div.rooms-list__room div#swipper-rooms-offers div#swi
   color: rgb(34, 34, 34);
   top: 180px;
 }
-main section.popular-rooms div.rooms-list__room div#swipper-rooms-offers div#swiper-button-next-rooms-offers::after, main section.popular-rooms div.rooms-list__room div#swipper-rooms-offers .swiper-rtl #swiper-button-next-rooms-offers::after {
+main section.popular-rooms div.rooms-list__room div#swipper-rooms-offers div#swiper-button-next-rooms-offers::after,
+main section.popular-rooms div.rooms-list__room div#swipper-rooms-offers .swiper-rtl #swiper-button-next-rooms-offers::after {
   content: "next";
   font-size: 1.1em;
 }
