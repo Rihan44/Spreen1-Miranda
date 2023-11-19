@@ -154,6 +154,11 @@ header.header {
             font-family: $fontPrincipal;
             font-weight: 600;
             background: none;
+            transition: 0.5s;
+          &:hover {
+            transform: scaleX(1.2);
+            color: rgb(190, 173, 142);
+          }
           }
         }
       }

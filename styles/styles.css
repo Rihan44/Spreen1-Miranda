@@ -275,6 +275,11 @@ header.header nav.header-menu-desktop {
     font-family: "Archivo", sans-serif;
     font-weight: 600;
     background: none;
+    transition: 0.5s;
+  }
+  header.header nav.header-menu-desktop ul.header-menu-desktop-menu__items li a:hover {
+    transform: scaleX(1.2);
+    color: rgb(190, 173, 142);
   }
 }
 footer {
@@ -421,6 +426,7 @@ footer div.footer__contact h3.footer-contact__h3 {
   line-height: 24px;
   color: rgb(34, 34, 34);
   background: none;
+  text-align: center;
 }
 footer div.footer__contact div.footer-contact__container {
   display: flex;
@@ -766,11 +772,30 @@ main section.banner div.banner__container div.banner__buttons button.banner-butt
   background: rgb(190, 173, 142);
   margin-bottom: 20px;
   margin-top: 40px;
+  transition: 0.5s;
+  border: 2px solid rgb(190, 173, 142);
+}
+main section.banner div.banner__container div.banner__buttons button.banner-buttons__tour a {
+  color: #fff;
+  background: none;
+}
+main section.banner div.banner__container div.banner__buttons button.banner-buttons__tour:hover {
+  background-color: rgb(51, 51, 51);
+  border: 2px solid gray;
 }
 main section.banner div.banner__container div.banner__buttons button.banner-buttons__more {
   background: none;
   border: 2px solid gray;
   margin-bottom: 60px;
+  transition: 0.5s;
+}
+main section.banner div.banner__container div.banner__buttons button.banner-buttons__more a {
+  color: #fff;
+  background: none;
+}
+main section.banner div.banner__container div.banner__buttons button.banner-buttons__more:hover {
+  background: rgb(190, 173, 142);
+  border: 2px solid rgb(190, 173, 142);
 }
 
 @media screen and (min-width: 1000px) {
@@ -852,6 +877,7 @@ main section.banner__checkdate form.banner-checkdate__form div.banner-checkdate-
   font-size: 1em;
   font-weight: 700;
   border: none;
+  cursor: pointer;
 }
 main section.banner__checkdate form.banner-checkdate__form div.banner-checkdate-form__input-container input {
   border-bottom: 1px solid rgb(190, 173, 142);
@@ -887,6 +913,25 @@ main section.banner__checkdate form.banner-checkdate__form button.banner-checkda
     display: flex;
     flex-direction: column;
     width: 25%;
+    /* mostrar el calendario al hacer click */
+  }
+  main section.banner__checkdate form.banner-checkdate__form div.banner-checkdate-form__input-container input[type=date]::-webkit-inner-spin-button,
+  main section.banner__checkdate form.banner-checkdate__form div.banner-checkdate-form__input-container ::-webkit-calendar-picker-indicator,
+  main section.banner__checkdate form.banner-checkdate__form div.banner-checkdate-form__input-container ::-webkit-datetime-edit {
+    display: none;
+  }
+  main section.banner__checkdate form.banner-checkdate__form div.banner-checkdate-form__input-container input[type=date]::-webkit-calendar-picker-indicator {
+    display: block;
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
   }
   main section.banner__checkdate form.banner-checkdate__form button.banner-checkdate-form__button {
     width: 25%;
