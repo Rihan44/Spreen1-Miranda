@@ -775,10 +775,6 @@ main section.banner div.banner__container div.banner__buttons button.banner-butt
   transition: 0.5s;
   border: 2px solid rgb(190, 173, 142);
 }
-main section.banner div.banner__container div.banner__buttons button.banner-buttons__tour a {
-  color: #fff;
-  background: none;
-}
 main section.banner div.banner__container div.banner__buttons button.banner-buttons__tour:hover {
   background-color: rgb(51, 51, 51);
   border: 2px solid gray;
@@ -788,10 +784,6 @@ main section.banner div.banner__container div.banner__buttons button.banner-butt
   border: 2px solid gray;
   margin-bottom: 60px;
   transition: 0.5s;
-}
-main section.banner div.banner__container div.banner__buttons button.banner-buttons__more a {
-  color: #fff;
-  background: none;
 }
 main section.banner div.banner__container div.banner__buttons button.banner-buttons__more:hover {
   background: rgb(190, 173, 142);
@@ -899,6 +891,12 @@ main section.banner__checkdate form.banner-checkdate__form button.banner-checkda
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   background: rgb(190, 173, 142);
+  transition: 0.5s;
+  border: 2px solid rgb(190, 173, 142);
+}
+main section.banner__checkdate form.banner-checkdate__form button.banner-checkdate-form__button:hover {
+  background-color: rgb(51, 51, 51);
+  border: 2px solid gray;
 }
 
 @media screen and (min-width: 1000px) {
@@ -913,25 +911,6 @@ main section.banner__checkdate form.banner-checkdate__form button.banner-checkda
     display: flex;
     flex-direction: column;
     width: 25%;
-    /* mostrar el calendario al hacer click */
-  }
-  main section.banner__checkdate form.banner-checkdate__form div.banner-checkdate-form__input-container input[type=date]::-webkit-inner-spin-button,
-  main section.banner__checkdate form.banner-checkdate__form div.banner-checkdate-form__input-container ::-webkit-calendar-picker-indicator,
-  main section.banner__checkdate form.banner-checkdate__form div.banner-checkdate-form__input-container ::-webkit-datetime-edit {
-    display: none;
-  }
-  main section.banner__checkdate form.banner-checkdate__form div.banner-checkdate-form__input-container input[type=date]::-webkit-calendar-picker-indicator {
-    display: block;
-    background: transparent;
-    bottom: 0;
-    color: transparent;
-    cursor: pointer;
-    height: auto;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: auto;
   }
   main section.banner__checkdate form.banner-checkdate__form button.banner-checkdate-form__button {
     width: 25%;
@@ -2307,14 +2286,13 @@ main section.restaurant div.restaurant__container {
   height: auto;
   max-width: 750px;
 }
-main section.restaurant div.restaurant__container img.restaurant-container__img {
-  width: 100%;
+main section.restaurant div.restaurant__container img.restaurant__img {
   height: 232px;
 }
-main section.restaurant div.restaurant__container div.restaurant-container__info {
+main section.restaurant div.restaurant__container div.restaurant__info {
   padding: 10px;
 }
-main section.restaurant div.restaurant__container div.restaurant-container__info h2.restaurant-container-info__h2 {
+main section.restaurant div.restaurant__container div.restaurant__info h2.restaurant__title {
   width: 100%;
   background: none;
   font-size: 0.875em;
@@ -2327,7 +2305,7 @@ main section.restaurant div.restaurant__container div.restaurant-container__info
   margin-bottom: 20px;
   margin-top: 20px;
 }
-main section.restaurant div.restaurant__container div.restaurant-container__info h4.restaurant-container-info__h4 {
+main section.restaurant div.restaurant__container div.restaurant__info h4.restaurant__subtitle {
   width: 100%;
   background: none;
   font-family: "Old Standard TT", sans-serif;
@@ -2338,7 +2316,7 @@ main section.restaurant div.restaurant__container div.restaurant-container__info
   color: rgb(34, 34, 34);
   margin-bottom: 20px;
 }
-main section.restaurant div.restaurant__container div.restaurant-container__info p.restaurant-container-info__paraph {
+main section.restaurant div.restaurant__container div.restaurant__info p.restaurant__paragraph {
   width: 100%;
   font-family: "Archivo", sans-serif;
   background: none;
@@ -2347,7 +2325,7 @@ main section.restaurant div.restaurant__container div.restaurant-container__info
   margin-bottom: 30px;
   line-height: 25px;
 }
-main section.restaurant div.restaurant__container div.restaurant-container__info button.restaurant-container-info__button {
+main section.restaurant div.restaurant__container div.restaurant__info button.restaurant__cta {
   background: rgb(189, 172, 141);
   border: none;
   width: 65%;
@@ -2375,22 +2353,28 @@ main section.restaurant div.restaurant__container div.restaurant-container__info
     flex-direction: row;
     max-width: 1300px;
   }
-  main section.restaurant div.restaurant__container img.restaurant-container__img {
+  main section.restaurant div.restaurant__container img.restaurant__img {
     width: 50%;
     height: auto;
     margin-right: 20px;
   }
-  main section.restaurant div.restaurant__container div.restaurant-container__info {
+  main section.restaurant div.restaurant__container div.restaurant__info {
     width: 50%;
   }
-  main section.restaurant div.restaurant__container div.restaurant-container__info h4.restaurant-container-info__h4 {
+  main section.restaurant div.restaurant__container div.restaurant__info h4.restaurant__subtitle {
     width: 70%;
   }
-  main section.restaurant div.restaurant__container div.restaurant-container__info p.restaurant-container-info__paraph {
+  main section.restaurant div.restaurant__container div.restaurant__info p.restaurant__paragraph {
     width: 80%;
   }
-  main section.restaurant div.restaurant__container div.restaurant-container__info button.restaurant-container-info__button {
+  main section.restaurant div.restaurant__container div.restaurant__info button.restaurant__cta {
     width: 40%;
+    transition: 0.5s;
+    border: 2px solid rgb(190, 173, 142);
+  }
+  main section.restaurant div.restaurant__container div.restaurant__info button.restaurant__cta:hover {
+    background-color: rgb(51, 51, 51);
+    border: 2px solid gray;
   }
 }
 main section.facilities-about-us {
@@ -4218,6 +4202,11 @@ main div.contact-form-container {
   margin-top: 50px;
   max-width: 600px;
 }
+main div.contact-form-container p#paragraph__enviado {
+  font-size: 1.2em;
+  font-weight: bold;
+  opacity: 0;
+}
 main div.contact-form-container form.contact-form-container__formulario {
   display: flex;
   flex-direction: column;
@@ -4279,6 +4268,12 @@ main div.contact-form-container form.contact-form-container__formulario button.c
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   background: rgb(190, 173, 142);
+  transition: 0.5s;
+  border: 2px solid rgb(190, 173, 142);
+}
+main div.contact-form-container form.contact-form-container__formulario button.contact-form-container-formulario__button:hover {
+  background-color: rgb(51, 51, 51);
+  border: 2px solid gray;
 }
 
 @media screen and (min-width: 1000px) {

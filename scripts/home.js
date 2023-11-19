@@ -86,3 +86,23 @@ window.addEventListener('resize', () => {
     initSwiperRooms();
     initSwiperFacilities();
 })
+
+/* BUTTONS */
+let btn_tour = document.querySelector('#btn_tour');
+let btn_learn_more = document.querySelector('#btn_learn_more');
+let form_check_availability = document.querySelector('#form_check_availability');
+
+btn_tour.addEventListener('click', () => {
+    window.location.href = '../pages/rooms.html';
+})
+
+btn_learn_more.addEventListener('click', () => {
+    window.location.href = '../pages/contact.html';
+})
+
+form_check_availability.addEventListener('submit', (e) => {
+    e.preventDefault();
+    window.location.href = '../pages/rooms.html';
+})
+
+

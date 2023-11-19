@@ -61,27 +61,17 @@ main {
             margin-top: 40px;
             transition: 0.5s;
             border: 2px solid rgba(190, 173, 142, 1);
-            a {
-              color: #fff;
-              background: none;
-            }
 
             &:hover {
               background-color: rgba(51, 51, 51, 1);
               border: 2px solid gray;
             }
-
           }
           button.banner-buttons__more {
             background: none;
             border: 2px solid gray;
             margin-bottom: 60px;
             transition: 0.5s;
-
-            a {
-              color: #fff;
-              background: none;
-            }
 
             &:hover {
               background: rgba(190, 173, 142, 1);

@@ -53,6 +53,13 @@ main {
         font-family: $fontPrincipal;
         font-weight: 700;
         background: rgba(190, 173, 142, 1);
+        transition: 0.5s;
+        border: 2px solid rgba(190, 173, 142, 1);
+
+        &:hover {
+          background-color: rgba(51, 51, 51, 1);
+          border: 2px solid gray;
+        }
       }
     }
   }
@@ -72,28 +79,6 @@ main {
           display: flex;
           flex-direction: column;
           width: 25%;
-
-          input[type="date"]::-webkit-inner-spin-button,
-          ::-webkit-calendar-picker-indicator,
-          ::-webkit-datetime-edit {
-            display: none;
-          }
-
-
-          /* mostrar el calendario al hacer click */
-          input[type="date"]::-webkit-calendar-picker-indicator {
-            display: block;
-            background: transparent;
-            bottom: 0;
-            color: transparent;
-            cursor: pointer;
-            height: auto;
-            left: 0;
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: auto;
-          }
         }
 
         button.banner-checkdate-form__button {
