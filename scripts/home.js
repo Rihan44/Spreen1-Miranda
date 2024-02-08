@@ -91,6 +91,8 @@ window.addEventListener('resize', () => {
 let btn_tour = document.querySelector('#btn_tour');
 let btn_learn_more = document.querySelector('#btn_learn_more');
 let form_check_availability = document.querySelector('#form_check_availability');
+let btn_book_now = document.querySelector('#btn_book_now');
+let btn_book = document.querySelector('#btn_book');
 
 btn_tour.addEventListener('click', () => {
     window.location.href = '../pages/rooms.html';
@@ -105,4 +107,12 @@ form_check_availability.addEventListener('submit', (e) => {
     window.location.href = '../pages/rooms.html';
 })
 
+btn_book_now.addEventListener('click', () => {
+    window.location.href = '../pages/rooms.html';
+});
+
+btn_book.addEventListener('click', () => {
+    console.log('ey');
+    window.location.href = '../pages/rooms.html';
+});
 

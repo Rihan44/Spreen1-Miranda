@@ -6,6 +6,9 @@ main {
       max-width: 700px;
       margin: auto;
       margin-bottom: 40px;
+      div.swiper-wrapper__facilities {
+        height: 320px;
+      }
       h2.facilities__h2 {
         background: none;
         font-size: 0.875em;
@@ -52,37 +55,37 @@ main {
         }
       }
       div.facilities-slide__article1 {
-        background: url('../img/01.png');
+        background: url('/img/01.png');
         background-position: top right;
         background-repeat: no-repeat;
         background-position-x: 90%;
       }
       div.facilities-slide__article2 {
-        background: url('../img/02.png');
+        background: url('/img/02.png');
         background-position: top right;
         background-repeat: no-repeat;
         background-position-x: 90%;
       }
       div.facilities-slide__article3 {
-        background: url('../img/03.png');
+        background: url('/img/03.png');
         background-position: top right;
         background-repeat: no-repeat;
         background-position-x: 90%;
       }
       div.facilities-slide__article4 {
-        background: url('../img/04.png');
+        background: url('/img/04.png');
         background-position: top right;
         background-repeat: no-repeat;
         background-position-x: 90%;
       }
       div.facilities-slide__article5 {
-        background: url('../img/05.png');
+        background: url('/img/05.png');
         background-position: top right;
         background-repeat: no-repeat;
         background-position-x: 90%;
       }
       div.facilities-slide__article6 {
-        background: url('../img/06.png');
+        background: url('/img/06.png');
         background-position: top right;
         background-repeat: no-repeat;
         background-position-x: 90%;
@@ -112,6 +115,7 @@ main {
           padding-bottom: 0px;
           flex-wrap: wrap;
           justify-content: space-around;
+          height: auto;
           h3 {
             font-family: $color-secundario;
             font-weight: 400;
@@ -140,7 +144,7 @@ main {
           }
           div.facilities-slide__article1 {
             width: 30%;
-            background: url('../img/01.png');
+            background: url('/img/01.png');
             background-position: top right;
             background-repeat: no-repeat;
             background-position-x: 90%;
@@ -148,7 +152,7 @@ main {
           }
           div.facilities-slide__article2 {
             width: 30%;
-            background: url('../img/02.png');
+            background: url('/img/02.png');
             background-position: top right;
             background-repeat: no-repeat;
             background-position-x: 90%;
@@ -156,7 +160,7 @@ main {
           }
           div.facilities-slide__article3 {
             width: 30%;
-            background: url('../img/03.png');
+            background: url('/img/03.png');
             background-position: top right;
             background-repeat: no-repeat;
             background-position-x: 90%;
@@ -164,7 +168,7 @@ main {
           }
           div.facilities-slide__article4 {
             width: 30%;
-            background: url('../img/04.png');
+            background: url('/img/04.png');
             background-position: top right;
             background-repeat: no-repeat;
             background-position-x: 90%;
@@ -172,7 +176,7 @@ main {
           }
           div.facilities-slide__article5 {
             width: 30%;
-            background: url('../img/05.png');
+            background: url('/img/05.png');
             background-position: top right;
             background-repeat: no-repeat;
             background-position-x: 90%;
@@ -180,7 +184,7 @@ main {
           }
           div.facilities-slide__article6 {
             width: 30%;
-            background: url('../img/06.png');
+            background: url('/img/06.png');
             background-position: top right;
             background-repeat: no-repeat;
             background-position-x: 90%;
